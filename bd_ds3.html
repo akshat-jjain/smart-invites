@@ -42,15 +42,68 @@
             }
 
             .name {
+                width: 100%;
+                text-align: center;
                 font-family: 'Sacramento';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 36px;
+                font-size: 20px;
                 line-height: 53px;
+                background: transparent;
             }
 
             .details {
-                
+                width: 100%;
+                display: flex;
+            }
+
+            .personal-details,
+            .family-details {
+                width: 50%;
+                text-transform: capitalize;
+            }
+
+            .text-box {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                background: transparent;
+                text-transform: capitalize;
+                padding: .5% 1%;
+                font-family: 'SF Pro Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+            }
+
+            .text-box span {
+                background: transparent;
+            }
+
+            .left-txt {
+                width: 47%;
+            }
+
+            .cnt-txt {
+                width: 5%;
+            }
+
+            .right-txt {
+                width: 47%;
+            }
+
+            @media (min-width:501px) and (max-width:1024px) {
+
+                .text-box {
+                    font-size: 11px;
+                }
+            }
+
+            @media (min-width:1025px) {
+
+                .text-box {
+                    font-size: 16px;
+                }
             }
         </style>
     </head>
@@ -64,7 +117,69 @@
                         <img src="./images/pp.png" alt="Profile Photo" class="pp-photo">
                     </div>
                     <div class="name">[NAME]</div>
-                    <div class="details"></div>
+                    <div class="details">
+                        <div class="personal-details">
+                            <div class="text-box"><span class="left-txt">date of birth</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[DATE-OF-BIRTH]</span></div>
+                            <div class="text-box"><span class="left-txt">time of birth</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[TIME-OF-BIRTH]</span></div>
+                            <div class="text-box"><span class="left-txt">place of birth</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[PLACE-OF-BIRTH]</span></div>
+                            <div class="text-box"><span class="left-txt">rashi</span><span class="cnt-txt">:</span><span
+                                    class="right-txt">[SIGN-BIRTH](by Birth) [SIGN-MOON](by Moon)</span></div>
+                            <div class="text-box"><span class="left-txt">nakshatra</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[NAKSHATRA]</span></div>
+                            <div class="text-box"><span class="left-txt">height</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[HEIGHT]</span></div>
+                            <div class="text-box"><span class="left-txt">religion</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[RELIGION]</span></div>
+                            <div class="text-box"><span class="left-txt">caste</span><span class="cnt-txt">:</span><span
+                                    class="right-txt">[CASTE]</span></div>
+                            <div class="text-box"><span class="left-txt">sub caste</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[SUB-CASTE]</span></div>
+                            <div class="text-box"><span class="left-txt">gotra</span><span class="cnt-txt">:</span><span
+                                    class="right-txt">[GOTRA]</span></div>
+                            <div class="text-box"><span class="left-txt">mangalik</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[MANGALIK]</span></div>
+                            <div class="text-box"><span class="left-txt">education</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[EDUCATION]</span></div>
+                            <div class="text-box"><span class="left-txt">college name</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[COLLEGE-NAME]</span></div>
+                            <div class="text-box"><span class="left-txt">employed in</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[EMPLOYED-IN]</span></div>
+                            <div class="text-box"><span class="left-txt">organization name</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[ORGANIZATION-NAME]</span></div>
+                            <div class="text-box"><span class="left-txt">annual income</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[ANNUAL-INCOME]</span></div>
+                            <div class="text-box"><span class="left-txt">address details</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[ADDRESS-DETAILS]</span></div>
+                        </div>
+                        <div class="family-details">
+                            <div class="text-box"><span class="left-txt">Father’s name</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[FATHER-NAME]</span></div>
+                            <div class="text-box"><span class="left-txt">Father’s occupation</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[FATHER-OCCUPATION]</span></div>
+                            <div class="text-box"><span class="left-txt">Mother’s name</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[MOTHER-NAME]</span></div>
+                            <div class="text-box"><span class="left-txt">Mother’s occupation</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[MOTHER-OCCUPATION]</span></div>
+                            <div class="text-box"><span class="left-txt">total sisters</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[TOTAL-SISTERS]</span></div>
+                            <div class="text-box"><span class="left-txt">total brothers</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[TOTAL-BROTHERS]</span></div>
+                            <div class="text-box"><span class="left-txt">married sisters</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[MARRIED-SISTERS]</span></div>
+                            <div class="text-box"><span class="left-txt">married brothers</span><span
+                                    class="cnt-txt">:</span><span class="right-txt">[MARRIED-BROTHERS]</span></div>
+                            <br><br><br>
+                            <div class="text-box"><span class="left-txt">contact no.</span><span class="cnt-txt">:</span><span
+                                    class="right-txt">[CONTACT-NO]</span></div>
+                            <div class="text-box"><span class="left-txt">address</span><span class="cnt-txt">:</span><span
+                                    class="right-txt">[ADDRESS]</span></div>
+                            <div class="text-box"><span class="left-txt">whatsapp no.</span><span class="cnt-txt">:</span><span
+                                    class="right-txt">[WHATSAPP-NO]</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
