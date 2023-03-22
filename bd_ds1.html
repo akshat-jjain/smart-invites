@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <title>BD DS 1</title>
+        <style>
+            :root {
+                --background-color: #102D39;
+                --primary-color: #FFFFFF;
+                --secondary-color: #FFC700;
+                --background_img: url("./images/bd_ds1-1.png");
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                background-color: var(--background-color);
+                color: var(--primary-color);
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
+            .container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .outer-box {
+                position: relative;
+                /* background: var(--background_img) no-repeat center;
+                background-size: 100% 100%; */
+                width: 100%;
+                height: 99vh;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+                border: 2px solid var(--secondary-color);
+            }
+
+            .main-image {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+
+            .content {
+                width: 70%;
+                /* margin-top: 5rem; */
+                position: absolute;
+                top: 10%;
+                background: transparent;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+
+            .personal-header {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 5%;
+            }
+
+            .name {
+                font-size: 1rem;
+                font-weight: 600;
+                color: var(--secondary-color);
+                text-decoration: underline;
+            }
+
+            .mob-number {
+                font-size: .7rem;
+            }
+
+            .family-header {
+                margin-bottom: 5%;
+            }
+
+            .personal-details,
+            .family-details {
+                width: 100%;
+                background: transparent;
+            }
+
+            .text-box {
+                display: flex;
+                width: 100%;
+                background: transparent;
+                font-size: .75rem;
+                text-transform: capitalize;
+                padding: .5% 1%;
+            }
+
+            .text-box span {
+                background: transparent;
+            }
+
+            .left-txt {
+                width: 47%;
+            }
+
+            .cnt-txt {
+                width: 5%;
+            }
+
+            .right-txt {
+                width: 47%;
+            }
+
+            @media (min-width:501px) and (max-width:1024px) {
+                .outer-box {
+                    width: 60%;
+                }
+                .text-box {
+                    font-size: .7rem;
+                }
+            }
+
+            @media (min-width:1025px) {
+                .outer-box {
+                    width: 50%;
+                }
+
+                .name {
+                    font-size: 1.4rem;
+                }
+
+                .mob-number {
+                    font-size: 1.2rem;
+                }
+
+                .text-box {
+                    font-size: .75rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="outer-box">
+                <img src="./bd_ds1-1.png" alt="main-background" srcset="" class="main-image">
+                <div class="content">
+                    <div class="personal-header">
+                        <div class="name">[NAME]</div>
+                        <div class="mob-number">Mb.No.-[MOBILE_NUMBER]</div>
+                    </div>
+                    <div class="personal-details">
+                        <div class="text-box"><span class="left-txt">date of birth</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[DATE_OF_BIRTH]</span></div>
+                        <div class="text-box"><span class="left-txt">time of birth</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[TIME_OF_BIRTH]</span></div>
+                        <div class="text-box"><span class="left-txt">place of birth</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[PLACE_OF_BIRTH]</span></div>
+                        <div class="text-box"><span class="left-txt">rashi</span><span class="cnt-txt">:</span><span
+                                class="right-txt">[SIGN_BIRTH](by Birth) [SIGN_MOON](by Moon)</span></div>
+                        <div class="text-box"><span class="left-txt">nakshatra</span><span class="cnt-txt">:</span><span
+                                class="right-txt">[NAKSHATRA]</span></div>
+                        <div class="text-box"><span class="left-txt">height</span><span class="cnt-txt">:</span><span
+                                class="right-txt">[HEIGHT]</span></div>
+                        <div class="text-box"><span class="left-txt">religion</span><span class="cnt-txt">:</span><span
+                                class="right-txt">[RELIGION]</span></div>
+                        <div class="text-box"><span class="left-txt">caste</span><span class="cnt-txt">:</span><span
+                                class="right-txt">[CASTE]</span></div>
+                        <div class="text-box"><span class="left-txt">sub caste</span><span class="cnt-txt">:</span><span
+                                class="right-txt">[SUB_CASTE]</span></div>
+                        <div class="text-box"><span class="left-txt">gotra</span><span class="cnt-txt">:</span><span
+                                class="right-txt">[GOTRA]</span></div>
+                        <div class="text-box"><span class="left-txt">mangalik</span><span class="cnt-txt">:</span><span
+                                class="right-txt">[MANGALIK]</span></div>
+                        <div class="text-box"><span class="left-txt">education</span><span class="cnt-txt">:</span><span
+                                class="right-txt">[EDUCATION]</span></div>
+                        <div class="text-box"><span class="left-txt">college name</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[COLLEGE_NAME]</span></div>
+                        <div class="text-box"><span class="left-txt">employed in</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[EMPLOYED_IN]</span></div>
+                        <div class="text-box"><span class="left-txt">organization name</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[ORGANIZATION_NAME]</span></div>
+                        <div class="text-box"><span class="left-txt">annual income</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[ANNUAL_INCOME]</span></div>
+                        <div class="text-box"><span class="left-txt">address details</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[ADDRESS_DETAILS]</span></div>
+                    </div>
+                    <div class="family-header">
+                        <div class="name">Family Details</div>
+                    </div>
+                    <div class="family-details">
+                        <div class="text-box"><span class="left-txt">Father’s name</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[FATHER_NAME]</span></div>
+                        <div class="text-box"><span class="left-txt">Father’s occupation</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[FATHER_OCCUPATION]</span></div>
+                        <div class="text-box"><span class="left-txt">Mother’s name</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[MOTHER_NAME]</span></div>
+                        <div class="text-box"><span class="left-txt">Mother’s occupation</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[MOTHER_OCCUPATION]</span></div>
+                        <div class="text-box"><span class="left-txt">total sisters</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[TOTAL_SISTERS]</span></div>
+                        <div class="text-box"><span class="left-txt">total brothers</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[TOTAL_BROTHERS]</span></div>
+                        <div class="text-box"><span class="left-txt">married sisters</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[MARRIED_SISTERS]</span></div>
+                        <div class="text-box"><span class="left-txt">married brothers</span><span
+                                class="cnt-txt">:</span><span class="right-txt">[MARRIED_BROTHERS]</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

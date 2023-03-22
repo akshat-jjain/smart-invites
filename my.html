@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SEI | Invites</title>
+        <style>
+            @font-face {
+                font-family: ramaraja;
+                font-style: normal;
+                font-weight: 400;
+                src: local('Ramaraja'), url("https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/fonts/b8018499-32c1-48a6-b7fc-e0b5c0b528b6.woff") format('woff')
+            }
+
+            @font-face {
+                font-family: glass antiqua;
+                font-style: normal;
+                font-weight: 400;
+                src: local('Glass Antiqua'), url(https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/fonts/ab858152-6d8d-412f-8402-21b8a449ee5f.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'besley*';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Besley*'), url(https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/fonts/06efd498-85c9-4947-91ad-6747bfc8a20d.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'besley*';
+                font-style: italic;
+                font-weight: 400;
+                src: local('Besley*'), url(https://fonts.cdnfonts.com/s/17810/Besley-BookItalic.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'besley*';
+                font-style: normal;
+                font-weight: 500;
+                src: local('Besley*'), url(https://fonts.cdnfonts.com/s/17810/Besley-Medium.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'besley*';
+                font-style: italic;
+                font-weight: 500;
+                src: local('Besley*'), url(https://fonts.cdnfonts.com/s/17810/Besley-MediumItalic.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'besley*';
+                font-style: normal;
+                font-weight: 700;
+                src: local('Besley*'), url(https://fonts.cdnfonts.com/s/17810/Besley-Bold.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'besley*';
+                font-style: italic;
+                font-weight: 700;
+                src: local('Besley*'), url(https://fonts.cdnfonts.com/s/17810/Besley-BoldItalic.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'besley*';
+                font-style: normal;
+                font-weight: 900;
+                src: local('Besley*'), url(https://fonts.cdnfonts.com/s/17810/Besley-Fatface.woff) format('woff')
+            }
+
+            @font-face {
+                font-family: 'besley*';
+                font-style: italic;
+                font-weight: 900;
+                src: local('Besley*'), url(https://fonts.cdnfonts.com/s/17810/Besley-FatfaceItalic.woff) format('woff')
+            }
+
+            .preload {
+                width: 100px;
+                height: 100px;
+                position: fixed;
+                top: 50%;
+                left: 45%;
+            }
+        </style>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                background-color: #F6DFAD;
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
+            .container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .header {
+                width: 100%;
+                height: 100vh;
+                background: url("https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/thumbnail/c896525f-2b54-4052-9167-b1439abd5ab6.png") no-repeat center;
+                background-size: 100% 100%;
+                text-align: center;
+            }
+
+            .header-image {
+                width: 78vw;
+                height: 90vh;
+                object-fit: cover;
+                margin: 6% 0;
+            }
+
+            .header-avatar {
+                width: 50%;
+                position: absolute;
+                margin: -4% 0;
+                top: 80%;
+                left: 25%;
+                background: transparent;
+            }
+
+            .widget-datetime {
+                width: 100%;
+                position: relative;
+                font-family: Ramaraja;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .widget-image {
+                width: 100%;
+            }
+
+            .widget-contain div {
+                width: 100%;
+                position: absolute;
+                background: transparent;
+                font-weight: bolder;
+            }
+
+            .widget-l1 {
+                top: 20%;
+                font-size: 10vw;
+            }
+
+            .widget-l2 {
+                top: 50%;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                align-items: center;
+            }
+
+            .widget-l2>div {
+                width: 30%;
+                position: initial;
+                font-size: 4vw;
+            }
+
+            .widget-l3,
+            .bg-family {
+                font-size: 4vw;
+            }
+
+            .widget-groom,
+            .widget-bride {
+                width: 100%;
+            }
+
+            .groom-box,
+            .bride-box {
+                position: relative;
+            }
+
+            .groom-details,
+            .bride-details {
+                width: 100%;
+                color: white;
+            }
+
+            .groom-details>div,
+            .bride-details>div {
+                width: 100%;
+                font-weight: bolder;
+                background-color: transparent;
+                position: absolute;
+                padding: 0 2%;
+            }
+
+            .bg-title {
+                top: 15%;
+            }
+
+            .bg-name {
+                top: 40%;
+                text-align: center;
+            }
+
+            .bg-family {
+                top: 65%;
+            }
+
+            .bg-title,
+            .bg-name {
+                font-size: 10vw;
+                text-transform: uppercase;
+            }
+
+            .dummy-img,
+            .widget-events {
+                width: 100%;
+            }
+
+            .widget-events,
+            .widget-counter {
+                width: 100%;
+                position: relative;
+                font-family: "Ramaraja";
+            }
+
+            .evt-name {
+                width: fit-content !important;
+                top: 20%;
+                font-size: 10vw;
+            }
+
+            .evt-date {
+                width: fit-content !important;
+                top: 30%;
+                font-size: 5vw;
+            }
+
+            .evt-location {
+                width: fit-content !important;
+                top: 40%;
+                font-size: 5vw;
+            }
+
+            .evt-btn {
+                width: 50% !important;
+                top: 60%;
+                font-size: 5vw;
+            }
+
+            .evt-btn>a {
+                padding: 3% 5%;
+                color: white;
+                text-decoration: none;
+            }
+
+            .widget-title {
+                top: 10%;
+                font-size: 7vw;
+                text-align: center;
+            }
+
+            .counter-body {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-between;
+                align-items: center;
+                top: 30%;
+            }
+
+            .cnt-time {
+                width: 33% !important;
+                position: initial !important;
+            }
+
+            .time-img {
+                width: 100%;
+                position: relative;
+            }
+
+            .time {
+                top: 5%;
+                position: absolute;
+                font-size: 33vw;
+                width: initial !important;
+            }
+
+            .counter-tile {
+                top: 90%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .cnt-caption {
+                width: 33% !important;
+                position: initial !important;
+                text-align: center;
+                font-size: 5vw;
+            }
+
+            .widget-gallery {
+                width: 100%;
+                height: 100vh;
+                background: url("https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/5cb3805f-50fb-43fb-8b69-e75bda67bb7a.png") no-repeat center;
+                background-size: 100% 100%;
+                background-color: black;
+                color: white;
+            }
+
+            .gallery-title {
+                padding: 5%;
+                background: transparent;
+                font-size: 5vw;
+            }
+
+            .gallery-images {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: center;
+                justify-content: flex-start;
+                align-items: center;
+                background: transparent;
+                overflow: scroll;
+                height: 80vh;
+            }
+
+            .g-img {
+                width: 90%;
+                background: black;
+            }
+
+            .contact-us {
+                position: relative;
+            }
+
+            .ctct-text {
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                background: transparent;
+                text-align: center;
+            }
+
+            .ctct-text>div {
+                background: transparent;
+                margin-bottom: 3%;
+                font-weight: bolder;
+            }
+
+            .contact-title {
+                width: fit-content !important;
+                font-size: 4vw;
+            }
+
+            .contact-btn {
+                width: 75% !important;
+            }
+
+            .contact-btn a {
+                padding: 2%;
+                text-decoration: none;
+                border-radius: 3px;
+            }
+
+            @media (max-width:550px) {
+
+                .header-image {
+                    margin: 8.4% 0;
+                }
+            }
+
+            @media (min-width:551px) and (max-width:750px) {
+                .header {
+                    height: 125vw;
+                }
+
+                .header-image {
+                    height: 115vw;
+                }
+
+                .header-avatar {
+                    top: 110%;
+                }
+            }
+
+            @media (min-width:751px) and (max-width:1024px) {
+
+                .header-image {
+                    height: 90vh;
+                    margin: 3% 0;
+                }
+
+                .gallery-images {
+                    height: 70vh;
+                }
+            }
+
+            @media (min-width:1025px) {
+
+                .header,
+                .widget-datetime,
+                .widget-bride,
+                .widget-groom,
+                .dummy-img,
+                .widget-events,
+                .widget-counter,
+                .widget-gallery,
+                .gallery-title {
+                    width: 50%;
+                }
+
+                .header-image {
+                    width: 80%;
+                }
+
+                .header-avatar {
+                    left: 35%;
+                    width: 30%;
+                }
+
+                .widget-l1,
+                .bg-title,
+                .bg-name,
+                .evt-name {
+                    font-size: 5vw;
+                }
+
+                .widget-title {
+                    font-size: 4vw;
+                }
+
+                .widget-l2>div,
+                .widget-l3,
+                .bg-family,
+                .evt-date,
+                .evt-location,
+                .evt-btn,
+                .cnt-caption,
+                .gallery-title,
+                .contact-title {
+                    font-size: 2vw;
+                }
+
+                .time {
+                    top: 0;
+                    font-size: 17vw;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="preload" id="preload">
+            <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/ef14ae80-4b10-4981-ad82-8044b2a1e31a.gif">
+        </div>
+        <div class="container">
+            <div class="header">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/54b40ab9-480b-4c67-a3bf-21eb3f8b9abb.jpg"
+                    alt="" class="header-image" srcset="">
+                <img class="header-avatar"
+                    src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/11fe4778-cf62-47c1-ad91-d90d8c7ec47b.png"
+                    alt="badhai ho!" />
+            </div>
+            <div class="widget-datetime">
+                <img class="widget-image"
+                    src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/thumbnail/db333b4e-185d-470b-adda-517469f47bfc.png"
+                    alt="" srcset="" />
+                <div class="widget-contain">
+                    <div class="widget-l1">wed on</div>
+                    <div class="widget-l2">
+                        <div class="">01 dec 2023</div>
+                        <div class="">Monday</div>
+                    </div>
+                    <div class="widget-l3" style="top: 65%;">Miracle Club, Jaipur</div>
+                </div>
+            </div>
+            <div class="widget-groom">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/1b7378cd-74b2-42bd-80d6-2ba3f98ad267.jpg"
+                    alt="weds_banner" style="width: 100%;" />
+                <div class="groom-box">
+                    <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/dfcf6e0a-333d-4a67-ae51-f5a442d80398.png"
+                        alt="" style="width: 100%;">
+                    <div class="groom-details">
+                        <div class="bg-title">#DULHA NO. 1</div>
+                        <div class="bg-name">GROOM NAME</div>
+                        <div class="bg-family">S/O <br>Father’s name <br>Mother's name</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dummy-img">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/bebbee0c-89e1-4990-830e-bf02760a8a69.png"
+                    alt="" srcset="" style="width: 100%;">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/4f60a53e-8f50-4931-ad0c-adf16c87bf95.png"
+                    alt="weds_banner" srcset="" style="width: 100%;">
+            </div>
+            <div class="widget-bride">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/33ec579e-52c8-4645-b60f-68238237fb9b.jpg"
+                    alt="" srcset="" style="width: 100%;">
+                <div class="bride-box">
+                    <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/dfcf6e0a-333d-4a67-ae51-f5a442d80398.png"
+                        alt="" style="width: 100%;">
+                    <div class="bride-details">
+                        <div class="bg-title">#DULHAN NO. 1</div>
+                        <div class="bg-name">BRIDE NAME</div>
+                        <div class="bg-family">S/O <br>Father’s name <br>Mother's name</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dummy-img">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/e1575bab-f57a-40a9-b755-46b2fc2f2864.png"
+                    alt="" srcset="" style="width: 100%;">
+            </div>
+            <div class="widget-events">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/bb0f97ca-781d-47d8-9be5-44030a804c3a.png"
+                    alt="" srcset="" class="widget-image" style="width: 100%;">
+                <div class="widget-contain" style="padding: 0 5%;color: #784C0E;">
+                    <div class="evt-name">Mehandi</div>
+                    <div class="evt-date">01 Dec 2023 | 5:00pm</div>
+                    <div class="evt-location">Miracle Resort, Sikar Rd,<br>near Eden Garden, Rajawas,<br>Rajasthan
+                        303704</div>
+                    <div class="evt-btn"><a href="#" style="background: #784C0E;">Location</a></div>
+                </div>
+            </div>
+            <div class="widget-events">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/07605fe7-b8ce-4ef0-8371-df616e08dd00.png"
+                    alt="" srcset="" class="widget-image" style="width: 100%;">
+                <div class="widget-contain" style="padding: 0 5%;color: #7F7204;">
+                    <div class="evt-name " style="top: 10%;">Haldi</div>
+                    <div class="evt-date" style="top:20%">01 Dec 2023 | 5:00pm</div>
+                    <div class="evt-location" style="top: 33%;">Miracle Resort, Sikar Rd,<br>near Eden Garden,
+                        Rajawas,<br>Rajasthan
+                        303704</div>
+                    <div class="evt-btn" style="top: 55%;"><a href="#" style="background: #7F7204;">Location</a></div>
+                </div>
+            </div>
+            <div class="widget-events">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/bb0f97ca-781d-47d8-9be5-44030a804c3a.png"
+                    alt="" srcset="" class="widget-image" style="width: 100%;">
+                <div class="widget-contain" style="padding: 0 5%;color: #784C0E;">
+                    <div class="evt-name">Sangeet</div>
+                    <div class="evt-date">01 Dec 2023 | 5:00pm</div>
+                    <div class="evt-location">Miracle Resort, Sikar Rd,<br>near Eden Garden, Rajawas,<br>Rajasthan
+                        303704</div>
+                    <div class="evt-btn"><a href="#" style="background: #784C0E;">Location</a></div>
+                </div>
+            </div>
+            <div class="widget-events">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/07605fe7-b8ce-4ef0-8371-df616e08dd00.png"
+                    alt="" srcset="" class="widget-image" style="width: 100%;">
+                <div class="widget-contain" style="padding: 0 5%;color: #7F7204;">
+                    <div class="evt-name " style="top: 10%;">Vivah</div>
+                    <div class="evt-date" style="top:20%">01 Dec 2023 | 5:00pm</div>
+                    <div class="evt-location" style="top: 33%;">Miracle Resort, Sikar Rd,<br>near Eden Garden,
+                        Rajawas,<br>Rajasthan
+                        303704</div>
+                    <div class="evt-btn" style="top: 55%;"><a href="#" style="background: #7F7204;">Location</a></div>
+                </div>
+            </div>
+            <div class="widget-counter">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/thumbnail/c6239a8d-4760-4576-b4ce-6dee11bfb77d.png"
+                    alt="" srcset="" class="widget-image">
+                <div class="widget-contain">
+                    <div class="widget-title">“Sabar karo, Ruko jara”</div>
+                    <div class="counter-body">
+                        <div class="cnt-time">
+                            <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/6ae12067-0d95-4e84-a386-3c8697da9ca3.png"
+                                alt="" class="time-img">
+                            <div class="time" id="time1">01</div>
+                            </img>
+                        </div>
+                        <div class="cnt-time">
+                            <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/6ae12067-0d95-4e84-a386-3c8697da9ca3.png"
+                                alt="" class="time-img">
+                            <div class="time" id="time2">23</div>
+                            </img>
+                        </div>
+                        <div class="cnt-time">
+                            <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/6ae12067-0d95-4e84-a386-3c8697da9ca3.png"
+                                alt="" class="time-img">
+                            <div class="time" id="time3">45</div>
+                            </img>
+                        </div>
+                    </div>
+                    <div class="counter-tile">
+                        <div class="cnt-caption">Days</div>
+                        <div class="cnt-caption">Hours</div>
+                        <div class="cnt-caption">Minutes</div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-gallery">
+                <div class="gallery-title">HUM SATH SATH HAI</div>
+                <div class="gallery-images">
+                    <div class="g-img">
+                        <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/93fbb523-64b9-4822-ab35-63cc3c27a6ca.jpg"
+                            alt="" srcset="" style="width: 100%;">
+                    </div>
+                    <div class="g-img">
+                        <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/3d2416db-fac7-4736-a1c7-84b6e83b0ba3.jpg"
+                            alt="" srcset="" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="contact-us dummy-img">
+                <img src="https://d34hrb0wq6y5f9.cloudfront.net/cdn-sei/cache/1d7aee2b-94c6-47db-bf48-8aeb85832ebb.png"
+                    alt="" srcset="" style="width: 100%;">
+                <div class="ctct-text">
+                    <div class="contact-title" style="color: #F26922;">WARM REGARDS <br> Smart e-Invites</div>
+                    <div class="contact-btn"><a href="#" style="background: black;color: white;">Call on 📞</a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        // Set the date we're counting down to
+        var endDate = new Date("Dec 1, 2023 17:00:00").getTime();
+        // Update the count down every 10 second
+        var x = setInterval(function () {
+            // Get todays date and time
+            var now = new Date().getTime();
+            // Find the distance between now an the count down date
+            var distance = endDate - now;
+            // Time calculations for days, hours and minutes
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            // Output the result in elements with id="cdHour/cdMin"
+            document.getElementById("time1").innerHTML = ("0" + days).slice(-2);
+            document.getElementById("time2").innerHTML = ("0" + hours).slice(-2);
+            document.getElementById("time3").innerHTML = ("0" + minutes).slice(-2);
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("time1").innerHTML = ("00").slice(-2);
+                document.getElementById("time2").innerHTML = ("00").slice(-2);
+                document.getElementById("time3").innerHTML = ("00").slice(-2);
+            }
+        }, 10000);
+    </script>
+    <script>
+        document.addEventListener('readystatechange', event => {
+
+            console.log(event.target.readyState);
+
+            // When HTML/DOM elements are ready:
+            if (event.target.readyState ===
+                "interactive") { //does same as:  ..addEventListener("DOMContentLoaded"..
+            }
+
+            // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
+            if (event.target.readyState === "complete") {
+                document.getElementById("preload").style.display = "none";
+
+            }
+        });
+    </script>
+
+</html>
