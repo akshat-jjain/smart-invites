@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ivt DS 1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="./assets/style/common.css">
+        <style>
+            :root {
+                --background-color: #1E1E1E;
+                --primary-color: #9ED2A0;
+                --secondary-color: #FDD8AF;
+                --third-color: #90C85D;
+                --background_img: url("./images/ivt_ds1-1.png");
+            }
+
+            .content {
+                width: 60%;
+                text-align: center;
+                position: absolute;
+                top: 20%;
+                background: transparent;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .content div,
+            .content span {
+                background: transparent;
+                text-transform: uppercase;
+            }
+
+            .brd-grm-name,
+            .groom-name,
+            .bride-name {
+                text-transform: capitalize !important;
+                text-align: center;
+                font-size: larger;
+            }
+
+            .and {
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            img {
+                width: 100%;
+                background: transparent;
+            }
+
+            .invite-line {
+                font-size: smaller;
+                color: var(--secondary-color);
+                margin-bottom: 3px;
+            }
+
+            .date-time {
+                width: 100%;
+            }
+
+            .date {
+                color: var(--primary-color);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="outer-box">
+                <img src="./images/ivt_ds1-1.png" alt="" class="main-image">
+                <div class="content">
+                    <div class="brd-grm-name">
+                        <div class="groom-name">Aman</div>
+                        <div class="and"><img src="./images/and.png" alt="" srcset=""></div>
+                        <div class="bride-name">Simran</div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="outer-box">
+                <img src="./images/ivt_ds1-2.png" alt="" class="main-image">
+                <div class="content">
+                    <div class="invite-line">You are cordially <br> invited to attend the wedding of</div>
+                    <div class="brd-grm-name">
+                        <div class="groom-name">Aman</div>
+                        <div class="and"><img src="./images/and.png" alt="" srcset=""></div>
+                        <div class="bride-name">Simran</div>
+                    </div>
+                    <div class="date-time">
+                        <div style="color: var(--secondary-color);">on</div>
+                        <div class="date">friday <br><span style="color:var(--third-color);"> jan 15 2023</span></div>
+                        <div class="time">At 4pm</div>
+                    </div>
+                    <div class="venue-block">
+                        <span>Venue</span>
+                        <div class="address">Venue</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
