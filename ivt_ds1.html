@@ -37,13 +37,14 @@
             .brd-grm-name,
             .groom-name,
             .bride-name {
+                width: 100%;
                 text-transform: capitalize !important;
                 text-align: center;
                 font-size: larger;
             }
 
             .and {
-                width: 50%;
+                width: 20%;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -56,15 +57,45 @@
             .invite-line {
                 font-size: smaller;
                 color: var(--secondary-color);
-                margin-bottom: 3px;
+                margin-bottom: 15%;
             }
 
             .date-time {
                 width: 100%;
+                font-size: larger;
+                margin-bottom: 15px;
             }
 
             .date {
                 color: var(--primary-color);
+                margin-bottom: 10px;
+            }
+
+            .time {
+                color: var(--secondary-color);
+            }
+
+            .on-box {
+                color: var(--secondary-color);
+                font-size: small;
+                margin-top: 2px;
+            }
+
+            .address {
+                margin-bottom: 10px;
+                color: var(--secondary-color);
+            }
+
+            @media (min-width:1025px) {
+
+                .invite-line,
+                .on-box {
+                    font-size: larger;
+                }
+
+                .date-time {
+                    font-size: xx-large;
+                }
             }
         </style>
     </head>
@@ -92,13 +123,26 @@
                         <div class="bride-name">Simran</div>
                     </div>
                     <div class="date-time">
-                        <div style="color: var(--secondary-color);">on</div>
-                        <div class="date">friday <br><span style="color:var(--third-color);"> jan 15 2023</span></div>
+                        <div class="on-box">on</div>
+                        <div class="date">
+                            <div style="margin-bottom: 12px;">friday</div>
+                            <div style="color:var(--third-color);">jan 15 2023</div>
+                        </div>
                         <div class="time">At 4pm</div>
                     </div>
                     <div class="venue-block">
-                        <span>Venue</span>
-                        <div class="address">Venue</div>
+                        <div style="margin-bottom: 10px;">Venue</div>
+                        <div class="address">123, Street name, city name, street, country, 12345</div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="outer-box">
+                <img src="./images/ivt_ds1-3.png" alt="" class="main-image">
+                <div class="content">
+                    <div class="invite-line">You are cordially <br> invited to attend the</div>
+                    <div class="brd-grm-name">
+                        <div class="groom-name">Aman</div>
                     </div>
                 </div>
             </div>
