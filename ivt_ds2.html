@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ivt DS 1</title>
+        <title>Ivt DS 2</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" href="./assets/style/common.css">
         <style>
@@ -16,9 +16,56 @@
                 --third-color: #851418;
             }
 
+            .outer-box {
+                margin-bottom: 2%;
+            }
+
             .content {
                 width: 60%;
                 text-align: center;
+                top: 10%;
+                bottom: 10%;
+            }
+
+            .content div {
+                background: transparent;
+                color: var(--primary-color);
+            }
+
+            .brd-grm-name {
+                margin-left: 40%;
+                width: 60%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                vertical-align: middle;
+                justify-content: center;
+                font-weight: 900;
+                font-size: medium;
+            }
+
+            .date {
+                margin-top: 10px;
+                text-transform: uppercase;
+            }
+
+            .venue {
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: small;
+                margin-top: -10%;
+            }
+
+            @media (min-width:1025px) {
+                .brd-grm-name {
+                    font-size: x-large;
+                }
+
+                .venue {
+                    font-size: medium;
+                }
             }
         </style>
     </head>
@@ -29,11 +76,18 @@
                 <img src="./images/ivt_ds2-1.png" alt="" class="main-image">
                 <div class="content">
                     <div class="brd-grm-name">
-                        <div class="groom-name">Rahul</div>
+                        <div class="groom-name"><i>Rahul</i></div>
                         <div class="and"><img src="./images/ivt_ds2-and.png" alt="" srcset=""></div>
-                        <div class="bride-name">Kajal</div>
+                        <div class="bride-name"><i>Kajal</i></div>
+                        <div class="date">may 24 | 2030</div>
+                    </div>
+                    <div class="venue">
+                        <span>add your venue here</span><br><span>add your venue here</span>
                     </div>
                 </div>
+            </div>
+            <div class="outer-box">
+                <img src="./images/ivt_ds2-2.png" alt="" class="main-image">
             </div>
         </div>
     </body>
