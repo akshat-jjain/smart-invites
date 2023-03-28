@@ -74,6 +74,7 @@
                 width: 100%;
                 text-transform: uppercase;
                 color: var(--third-color) !important;
+                font-size: smaller;
             }
 
             .date {
@@ -102,20 +103,65 @@
                 align-items: center;
             }
 
+            .content-inner-1 {
+                position: absolute;
+                bottom: -30%;
+            }
+
             .venue-fnt {
                 font-family: 'Inknut Antiqua', serif;
                 font-weight: 300;
                 font-size: smaller;
+                color: var(--third-color) !important;
+            }
+
+            .gname-1,
+            .date-1 {
+                font-weight: 400;
+                font-size: large;
+            }
+
+            .venue-1 {
+                font-size: medium;
+                color: var(--third-color) !important;
+            }
+
+            .gname-1,
+            .bride-name,
+            .groom-name {
+                font-weight: 900;
+                font-size: 30px;
             }
 
             @media (min-width:1025px) {
 
-                .brd-grm-name,.welcome-by,.venue-fnt {
+                .brd-grm-name,
+                .welcome-by,
+                .venue-1 {
                     font-size: x-large;
                 }
 
+                .venue-fnt {
+                    font-size: large;
+                }
+
+                .grace-by {
+                    font-size: larger;
+                }
+
+                .groom-name,
+                .bride-name {
+                    font-size: 50px;
+                }
+
+                .gname-1 {
+                    font-size: 80px;
+                }
+
                 .brd-grm-name-1,
-                .welcome-by {
+                .welcome-by,
+                .date-1 {
+                    font-weight: 900;
                     font-size: xx-large;
                 }
 
@@ -154,8 +200,7 @@
                             <div class="bride-name"><i>Kajal</i></div>
                             <div class="date">may 24 | 2030</div>
                         </div>
-                        <div class="venue-fnt">Euphoria emporium Banquet,
-                            Rama Road, New Delhi</div>
+                        <div class="venue-fnt">Euphoria emporium Banquet,Rama Road, New Delhi</div>
                     </div>
                 </div>
             </div>
