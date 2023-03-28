@@ -39,6 +39,13 @@
     object-fit: fill;
 }
 
+.content {
+    background: transparent;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media (min-width:501px) and (max-width:1024px) {
     .outer-box {
         width: 60%;
