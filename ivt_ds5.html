@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivt DS 5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Meow+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/common-v1.css" />
+    <style>
+      @font-face {
+        font-family: "Exceptional";
+        src: url(./assets/fonts/Exceptional-Regular.ttf);
+      }
+      :root {
+        --background-color: #ffffff;
+        --primary-color: #407a86;
+        --secondary-color: #407a86;
+        --third-color: #407a86;
+        --font-family: "Inter", sans-serif;
+        --font-family-1: "Exceptional", serif;
+        --font-family-2: "Meow Script", cursive;
+        --fs-xx-small: xx-small;
+        --fs-x-small: x-small;
+        --fs-smaller: smaller;
+        --fs-small: small;
+        --fs-medium: medium;
+        --fs-larger: larger;
+        --fs-x-large: x-large;
+      }
+      @media (min-width: 1025px) {
+        :root {
+          --fs-xx-small: smaller;
+          --fs-x-small: small;
+          --fs-smaller: medium;
+          --fs-small: large;
+          --fs-medium: larger;
+          --fs-larger: xx-large;
+          --fs-x-large: xxx-large;
+        }
+      }
+      .content {
+        width: 60%;
+        text-align: center;
+        top: 15%;
+        bottom: 15%;
+      }
+      .content * {
+        color: var(--primary-color);
+      }
+
+      .inner-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .invite-text {
+        width: 85%;
+        font-size: var(--fs-xx-small);
+        text-transform: uppercase;
+      }
+      .wedding-date {
+        font-family: var(--font-family-1);
+        font-size: var(--fs-medium);
+        text-transform: uppercase;
+      }
+      .evt-and-text,
+      .save-date {
+        text-transform: uppercase;
+        font-size: var(--fs-smaller);
+      }
+      /* Css for Event Starts Here */
+      .event-name {
+        font-family: var(--font-family-2);
+        font-size: var(--fs-x-large);
+        text-transform: capitalize;
+      }
+      .event-img-block {
+        width: 60%;
+      }
+      .evt-by-name {
+        
+        font-family: var(--font-family-1);
+        overflow-wrap: anywhere;
+        font-size: xx-large;
+        color: var(--primary-color);
+        text-transform: capitalize;
+      }
+      .evt-time-block {
+        width: 100%;
+        position: relative;
+      }
+      .evt-time {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        padding: 6% 0;
+        text-transform: uppercase;
+        font-size: var(--fs-x-small);
+      }
+      .evt-date {
+        font-family: var(--font-family-1);
+        font-size: var(--fs-medium);
+        text-transform: uppercase;
+      }
+      .evt-venue {
+        width: 70%;
+        padding: 1%;
+      }
+      .venue-title {
+        font-family: var(--font-family-1);
+        font-size: var(--fs-larger);
+        text-transform: capitalize;
+        border-bottom: 3px solid var(--primary-color);
+      }
+      .venue-text {
+        display: inline-block;
+        margin-top: 5%;
+        text-transform: uppercase;
+        font-size: var(--fs-xx-small);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Intro Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds5-1.png" alt="" class="main-image" />
+        <div class="content" style="top: 20%; bottom: 20%">
+          <div class="inner-block" style="margin-left: 40%">
+            <div class="evt-by-name">#BRIDE_NAME</div>
+            <div class="evt-and-text">and</div>
+            <div class="evt-by-name">#GROOM_NAME</div>
+            <span class="wedding-date">#WEDDING_DATE</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Wedding Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds5-2.png" alt="" class="main-image" />
+        <div class="content" style="top: 15%; bottom: 15%">
+          <div class="inner-block">
+            <span class="invite-text">
+              YOU ARE CORDIALLY <br />
+              INVITED TO ATTEND THE WEDDING OF
+            </span>
+            <div class="evt-by-name">#BRIDE_NAME</div>
+            <div class="evt-and-text">and</div>
+            <div class="evt-by-name">#GROOM_NAME</div>
+            <div class="evt-time-block">
+              <img
+                src="./images/invite/evt-time-ds5.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#WEDDING_TIME</div>
+            </div>
+            <span class="evt-date">#WEDDING_DATE</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Haldi Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds5-2.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">haldi</div>
+            <div class="event-img-block">
+              <img
+                src="./images/invite/haldi.png"
+                alt="Haldi Event Image"
+                class="event-img"
+              />
+            </div>
+            <div class="evt-by-name">#BRIDE_NAME</div>
+            <div class="evt-time-block">
+              <img
+                src="./images/invite/evt-time-ds5.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#HALDI_EVENT_TIME</div>
+            </div>
+            <span class="evt-date">#HALDI_EVENT_DATE</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Engagement Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds5-2.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">engagement</div>
+            <div class="event-img-block">
+              <img
+                src="./images/invite/engagement-1.png"
+                alt="Engagement Event Image"
+                class="event-img"
+              />
+            </div>
+            <div class="evt-by-name">#BRIDE_NAME</div>
+            <div class="evt-time-block">
+              <img
+                src="./images/invite/evt-time-ds5.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#ENGAGEMENT_EVENT_TIME</div>
+            </div>
+            <span class="evt-date">#ENGAGEMENT_EVENT_DATE</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cocktail Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds5-2.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">cocktail</div>
+            <div class="event-img-block" style="width: 40%">
+              <img
+                src="./images/invite/cocktail.png"
+                alt="Cocktail Event Image"
+                class="event-img"
+              />
+            </div>
+            <div class="evt-by-name">#BRIDE_NAME</div>
+            <div class="evt-time-block">
+              <img
+                src="./images/invite/evt-time-ds5.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#COCKTAIL_EVENT_TIME</div>
+            </div>
+            <span class="evt-date">#COCKTAIL_EVENT_DATE</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Reception Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds5-2.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">reception</div>
+            <div class="event-img-block" style="width: 40%">
+              <img
+                src="./images/invite/sangeet.png"
+                alt="Reception Event Image"
+                class="event-img"
+              />
+            </div>
+            <div class="evt-by-name">#BRIDE_NAME</div>
+            <div class="evt-time-block">
+              <img
+                src="./images/invite/evt-time-ds5.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#RECEPTION_EVENT_TIME</div>
+            </div>
+            <span class="evt-date">#RECEPTION_EVENT_DATE</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mehandi Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds5-2.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">mehandi</div>
+            <div class="event-img-block">
+              <img
+                src="./images/invite/mehandi.png"
+                alt="Mehandi Event Image"
+                class="event-img"
+              />
+            </div>
+            <div class="evt-by-name">#BRIDE_NAME</div>
+            <div class="evt-time-block">
+              <img
+                src="./images/invite/evt-time-ds5.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#MEHANDI_EVENT_TIME</div>
+            </div>
+            <span class="evt-date">#MEHANDI_EVENT_DATE</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
