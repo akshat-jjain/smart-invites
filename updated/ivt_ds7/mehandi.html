@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro | Ivt DS 7</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Kaisei+Decol:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "meritage";
+        src: url(/assets/fonts/meritage.ttf);
+      }
+      @font-face {
+        font-family: "antique";
+        src: url(/assets/fonts/Book\ Antiqua\ Font.ttf);
+      }
+      @font-face {
+        font-family: "Booter Script";
+        src: url(/assets/fonts/FREEBSC_.ttf);
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        font-family: var(--font-family);
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        background: var(--background-color);
+      }
+
+      .outer-box {
+        position: relative;
+        width: 100%;
+        height: 150vw;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        border: 2px solid var(--secondary-color);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+
+      .content {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: 501px) and (max-width: 1024px) {
+        .outer-box {
+          width: 60%;
+          height: 100%;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        .outer-box {
+          width: 50%;
+          /* height: 100vh !important; */
+          height: 100% !important;
+        }
+      }
+      :root {
+        --background-color: #ffffff;
+        --primary-color: #ffffff;
+        --secondary-color: #e7b26d;
+        --third-color: #ee9dc4;
+        --font-family: "Inter", sans-serif;
+        --font-family-1: "Kaisei Decol", serif;
+        --font-family-2: "meritage";
+        --font-family-3: "antique";
+        --font-family-4: "Booter Script";
+        --fs-xx-small: xx-small;
+        --fs-x-small: x-small;
+        --fs-smaller: smaller;
+        --fs-small: small;
+        --fs-medium: medium;
+        --fs-larger: larger;
+        --fs-x-large: x-large;
+      }
+      @media (min-width: 1025px) {
+        :root {
+          --fs-xx-small: smaller;
+          --fs-x-small: small;
+          --fs-smaller: medium;
+          --fs-small: large;
+          --fs-medium: larger;
+          --fs-larger: xx-large;
+          --fs-x-large: xxx-large;
+        }
+        .address {
+          margin-top: 90%;
+        }
+      }
+      .content {
+        width: 65%;
+        text-align: center;
+        top: 5%;
+        bottom: 20%;
+      }
+      .content * {
+        color: var(--primary-color);
+      }
+
+      .inner-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .ivt-from-text {
+        text-transform: capitalize;
+        font-family: var(--font-family-2);
+        font-size: var(--fs-x-large);
+      }
+      .invite-text {
+        font-size: var(--fs-xx-small);
+        text-transform: uppercase;
+        color: var(--secondary-color);
+      }
+      .wedding-date {
+        width: 100%;
+        font-family: var(--font-family-3);
+        font-size: var(--fs-medium);
+        text-transform: uppercase;
+      }
+      .evt-and-text,
+      .save-date {
+        width: 50% !important;
+        text-transform: uppercase;
+        font-size: var(--fs-smaller);
+        color: var(--third-color);
+      }
+      .address {
+        margin-top: 25%;
+      }
+      /* Css for Event Starts Here */
+      .event-name {
+        font-family: var(--font-family-4);
+        font-size: xxx-large;
+        text-transform: capitalize;
+      }
+      .event-img-block {
+        width: 60%;
+      }
+      .evt-by-name {
+        width: 100%;
+        overflow-wrap: anywhere;
+        font-family: var(--font-family-2);
+        font-size: xxx-large;
+        color: var(--primary-color);
+        text-transform: capitalize;
+      }
+      .on-of-text {
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        font-size: var(--fs-x-small);
+      }
+      .evt-time-block {
+        width: 100%;
+        position: relative;
+      }
+      .evt-time {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        padding: 6% 0;
+        text-transform: uppercase;
+        font-size: var(--fs-x-small);
+      }
+      .evt-date {
+        font-family: var(--font-family-3);
+        font-size: var(--fs-larger);
+        text-transform: uppercase;
+      }
+      .evt-venue {
+        width: 75%;
+        padding: 1%;
+      }
+      .venue-title {
+        font-family: var(--font-family-1);
+        font-size: xx-large;
+        text-transform: capitalize;
+        border-bottom: 3px solid var(--primary-color);
+      }
+      .venue-text {
+        display: inline-block;
+        margin-top: 5%;
+        text-transform: capitalize;
+        font-family: var(--font-family-1);
+        font-size: var(--fs-x-small);
+        color: var(--third-color);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Mehandi Block -->
+      <div class="outer-box">
+        <img src="/images/invite/ivt_ds7-2.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <span class="invite-text">
+              Request the pleasure of your presence to grace the
+            </span>
+            <div class="event-name">mehandi</div>
+            <div class="event-img-block">
+              <img
+                src="/images/invite/mehandi.png"
+                alt="Mehandi Event Image"
+                class="event-img"
+              />
+            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">#by_name</div>
+            <span class="on-of-text">on</span>
+            <span class="evt-date">#MEHANDI_EVENT_DATE </span>
+            <div class="evt-venue">
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,274 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivt DS 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Meow+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/common-v1.css" />
+    <style>
+      @font-face {
+        font-family: "arunika";
+        src: url(./assets/fonts/Arunika.ttf);
+      }
+      @font-face {
+        font-family: "Booter Script";
+        src: url(./assets/fonts/FREEBSC_.ttf);
+      }
+      :root {
+        --background-color: #1e1e1e;
+        --primary-color: #9ed2a0;
+        --secondary-color: #fdd8af;
+        --third-color: #90c85d;
+        --fourth-color: #ffffff;
+        --font-family: "Inter", sans-serif;
+        --font-family-1: "arunika", serif;
+        --font-family-2: "Meow Script", cursive;
+        --fs-xx-small: xx-small;
+        --fs-x-small: x-small;
+        --fs-smaller: smaller;
+        --fs-small: small;
+        --fs-medium: medium;
+        --fs-larger: larger;
+        --fs-x-large: x-large;
+        --fs-xx-large: xx-large;
+      }
+      @media (min-width: 1025px) {
+        :root {
+          --fs-xx-small: smaller;
+          --fs-x-small: small;
+          --fs-smaller: medium;
+          --fs-small: large;
+          --fs-medium: larger;
+          --fs-larger: xx-large;
+          --fs-x-large: xxx-large;
+          --fs-xx-large: xxx-large;
+        }
+      }
+      .content {
+        width: 65%;
+        text-align: center;
+        top: 15%;
+        bottom: 15%;
+      }
+      .content * {
+        color: var(--primary-color);
+      }
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ivt DS 1</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="./assets/style/common.css">
-        <style>
-            :root {
-                --background-color: #1E1E1E;
-                --primary-color: #9ED2A0;
-                --secondary-color: #FDD8AF;
-                --third-color: #90C85D;
-                --background_img: url("./images/invite/ivt_ds1-1.png");
-            }
+      .inner-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .ivt-from-text {
+        text-transform: capitalize;
+        font-family: var(--font-family-2);
+        font-size: var(--fs-x-large);
+      }
+      .invite-text {
+        font-size: var(--fs-xx-small);
+        text-transform: uppercase;
+        color: var(--secondary-color);
+      }
+      .wedding-date {
+        width: 100%;
+        font-family: var(--font-family-3);
+        font-size: var(--fs-medium);
+        color: var(--secondary-color);
+        text-transform: uppercase;
+      }
+      .evt-and-text,
+      .save-date {
+        width: 50% !important;
+        text-transform: uppercase;
+        font-size: var(--fs-small);
+        color: var(--background-color);
+      }
+      .evt-and-text[and] {
+        margin: -15% 0;
+      }
+      /* Css for Event Starts Here */
+      .event-name {
+        color: var(--fourth-color);
+        font-family: var(--font-family-2);
+        font-size: xxx-large;
+        text-transform: capitalize;
+      }
+      .event-img-block {
+        width: 60%;
+      }
+      .evt-by-name {
+        width: 100%;
+        overflow-wrap: anywhere;
+        font-family: var(--font-family-1);
+        font-size: var(--fs-xx-large);
+        color: var(--primary-color);
+        text-transform: capitalize;
+      }
+      .on-of-text {
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        font-size: var(--fs-x-small);
+      }
+      .on-of-text[time],
+      .on-of-text[on] {
+        color: var(--secondary-color);
+      }
+      .on-of-text[day],
+      .on-of-text[time] {
+        font-size: var(--fs-medium);
+      }
+      .evt-time-block {
+        width: 100%;
+        position: relative;
+      }
+      .evt-time {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        padding: 6% 0;
+        text-transform: uppercase;
+        font-size: var(--fs-x-small);
+      }
+      .evt-date {
+        font-family: var(--font-family-3);
+        font-size: var(--fs-larger);
+        text-transform: uppercase;
+        color: var(--third-color);
+      }
+      .evt-venue {
+        width: 75%;
+        padding: 1%;
+      }
+      .venue-title {
+        font-family: var(--font-family-1);
+        font-size: xx-large;
+        text-transform: capitalize;
+      }
+      .venue-text {
+        display: inline-block;
+        margin-top: 5%;
+        text-transform: capitalize;
+        font-family: var(--font-family);
+        font-size: var(--fs-x-small);
+        color: var(--secondary-color);
+        font-weight: 700;
+      }
+    </style>
+  </head>
 
-            .outer-box {
-                height: 150vw;
-            }
-
-            .content {
-                width: 60%;
-                text-align: center;
-                top: 20%;
-                bottom: 5%;
-                justify-content: center;
-            }
-
-            .content div,
-            .content span {
-                background: transparent;
-                text-transform: uppercase;
-            }
-
-            .brd-grm-name,
-            .groom-name,
-            .bride-name {
-                width: 100%;
-                text-transform: capitalize !important;
-                text-align: center;
-                font-size: larger;
-            }
-
-            .and {
-                width: 20%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            img {
-                width: 100%;
-                background: transparent;
-            }
-
-            .invite-line {
-                font-size: smaller;
-                color: var(--secondary-color);
-                margin-bottom: 15%;
-            }
-
-            .date-time {
-                width: 100%;
-                font-size: larger;
-                margin-bottom: 15px;
-            }
-
-            .date {
-                color: var(--primary-color);
-                margin-bottom: 10px;
-            }
-
-            .time {
-                color: var(--secondary-color);
-            }
-
-            .on-box {
-                color: var(--secondary-color);
-                font-size: small;
-                margin-top: 2px;
-            }
-
-            .address {
-                margin-bottom: 10px;
-                color: var(--secondary-color);
-            }
-
-            .content-1,
-            .content-2 {
-                top: 27%;
-            }
-
-            .content-3 {
-                top: 30%;
-            }
-
-            @media (min-width:1025px) {
-                .outer-box {
-                    height: max-content;
-                }
-
-                .content {
-                    top: 15%;
-                }
-
-                .content-1,
-                .content-2 {
-                    top: 25%;
-                }
-
-                .content-3 {
-                    top: 30%;
-                }
-
-                .invite-line,
-                .on-box {
-                    font-size: larger;
-                }
-
-                .date-time {
-                    font-size: xx-large;
-                }
-            }
-        </style>
-    </head>
-
-    <body>
-        <div class="container">
-            <div class="outer-box">
-                <img src="./images/invite/ivt_ds1-1.png" alt="" class="main-image">
-                <div class="content">
-                    <div class="brd-grm-name">
-                        <div class="groom-name">Aman</div>
-                        <div class="and"><img src="./images/invite/ivt_ds1-and.png" alt="" srcset=""></div>
-                        <div class="bride-name">Simran</div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="outer-box">
-                <img src="./images/invite/ivt_ds1-2.png" alt="" class="main-image">
-                <div class="content">
-                    <div class="invite-line">You are cordially <br> invited to attend the wedding of</div>
-                    <div class="brd-grm-name">
-                        <div class="groom-name">Aman</div>
-                        <div class="and"><img src="./images/and.png" alt="" srcset=""></div>
-                        <div class="bride-name">Simran</div>
-                    </div>
-                    <div class="date-time">
-                        <div class="on-box">on</div>
-                        <div class="date">
-                            <div style="margin-bottom: 12px;">friday</div>
-                            <div style="color:var(--third-color);">jan 15 2023</div>
-                        </div>
-                        <div class="time">At 4pm</div>
-                    </div>
-                    <div class="venue-block">
-                        <div style="margin-bottom: 10px;">Venue</div>
-                        <div class="address">123, Street name, city name, street, country, 12345</div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="outer-box">
-                <img src="./images/invite/ivt_ds1-3.png" alt="" class="main-image">
-                <div class="content content-1">
-                    <div class="brd-grm-name" style="margin-top:50%">
-                        <div class="groom-name" style="font-size: x-large;">Aman</div>
-                    </div>
-                    <div class="date-time">
-                        <div class="on-box">on</div>
-                        <div class="date">
-                            <div style="margin-bottom: 12px">friday</div>
-                            <div style="color:var(--third-color);">jan 15 2023</div>
-                        </div>
-                        <div class="time">At 4pm</div>
-                    </div>
-                    <div class="venue-block">
-                        <div style="margin-bottom: 10px;">Venue</div>
-                        <div class="address">123, Street name, city name, street, country, 12345</div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="outer-box" style="justify-content: flex-start;">
-                <img src="./images/invite/ivt_ds1-4.png" alt="" class="main-image">
-                <div class="content content-2" style="width: 50%;">
-                    <div class="brd-grm-name" style="margin-top:10%;">
-                        <div class="groom-name">Aman</div>
-                    </div>
-                    <div class="date-time">
-                        <div class="on-box">on</div>
-                        <div class="date">
-                            <div style="margin-bottom: 12px">friday</div>
-                            <div style="color:var(--third-color);">jan 15 2023</div>
-                        </div>
-                        <div class="time">At 4pm</div>
-                    </div>
-                    <div class="venue-block">
-                        <div style="margin-bottom: 10px;">Venue</div>
-                        <div class="address">123, Street name, city name, street, country, 12345</div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="outer-box">
-                <img src="./images/invite/ivt_ds1-5.png" alt="" class="main-image">
-                <div class="content content-1">
-                    <div class="brd-grm-name" style="margin-top:50%">
-                        <div class="groom-name" style="font-size: x-large;">Aman</div>
-                    </div>
-                    <div class="date-time">
-                        <div class="on-box">on</div>
-                        <div class="date">
-                            <div style="margin-bottom: 12px">friday</div>
-                            <div style="color:var(--third-color);">jan 15 2023</div>
-                        </div>
-                        <div class="time">At 4pm</div>
-                    </div>
-                    <div class="venue-block">
-                        <div style="margin-bottom: 10px;">Venue</div>
-                        <div class="address">123, Street name, city name, street, country, 12345</div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="outer-box">
-                <img src="./images/invite/ivt_ds1-6.png" alt="" class="main-image">
-                <div class="content content-1">
-                    <div class="brd-grm-name" style="margin-top:50%">
-                        <div class="groom-name" style="font-size: x-large;">Aman</div>
-                    </div>
-                    <div class="date-time">
-                        <div class="on-box">on</div>
-                        <div class="date">
-                            <div style="margin-bottom: 12px">friday</div>
-                            <div style="color:var(--third-color);">jan 15 2023</div>
-                        </div>
-                        <div class="time">At 4pm</div>
-                    </div>
-                    <div class="venue-block">
-                        <div style="margin-bottom: 10px;">Venue</div>
-                        <div class="address">123, Street name, city name, street, country, 12345</div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="outer-box">
-                <img src="./images/invite/ivt_ds1-7.png" alt="" class="main-image">
-                <div class="content content-3">
-                    <div class="brd-grm-name" style="margin-top:50%">
-                        <div class="groom-name" style="font-size: x-large;">Aman</div>
-                    </div>
-                    <div class="date-time">
-                        <div class="on-box">on</div>
-                        <div class="date">
-                            <div style="margin-bottom: 12px">friday</div>
-                            <div style="color:var(--third-color);">jan 15 2023</div>
-                        </div>
-                        <div class="time">At 4pm</div>
-                    </div>
-                    <div class="venue-block">
-                        <div style="margin-bottom: 10px;">Venue</div>
-                        <div class="address">123, Street name, city name, street, country, 12345</div>
-                    </div>
-                </div>
-            </div>
-            <br>
+  <body>
+    <div class="container">
+      <!-- Intro Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds1-1.png" alt="" class="main-image" />
+        <div class="content" style="top: 10%; bottom: 10%">
+          <div class="inner-block" style="height: 45%">
+            <div class="evt-by-name">Aman</div>
+            <div class="evt-and-text evt-by-name" and>&</div>
+            <div class="evt-by-name">Simran</div>
+          </div>
         </div>
-    </body>
-
+      </div>
+      <!-- Wedding Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds1-2.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <span class="invite-text">
+              YOU ARE CORDIALLY <br />
+              INVITED TO ATTEND THE WEDDING OF
+            </span>
+            <div class="evt-by-name" style="margin-bottom: -10%">Aman</div>
+            <div
+              class="evt-and-text evt-by-name"
+              style="color: var(--third-color)"
+            >
+              &
+            </div>
+            <div class="evt-by-name" style="margin-top: -10%">Simran</div>
+            <span class="on-of-text" on>on</span>
+            <span class="on-of-text" day>friday</span>
+            <span class="evt-date">jan 15 2021</span>
+            <span class="on-of-text" time>At 4pm</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mehandi Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds1-4.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <span class="invite-text">
+              YOU ARE CORDIALLY INVITED TO <br />ATTEND THE
+            </span>
+            <div class="event-name">mehandi</div>
+            <div class="event-img-block">
+              <img
+                src="./images/invite/mehandi-hands.png"
+                alt="Mehandi Event Image"
+                class="event-img"
+              />
+            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">Aman</div>
+            <span class="on-of-text" on>on</span>
+            <span class="on-of-text" day>friday</span>
+            <span class="evt-date">jan 15 2021</span>
+            <span class="on-of-text" time>At 4pm</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Engagement Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds1-3.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <span class="invite-text">
+              YOU ARE CORDIALLY INVITED TO <br />ATTEND THE
+            </span>
+            <div class="event-name">engagement</div>
+            <div class="event-img-block">
+              <img
+                src="./images/invite/engagement-red.png"
+                alt="Engagement Event Image"
+                class="event-img"
+              />
+            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">Aman</div>
+            <span class="on-of-text" on>on</span>
+            <span class="on-of-text" day>friday</span>
+            <span class="evt-date">jan 15 2021</span>
+            <span class="on-of-text" time>At 4pm</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Haldi Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds1-4.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <span class="invite-text">
+              YOU ARE CORDIALLY INVITED TO <br />ATTEND THE
+            </span>
+            <div class="event-name">haldi</div>
+            <div class="event-img-block">
+              <img
+                src="./images/invite/haldi-bowl.png"
+                alt="Haldi Event Image"
+                class="event-img"
+                style="width: 60%"
+              />
+            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">Aman</div>
+            <span class="on-of-text" on>on</span>
+            <span class="on-of-text" day>friday</span>
+            <span class="evt-date">jan 15 2021</span>
+            <span class="on-of-text" time>At 4pm</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sangeet Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds1-3.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <span class="invite-text">
+              YOU ARE CORDIALLY INVITED TO <br />ATTEND THE
+            </span>
+            <div class="event-name">sangeet</div>
+            <div class="event-img-block" style="width: 40%">
+              <img
+                src="./images/invite/sangeet-2.png"
+                alt="Sangeet Event Image"
+                class="event-img"
+              />
+            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">Aman</div>
+            <span class="on-of-text" on>on</span>
+            <span class="on-of-text" day>friday</span>
+            <span class="evt-date">jan 15 2021</span>
+            <span class="on-of-text" time>At 4pm</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cocktail Block -->
+      <div class="outer-box">
+        <img src="./images/invite/ivt_ds1-3.png" alt="" class="main-image" />
+        <div class="content">
+          <div class="inner-block">
+            <span class="invite-text">
+              YOU ARE CORDIALLY INVITED TO <br />ATTEND THE
+            </span>
+            <div class="event-name">cocktail</div>
+            <div class="event-img-block">
+              <img
+                src="./images/invite/cocktail-2.png"
+                alt="Cocktail Event Image"
+                class="event-img"
+              />
+            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">Aman</div>
+            <span class="on-of-text" on>on</span>
+            <span class="on-of-text" day>friday</span>
+            <span class="evt-date">jan 15 2021</span>
+            <span class="on-of-text" time>At 4pm</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
