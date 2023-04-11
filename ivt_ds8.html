@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivt DS 7</title>
+    <title>Ivt DS 8</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Kaisei+Decol:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Meow+Script&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -80,27 +80,18 @@
       }
 
       @font-face {
-        font-family: "meritage";
-        src: url(./assets/fonts/meritage.ttf);
-      }
-      @font-face {
-        font-family: "antique";
-        src: url(./assets/fonts/Book\ Antiqua\ Font.ttf);
-      }
-      @font-face {
-        font-family: "Booter Script";
-        src: url(./assets/fonts/FREEBSC_.ttf);
+        font-family: "mojito";
+        src: url(./assets/fonts/mojito-web.ttf);
       }
       :root {
         --background-color: #ffffff;
-        --primary-color: #ffffff;
-        --secondary-color: #e7b26d;
-        --third-color: #ee9dc4;
+        --primary-color: #d8882a;
+        --secondary-color: #ffedaf;
+        --third-color: #7e2d04;
+        --fourth-color: #ffefc9;
         --font-family: "Inter", sans-serif;
-        --font-family-1: "Kaisei Decol", serif;
-        --font-family-2: "meritage";
-        --font-family-3: "antique";
-        --font-family-4: "Booter Script";
+        --font-family-1: "mojito", serif;
+        --font-family-2: "Meow Script", serif;
         --fs-xx-small: xx-small;
         --fs-x-small: x-small;
         --fs-smaller: smaller;
@@ -126,8 +117,8 @@
       .content {
         width: 65%;
         text-align: center;
-        top: 5%;
-        bottom: 20%;
+        top: 2%;
+        bottom: 10%;
       }
       .content * {
         color: var(--primary-color);
@@ -144,7 +135,7 @@
       }
       .ivt-from-text {
         text-transform: capitalize;
-        font-family: var(--font-family-2);
+        font-family: var(--font-family-1);
         font-size: var(--fs-x-large);
       }
       .invite-text {
@@ -154,7 +145,6 @@
       }
       .wedding-date {
         width: 100%;
-        font-family: var(--font-family-3);
         font-size: var(--fs-medium);
         text-transform: uppercase;
       }
@@ -163,48 +153,63 @@
         width: 50% !important;
         text-transform: uppercase;
         font-size: var(--fs-smaller);
-        color: var(--third-color);
       }
       .address {
         margin-top: 25%;
       }
       /* Css for Event Starts Here */
       .event-name {
-        font-family: var(--font-family-4);
+        font-family: var(--font-family-2);
         font-size: xxx-large;
         text-transform: capitalize;
+        color: var(--fourth-color);
       }
       .event-img-block {
+        margin-top: 35%;
         width: 60%;
       }
       .evt-by-name {
         width: 100%;
         overflow-wrap: anywhere;
-        font-family: var(--font-family-2);
-        font-size: xxx-large;
+        font-family: var(--font-family-1);
+        font-size: xx-large;
         color: var(--primary-color);
         text-transform: capitalize;
       }
+      .evt-by-name[first] {
+        color: var(--third-color);
+      }
       .on-of-text {
+        color: var(--third-color);
         text-transform: uppercase;
-        font-family: var(--font-family);
         font-size: var(--fs-x-small);
       }
-      .evt-time-block {
-        width: 100%;
+      .evt-date-block {
+        width: 60%;
         position: relative;
       }
-      .evt-time {
+      .evt-date {
         width: 100%;
+        display: flex;
         position: absolute;
         top: 0;
-        padding: 6% 0;
+        padding: 3.5% 10%;
         text-transform: uppercase;
-        font-size: var(--fs-x-small);
+        font-size: var(--fs-medium);
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
       }
-      .evt-date {
-        font-family: var(--font-family-3);
-        font-size: var(--fs-larger);
+      .day-date {
+        margin-top: -4%;
+      }
+      span[date] {
+        font-weight: bolder;
+      }
+      .evt-time {
+        font-size: var(--fs-smaller);
         text-transform: uppercase;
       }
       .evt-venue {
@@ -221,9 +226,7 @@
         display: inline-block;
         margin-top: 5%;
         text-transform: capitalize;
-        font-family: var(--font-family-1);
         font-size: var(--fs-x-small);
-        color: var(--third-color);
         font-weight: 700;
       }
     </style>
@@ -233,21 +236,12 @@
     <div class="container">
       <!-- Intro Block -->
       <div class="outer-box">
-        <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/417ee57d-b5ec-430c-8a03-e5e75eebda47.png"
-          alt=""
-          class="main-image"
-        />
+        <img src="./images/invite/ivt_ds8-1.png" alt="" class="main-image" />
         <div class="content" style="top: 30%; bottom: 0%">
           <div class="inner-block" style="margin-left: 45%">
-            <div class="evt-by-name">#by_name</div>
-            <div
-              class="evt-and-text evt-by-name"
-              style="color: var(--third-color)"
-            >
-              &
-            </div>
-            <div class="evt-by-name">#spouse_name</div>
+            <div class="evt-by-name" first>#by_name</div>
+            <div class="evt-and-text evt-by-name" first>&</div>
+            <div class="evt-by-name" first>#spouse_name</div>
             <span class="wedding-date">#WEDDING_DATE</span>
           </div>
           <div style="width: 100%" class="address">
@@ -257,27 +251,36 @@
       </div>
       <!-- Wedding Block -->
       <div class="outer-box">
-        <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/d60f11e9-e7a9-4226-9e1f-5fac55217ad6.png"
-          alt=""
-          class="main-image"
-        />
-        <div class="content">
+        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
+        <div class="content" style="bottom: 18%">
           <div class="inner-block">
-            <span class="ivt-from-text">mr. and mrs. #BY_LAST_NAME</span>
-            <span class="invite-text">
-              Request the pleasure of your presence to grace the wedding of
-            </span>
-            <div class="evt-by-name" style="margin-bottom: -10%">#by_name</div>
-            <div
-              class="evt-and-text evt-by-name"
-              style="color: var(--third-color)"
-            >
-              &
+            <span class="invite-text"> you are invited </span>
+            <div class="event-name">wedding</div>
+            <div class="evt-by-name" first style="margin-bottom: -10%">
+              #by_name
             </div>
-            <div class="evt-by-name" style="margin-top: -10%">#spouse_name</div>
-            <span class="evt-date">#WEDDING_DATE</span>
+            <div class="evt-and-text evt-by-name">&</div>
+            <div class="evt-by-name" first style="margin-top: -10%">
+              #spouse_name
+            </div>
+            <div class="evt-date-block">
+              <img
+                src="../images/invite/evt-date-ds8.png"
+                alt="Event Time Decor Image"
+                class="evt-date-img"
+              />
+              <div class="evt-date">
+                <div>OCT</div>
+                <div class="day-date">
+                  <span>MON</span><br />
+                  <span date>19</span>
+                </div>
+                <div>2020</div>
+              </div>
+            </div>
+            <span class="evt-time" time>at 4'o clock in the evening</span>
             <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
@@ -285,16 +288,10 @@
       </div>
       <!-- Engagement Block -->
       <div class="outer-box">
-        <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/d60f11e9-e7a9-4226-9e1f-5fac55217ad6.png"
-          alt=""
-          class="main-image"
-        />
+        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
         <div class="content">
           <div class="inner-block">
-            <span class="invite-text">
-              Request the pleasure of your presence to grace the
-            </span>
+            <span class="invite-text"> you are invited </span>
             <div class="event-name">engagement</div>
             <div class="event-img-block">
               <img
@@ -303,11 +300,25 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
             <div class="evt-by-name">#by_name</div>
-            <span class="on-of-text">on</span>
-            <span class="evt-date">#ENGAGEMENT_EVENT_DATE</span>
+            <div class="evt-date-block">
+              <img
+                src="../images/invite/evt-date-ds8.png"
+                alt="Event Time Decor Image"
+                class="evt-date-img"
+              />
+              <div class="evt-date">
+                <div>OCT</div>
+                <div class="day-date">
+                  <span>MON</span><br />
+                  <span date>19</span>
+                </div>
+                <div>2020</div>
+              </div>
+            </div>
+            <span class="evt-time" time>at 4'o clock in the evening</span>
             <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
@@ -315,16 +326,10 @@
       </div>
       <!-- Sangeet Block -->
       <div class="outer-box">
-        <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/d60f11e9-e7a9-4226-9e1f-5fac55217ad6.png"
-          alt=""
-          class="main-image"
-        />
+        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
         <div class="content">
           <div class="inner-block">
-            <span class="invite-text">
-              Request the pleasure of your presence to grace the
-            </span>
+            <span class="invite-text"> you are invited </span>
             <div class="event-name">sangeet</div>
             <div class="event-img-block" style="width: 40%">
               <img
@@ -333,11 +338,25 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
             <div class="evt-by-name">#by_name</div>
-            <span class="on-of-text">on</span>
-            <span class="evt-date">#SANGEET_EVENT_DATE</span>
+            <div class="evt-date-block">
+              <img
+                src="../images/invite/evt-date-ds8.png"
+                alt="Event Time Decor Image"
+                class="evt-date-img"
+              />
+              <div class="evt-date">
+                <div>OCT</div>
+                <div class="day-date">
+                  <span>MON</span><br />
+                  <span date>19</span>
+                </div>
+                <div>2020</div>
+              </div>
+            </div>
+            <span class="evt-time" time>at 4'o clock in the evening</span>
             <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
@@ -345,16 +364,10 @@
       </div>
       <!-- Haldi Block -->
       <div class="outer-box">
-        <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/d60f11e9-e7a9-4226-9e1f-5fac55217ad6.png"
-          alt=""
-          class="main-image"
-        />
+        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
         <div class="content">
           <div class="inner-block">
-            <span class="invite-text">
-              Request the pleasure of your presence to grace the
-            </span>
+            <span class="invite-text"> you are invited </span>
             <div class="event-name">haldi</div>
             <div class="event-img-block">
               <img
@@ -363,11 +376,25 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
             <div class="evt-by-name">#by_name</div>
-            <span class="on-of-text">on</span>
-            <span class="evt-date">#HALDI_EVENT_DATE</span>
+            <div class="evt-date-block">
+              <img
+                src="../images/invite/evt-date-ds8.png"
+                alt="Event Time Decor Image"
+                class="evt-date-img"
+              />
+              <div class="evt-date">
+                <div>OCT</div>
+                <div class="day-date">
+                  <span>MON</span><br />
+                  <span date>19</span>
+                </div>
+                <div>2020</div>
+              </div>
+            </div>
+            <span class="evt-time" time>at 4'o clock in the evening</span>
             <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
@@ -375,16 +402,10 @@
       </div>
       <!-- Mehandi Block -->
       <div class="outer-box">
-        <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/d60f11e9-e7a9-4226-9e1f-5fac55217ad6.png"
-          alt=""
-          class="main-image"
-        />
+        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
         <div class="content">
           <div class="inner-block">
-            <span class="invite-text">
-              Request the pleasure of your presence to grace the
-            </span>
+            <span class="invite-text"> you are invited </span>
             <div class="event-name">mehandi</div>
             <div class="event-img-block">
               <img
@@ -393,11 +414,25 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
             <div class="evt-by-name">#by_name</div>
-            <span class="on-of-text">on</span>
-            <span class="evt-date">#MEHANDI_EVENT_DATE </span>
+            <div class="evt-date-block">
+              <img
+                src="../images/invite/evt-date-ds8.png"
+                alt="Event Time Decor Image"
+                class="evt-date-img"
+              />
+              <div class="evt-date">
+                <div>OCT</div>
+                <div class="day-date">
+                  <span>MON</span><br />
+                  <span date>19</span>
+                </div>
+                <div>2020</div>
+              </div>
+            </div>
+            <span class="evt-time" time>at 4'o clock in the evening</span>
             <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
@@ -405,16 +440,10 @@
       </div>
       <!-- Cocktail Block -->
       <div class="outer-box">
-        <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/d60f11e9-e7a9-4226-9e1f-5fac55217ad6.png"
-          alt=""
-          class="main-image"
-        />
+        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
         <div class="content">
           <div class="inner-block">
-            <span class="invite-text">
-              Request the pleasure of your presence to grace the
-            </span>
+            <span class="invite-text"> you are invited </span>
             <div class="event-name">cocktail</div>
             <div class="event-img-block" style="width: 40%">
               <img
@@ -423,11 +452,25 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
             <div class="evt-by-name">#by_name</div>
-            <span class="on-of-text">on</span>
-            <span class="evt-date">#COCKTAIL_EVENT_DATE</span>
+            <div class="evt-date-block">
+              <img
+                src="../images/invite/evt-date-ds8.png"
+                alt="Event Time Decor Image"
+                class="evt-date-img"
+              />
+              <div class="evt-date">
+                <div>OCT</div>
+                <div class="day-date">
+                  <span>MON</span><br />
+                  <span date>19</span>
+                </div>
+                <div>2020</div>
+              </div>
+            </div>
+            <span class="evt-time" time>at 4'o clock in the evening</span>
             <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
