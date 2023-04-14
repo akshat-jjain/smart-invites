@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivt DS 8</title>
+    <title>Ivt DS 9</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -115,10 +115,10 @@
         }
       }
       .content {
-        width: 65%;
+        width: 70%;
         text-align: center;
-        top: 2%;
-        bottom: 10%;
+        top: 12%;
+        bottom: 15%;
       }
       .content * {
         color: var(--primary-color);
@@ -141,31 +141,29 @@
       .invite-text {
         font-size: var(--fs-xx-small);
         text-transform: uppercase;
-        color: var(--secondary-color);
       }
       .wedding-date {
         width: 100%;
-        font-size: var(--fs-medium);
+        font-size: var(--fs-x-small);
         text-transform: uppercase;
       }
       .evt-and-text,
       .save-date {
-        width: 50% !important;
         text-transform: uppercase;
-        font-size: var(--fs-smaller);
+        font-size: var(--fs-x-small);
       }
-      .address {
-        margin-top: 25%;
+      .evt-and-text[first] {
+        font-size: var(--fs-x-small);
+        padding: 2%;
       }
       /* Css for Event Starts Here */
       .event-name {
         font-family: var(--font-family-2);
         font-size: xxx-large;
         text-transform: capitalize;
-        color: var(--fourth-color);
+        font-weight: bold;
       }
       .event-img-block {
-        margin-top: 35%;
         width: 60%;
       }
       .evt-by-name {
@@ -173,11 +171,13 @@
         overflow-wrap: anywhere;
         font-family: var(--font-family-1);
         font-size: xx-large;
+        font-weight: bold;
         color: var(--primary-color);
         text-transform: capitalize;
       }
       .evt-by-name[first] {
-        color: var(--third-color);
+        width: auto;
+        font-weight: 500;
       }
       .on-of-text {
         color: var(--third-color);
@@ -236,33 +236,35 @@
     <div class="container">
       <!-- Intro Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds8-1.png" alt="" class="main-image" />
-        <div class="content" style="top: 30%; bottom: 0%">
-          <div class="inner-block" style="margin-left: 45%">
-            <div class="evt-by-name" first>#by_name</div>
-            <div class="evt-and-text evt-by-name" first>&</div>
-            <div class="evt-by-name" first>#spouse_name</div>
-            <span class="wedding-date">#WEDDING_DATE</span>
-          </div>
-          <div style="width: 100%" class="address">
-            <span class="save-date">#ADDRESS</span>
+        <img src="./images/invite/ivt_ds9-1.png" alt="" class="main-image" />
+        <div class="content" style="top: 10%; bottom: 30%; width: 100%">
+          <div
+            class="inner-block"
+            style="
+              margin-left: 40%;
+              flex-direction: row;
+              justify-content: center;
+            "
+          >
+            <div class="save-date" style="width: 100%">Save our date</div>
+            <!-- <span class="evt-by-name" first>#by_name</span> -->
+            <span class="evt-by-name" first>parul</span>
+            <span class="evt-and-text" first>And</span>
+            <!-- <span class="evt-by-name" first>#spouse_name</span> -->
+            <span class="evt-by-name" first>rahul</span>
+            <div class="wedding-date">#WEDDING_DATE</div>
           </div>
         </div>
       </div>
       <!-- Wedding Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
-        <div class="content" style="bottom: 18%">
+        <img src="./images/invite/ivt_ds9-2.png" alt="" class="main-image" />
+        <div class="content" style="bottom: 20%">
           <div class="inner-block">
             <span class="invite-text"> you are invited </span>
-            <div class="event-name">wedding</div>
-            <div class="evt-by-name" first style="margin-bottom: -10%">
-              #by_name
-            </div>
+            <div class="evt-by-name" style="margin-bottom: -10%">#by_name</div>
             <div class="evt-and-text evt-by-name">&</div>
-            <div class="evt-by-name" first style="margin-top: -10%">
-              #spouse_name
-            </div>
+            <div class="evt-by-name" style="margin-top: -10%">#spouse_name</div>
             <div class="evt-date-block">
               <img
                 src="https://ewr1.vultrobjects.com/cdn-sei/original/d5cb6595-cb8f-4ae7-995c-a847efda08b8.png"
@@ -288,14 +290,14 @@
       </div>
       <!-- Engagement Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
+        <img src="./images/invite/ivt_ds9-3.png" alt="" class="main-image" />
         <div class="content">
           <div class="inner-block">
             <span class="invite-text"> you are invited </span>
             <div class="event-name">engagement</div>
-            <div class="event-img-block">
+            <div class="event-img-block" style="width: 40%">
               <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/1129eff1-806c-43ac-80f8-9726c4183681.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c7ecdbf5-1b8b-468f-8f09-95145b48b31d.png"
                 alt="Engagement Event Image"
                 class="event-img"
               />
@@ -326,14 +328,14 @@
       </div>
       <!-- Sangeet Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
+        <img src="./images/invite/ivt_ds9-3.png" alt="" class="main-image" />
         <div class="content">
           <div class="inner-block">
             <span class="invite-text"> you are invited </span>
             <div class="event-name">sangeet</div>
             <div class="event-img-block" style="width: 40%">
               <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/c2561659-dccf-415d-9848-d88c8ff8037f.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/d08f430b-4301-4957-9538-323c61873883.png"
                 alt="Sangeet Event Image"
                 class="event-img"
               />
@@ -364,14 +366,14 @@
       </div>
       <!-- Haldi Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
+        <img src="./images/invite/ivt_ds9-3.png" alt="" class="main-image" />
         <div class="content">
           <div class="inner-block">
             <span class="invite-text"> you are invited </span>
             <div class="event-name">haldi</div>
-            <div class="event-img-block">
+            <div class="event-img-block" style="width: 40%">
               <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/3802e80d-cfa0-4b57-9cb0-87a060e7b7e2.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/76240b47-c15a-49c8-b230-e490ba509b7e.png"
                 alt="Haldi Event Image"
                 class="event-img"
               />
@@ -402,14 +404,14 @@
       </div>
       <!-- Mehandi Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
+        <img src="./images/invite/ivt_ds9-3.png" alt="" class="main-image" />
         <div class="content">
           <div class="inner-block">
             <span class="invite-text"> you are invited </span>
             <div class="event-name">mehandi</div>
-            <div class="event-img-block">
+            <div class="event-img-block" style="width: 40%">
               <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/3962d680-30e0-4cbf-9639-2c42982bd684.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/285fd843-e03d-4ba4-83ea-5f2007c984da.png"
                 alt="Mehandi Event Image"
                 class="event-img"
               />
@@ -440,14 +442,14 @@
       </div>
       <!-- Cocktail Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds8-2.png" alt="" class="main-image" />
+        <img src="./images/invite/ivt_ds9-3.png" alt="" class="main-image" />
         <div class="content">
           <div class="inner-block">
             <span class="invite-text"> you are invited </span>
             <div class="event-name">cocktail</div>
             <div class="event-img-block" style="width: 40%">
               <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/80052519-133c-41b6-9a2f-fe25dd64212b.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/f3b5f99b-2a3e-423c-89f0-1e41e53b46ac.png"
                 alt="Cocktail Event Image"
                 class="event-img"
               />

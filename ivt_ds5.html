@@ -15,11 +15,72 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Meow+Script&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/style/common-v1.css" />
     <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        font-family: var(--font-family);
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        background: var(--background-color);
+      }
+
+      .outer-box {
+        position: relative;
+        width: 100%;
+        height: 150vw;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        border: 2px solid var(--secondary-color);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+
+      .content {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: 501px) and (max-width: 1024px) {
+        .outer-box {
+          width: 60%;
+          height: 100%;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        .outer-box {
+          width: 50%;
+          /* height: 100vh !important; */
+          height: 100% !important;
+        }
+      }
       @font-face {
         font-family: "Exceptional";
-        src: url(./assets/fonts/Exceptional-Regular.ttf);
+        src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/904c7605-2f1b-452e-bdae-4b535f7f6b30.ttf);
       }
       :root {
         --background-color: #ffffff;
@@ -92,7 +153,6 @@
         width: 60%;
       }
       .evt-by-name {
-        
         font-family: var(--font-family-1);
         overflow-wrap: anywhere;
         font-size: xx-large;
@@ -167,7 +227,7 @@
             <div class="evt-by-name">#GROOM_NAME</div>
             <div class="evt-time-block">
               <img
-                src="./images/invite/evt-time-ds5.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
                 alt="Event Time Decor Image"
                 class="evt-time-img"
               />
@@ -189,7 +249,7 @@
             <div class="event-name">haldi</div>
             <div class="event-img-block">
               <img
-                src="./images/invite/haldi.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/3802e80d-cfa0-4b57-9cb0-87a060e7b7e2.png"
                 alt="Haldi Event Image"
                 class="event-img"
               />
@@ -197,7 +257,7 @@
             <div class="evt-by-name">#BRIDE_NAME</div>
             <div class="evt-time-block">
               <img
-                src="./images/invite/evt-time-ds5.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
                 alt="Event Time Decor Image"
                 class="evt-time-img"
               />
@@ -219,7 +279,7 @@
             <div class="event-name">engagement</div>
             <div class="event-img-block">
               <img
-                src="./images/invite/engagement-1.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/1129eff1-806c-43ac-80f8-9726c4183681.png"
                 alt="Engagement Event Image"
                 class="event-img"
               />
@@ -227,7 +287,7 @@
             <div class="evt-by-name">#BRIDE_NAME</div>
             <div class="evt-time-block">
               <img
-                src="./images/invite/evt-time-ds5.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
                 alt="Event Time Decor Image"
                 class="evt-time-img"
               />
@@ -249,7 +309,7 @@
             <div class="event-name">cocktail</div>
             <div class="event-img-block" style="width: 40%">
               <img
-                src="./images/invite/cocktail.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/80052519-133c-41b6-9a2f-fe25dd64212b.png"
                 alt="Cocktail Event Image"
                 class="event-img"
               />
@@ -257,7 +317,7 @@
             <div class="evt-by-name">#BRIDE_NAME</div>
             <div class="evt-time-block">
               <img
-                src="./images/invite/evt-time-ds5.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
                 alt="Event Time Decor Image"
                 class="evt-time-img"
               />
@@ -279,7 +339,7 @@
             <div class="event-name">reception</div>
             <div class="event-img-block" style="width: 40%">
               <img
-                src="./images/invite/sangeet.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c2561659-dccf-415d-9848-d88c8ff8037f.png"
                 alt="Reception Event Image"
                 class="event-img"
               />
@@ -287,7 +347,7 @@
             <div class="evt-by-name">#BRIDE_NAME</div>
             <div class="evt-time-block">
               <img
-                src="./images/invite/evt-time-ds5.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
                 alt="Event Time Decor Image"
                 class="evt-time-img"
               />
@@ -309,7 +369,7 @@
             <div class="event-name">mehandi</div>
             <div class="event-img-block">
               <img
-                src="./images/invite/mehandi.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/3962d680-30e0-4cbf-9639-2c42982bd684.png"
                 alt="Mehandi Event Image"
                 class="event-img"
               />
@@ -317,7 +377,7 @@
             <div class="evt-by-name">#BRIDE_NAME</div>
             <div class="evt-time-block">
               <img
-                src="./images/invite/evt-time-ds5.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
                 alt="Event Time Decor Image"
                 class="evt-time-img"
               />

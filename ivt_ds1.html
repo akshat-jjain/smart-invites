@@ -15,15 +15,74 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Meow+Script&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/style/common-v1.css" />
+
     <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        font-family: var(--font-family);
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        background: var(--background-color);
+      }
+
+      .outer-box {
+        position: relative;
+        width: 100%;
+        height: 150vw;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        border: 2px solid var(--secondary-color);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+
+      .content {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: 501px) and (max-width: 1024px) {
+        .outer-box {
+          width: 60%;
+          height: 100%;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        .outer-box {
+          width: 50%;
+          /* height: 100vh !important; */
+          height: 100% !important;
+        }
+      }
+
       @font-face {
         font-family: "arunika";
-        src: url(./assets/fonts/Arunika.ttf);
-      }
-      @font-face {
-        font-family: "Booter Script";
-        src: url(./assets/fonts/FREEBSC_.ttf);
+        src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/5a98fa63-3687-4075-b59d-07ffbedeec4b.ttf);
       }
       :root {
         --background-color: #1e1e1e;
@@ -175,7 +234,11 @@
     <div class="container">
       <!-- Intro Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds1-1.png" alt="" class="main-image" />
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/a93f36a8-7478-4fc7-be2e-1f893a0f4fee.png"
+          alt=""
+          class="main-image"
+        />
         <div class="content" style="top: 10%; bottom: 10%">
           <div class="inner-block" style="height: 45%">
             <div class="evt-by-name">Aman</div>
@@ -186,7 +249,11 @@
       </div>
       <!-- Wedding Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds1-2.png" alt="" class="main-image" />
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/fbaad84c-c327-4e0d-87c1-d32750507c7a.png"
+          alt=""
+          class="main-image"
+        />
         <div class="content">
           <div class="inner-block">
             <span class="invite-text">
@@ -214,7 +281,11 @@
       </div>
       <!-- Mehandi Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds1-4.png" alt="" class="main-image" />
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/7b8d1cb3-a12b-4c9b-a1f0-7e187002a725.png"
+          alt=""
+          class="main-image"
+        />
         <div class="content">
           <div class="inner-block">
             <span class="invite-text">
@@ -223,7 +294,7 @@
             <div class="event-name">mehandi</div>
             <div class="event-img-block">
               <img
-                src="./images/invite/mehandi-hands.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/3d87502f-9aa5-4e0b-b001-18fb1f563c17.png"
                 alt="Mehandi Event Image"
                 class="event-img"
               />
@@ -243,7 +314,11 @@
       </div>
       <!-- Engagement Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds1-3.png" alt="" class="main-image" />
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/1ffd6578-8011-4a46-ac95-8bc2a583114c.png"
+          alt=""
+          class="main-image"
+        />
         <div class="content">
           <div class="inner-block">
             <span class="invite-text">
@@ -252,7 +327,7 @@
             <div class="event-name">engagement</div>
             <div class="event-img-block">
               <img
-                src="./images/invite/engagement-red.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/cf3edc6c-a63c-41cd-867c-a5612be8177d.png"
                 alt="Engagement Event Image"
                 class="event-img"
               />
@@ -272,7 +347,11 @@
       </div>
       <!-- Haldi Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds1-4.png" alt="" class="main-image" />
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/7b8d1cb3-a12b-4c9b-a1f0-7e187002a725.png"
+          alt=""
+          class="main-image"
+        />
         <div class="content">
           <div class="inner-block">
             <span class="invite-text">
@@ -281,7 +360,7 @@
             <div class="event-name">haldi</div>
             <div class="event-img-block">
               <img
-                src="./images/invite/haldi-bowl.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/5496d900-af1e-4a0b-9ed3-d904442cd1e9.png"
                 alt="Haldi Event Image"
                 class="event-img"
                 style="width: 60%"
@@ -302,7 +381,11 @@
       </div>
       <!-- Sangeet Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds1-3.png" alt="" class="main-image" />
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/1ffd6578-8011-4a46-ac95-8bc2a583114c.png"
+          alt=""
+          class="main-image"
+        />
         <div class="content">
           <div class="inner-block">
             <span class="invite-text">
@@ -311,7 +394,7 @@
             <div class="event-name">sangeet</div>
             <div class="event-img-block" style="width: 40%">
               <img
-                src="./images/invite/sangeet-2.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/d08f430b-4301-4957-9538-323c61873883.png"
                 alt="Sangeet Event Image"
                 class="event-img"
               />
@@ -331,7 +414,11 @@
       </div>
       <!-- Cocktail Block -->
       <div class="outer-box">
-        <img src="./images/invite/ivt_ds1-3.png" alt="" class="main-image" />
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/1ffd6578-8011-4a46-ac95-8bc2a583114c.png"
+          alt=""
+          class="main-image"
+        />
         <div class="content">
           <div class="inner-block">
             <span class="invite-text">
@@ -340,7 +427,7 @@
             <div class="event-name">cocktail</div>
             <div class="event-img-block">
               <img
-                src="./images/invite/cocktail-2.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/f3b5f99b-2a3e-423c-89f0-1e41e53b46ac.png"
                 alt="Cocktail Event Image"
                 class="event-img"
               />
