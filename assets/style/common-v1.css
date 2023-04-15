@@ -1,3 +1,46 @@
+@font-face {
+  font-family: "antique";
+  src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/49ac96cb-2123-4165-9fd5-7bd7f4f7d653.ttf);
+}
+@font-face {
+  font-family: "arunika";
+  src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/5a98fa63-3687-4075-b59d-07ffbedeec4b.ttf);
+}
+@font-face {
+  font-family: "Booter Script";
+  src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/f2754357-d69a-43b9-9bee-461bbd4bb7f7.ttf);
+}
+@font-face {
+  font-family: "Exceptional";
+  src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/904c7605-2f1b-452e-bdae-4b535f7f6b30.ttf);
+}
+@font-face {
+  font-family: "meritage";
+  src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/06783d24-29ab-40e9-861a-b3007e92ec79.ttf);
+}
+@font-face {
+  font-family: "mojito";
+  src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/8dd9e788-4434-41bd-85eb-0fbc17626a86.ttf);
+}
+:root {
+  --font-antique: "antique";
+  --font-arunika: "arunika";
+  --font-booter: "Booter Script";
+  --font-exceptional: "Exceptional", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-kaisei: "Kaisei Decol", serif;
+  --font-meow: "Meow Script", cursive;
+  --font-meritage: "meritage";
+  --font-mojito: "mojito";
+  --fs-xx-small: xx-small;
+  --fs-x-small: x-small;
+  --fs-smaller: smaller;
+  --fs-small: small;
+  --fs-medium: medium;
+  --fs-larger: larger;
+  --fs-x-large: x-large;
+  --fs-xx-large: xx-large;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -54,6 +97,16 @@ img {
 }
 
 @media (min-width: 1025px) {
+  :root {
+    --fs-xx-small: smaller;
+    --fs-x-small: small;
+    --fs-smaller: medium;
+    --fs-small: large;
+    --fs-medium: larger;
+    --fs-larger: xx-large;
+    --fs-x-large: xxx-large;
+    --fs-xx-large: xxx-large;
+  }
   .outer-box {
     width: 50%;
     /* height: 100vh !important; */

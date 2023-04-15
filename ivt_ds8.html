@@ -15,101 +15,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Meow+Script&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/style/common-v1.css" />
     <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        scroll-behavior: smooth;
-        font-family: var(--font-family);
-      }
-
-      ::-webkit-scrollbar {
-        display: none;
-      }
-
-      .container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        background: var(--background-color);
-      }
-
-      .outer-box {
-        position: relative;
-        width: 100%;
-        height: 150vw;
-        margin-bottom: 2%;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        border: 2px solid var(--secondary-color);
-      }
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-      }
-
-      .content {
-        position: absolute;
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      @media (min-width: 501px) and (max-width: 1024px) {
-        .outer-box {
-          width: 60%;
-          height: 100%;
-        }
-      }
-
-      @media (min-width: 1025px) {
-        .outer-box {
-          width: 50%;
-          /* height: 100vh !important; */
-          height: 100% !important;
-        }
-      }
-
-      @font-face {
-        font-family: "mojito";
-        src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/8dd9e788-4434-41bd-85eb-0fbc17626a86.ttf);
-      }
       :root {
         --background-color: #ffffff;
         --primary-color: #d8882a;
         --secondary-color: #ffedaf;
         --third-color: #7e2d04;
         --fourth-color: #ffefc9;
-        --font-family: "Inter", sans-serif;
-        --font-family-1: "mojito", serif;
-        --font-family-2: "Meow Script", serif;
-        --fs-xx-small: xx-small;
-        --fs-x-small: x-small;
-        --fs-smaller: smaller;
-        --fs-small: small;
-        --fs-medium: medium;
-        --fs-larger: larger;
-        --fs-x-large: x-large;
+        --font-family: var(--font-inter);
       }
       @media (min-width: 1025px) {
-        :root {
-          --fs-xx-small: smaller;
-          --fs-x-small: small;
-          --fs-smaller: medium;
-          --fs-small: large;
-          --fs-medium: larger;
-          --fs-larger: xx-large;
-          --fs-x-large: xxx-large;
-        }
         .address {
           margin-top: 90%;
         }
@@ -135,7 +51,7 @@
       }
       .ivt-from-text {
         text-transform: capitalize;
-        font-family: var(--font-family-1);
+        font-family: var(--font-mojito);
         font-size: var(--fs-x-large);
       }
       .invite-text {
@@ -159,7 +75,7 @@
       }
       /* Css for Event Starts Here */
       .event-name {
-        font-family: var(--font-family-2);
+        font-family: var(--font-meow);
         font-size: xxx-large;
         text-transform: capitalize;
         color: var(--fourth-color);
@@ -171,7 +87,7 @@
       .evt-by-name {
         width: 100%;
         overflow-wrap: anywhere;
-        font-family: var(--font-family-1);
+        font-family: var(--font-mojito);
         font-size: xx-large;
         color: var(--primary-color);
         text-transform: capitalize;
@@ -217,7 +133,7 @@
         padding: 1%;
       }
       .venue-title {
-        font-family: var(--font-family-1);
+        font-family: var(--font-mojito);
         font-size: xx-large;
         text-transform: capitalize;
         border-bottom: 3px solid var(--primary-color);

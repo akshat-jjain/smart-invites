@@ -15,100 +15,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Kaisei+Decol:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/style/common-v1.css" />
     <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        scroll-behavior: smooth;
-        font-family: var(--font-family);
-      }
-
-      ::-webkit-scrollbar {
-        display: none;
-      }
-
-      .container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        background: var(--background-color);
-      }
-
-      .outer-box {
-        position: relative;
-        width: 100%;
-        height: 150vw;
-        margin-bottom: 2%;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        border: 2px solid var(--secondary-color);
-      }
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-      }
-
-      .content {
-        position: absolute;
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      @media (min-width: 501px) and (max-width: 1024px) {
-        .outer-box {
-          width: 60%;
-          height: 100%;
-        }
-      }
-
-      @media (min-width: 1025px) {
-        .outer-box {
-          width: 50%;
-          /* height: 100vh !important; */
-          height: 100% !important;
-        }
-      }
-
-      @font-face {
-        font-family: "meritage";
-        src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/06783d24-29ab-40e9-861a-b3007e92ec79.ttf);
-      }
-      @font-face {
-        font-family: "antique";
-        src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/49ac96cb-2123-4165-9fd5-7bd7f4f7d653.ttf);
-      }
-      @font-face {
-        font-family: "Booter Script";
-        src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/f2754357-d69a-43b9-9bee-461bbd4bb7f7.ttf);
-      }
       :root {
         --background-color: #ff5a7b;
         --primary-color: #ffffff;
         --secondary-color: #481e6a;
         --third-color: #ee9dc4;
-        --font-family: "Inter", sans-serif;
-        --font-family-1: "Kaisei Decol", serif;
-        --font-family-2: "meritage";
-        --font-family-3: "antique";
-        --font-family-4: "Booter Script";
-        --fs-xx-small: xx-small;
-        --fs-x-small: x-small;
-        --fs-smaller: smaller;
-        --fs-small: small;
-        --fs-medium: medium;
-        --fs-larger: larger;
-        --fs-x-large: x-large;
-        --fs-xx-large: xx-large;
+        --font-family: var(--font-inter);
       }
       @media (min-width: 750px) {
         .evt-and-text[first] {
@@ -116,16 +30,6 @@
         }
       }
       @media (min-width: 1025px) {
-        :root {
-          --fs-xx-small: smaller;
-          --fs-x-small: small;
-          --fs-smaller: medium;
-          --fs-small: large;
-          --fs-medium: larger;
-          --fs-larger: xx-large;
-          --fs-x-large: xxx-large;
-          --fs-xx-large: xxx-large;
-        }
         .evt-and-text[first] {
           margin: 0;
         }
@@ -151,7 +55,7 @@
       }
       .ivt-from-text {
         text-transform: capitalize;
-        font-family: var(--font-family-2);
+        font-family: var(--font-meritage);
         font-size: var(--fs-x-large);
       }
       .invite-text {
@@ -161,7 +65,7 @@
       }
       .wedding-date {
         width: 100%;
-        font-family: var(--font-family-3);
+        font-family: var(--font-antique);
         font-size: var(--fs-medium);
         color: var(--secondary-color);
         text-transform: uppercase;
@@ -180,7 +84,7 @@
 
       /* Css for Event Starts Here */
       .event-name {
-        font-family: var(--font-family-4);
+        font-family: var(--font-booter);
         font-size: var(--fs-xx-large);
         text-transform: capitalize;
       }
@@ -190,7 +94,7 @@
       .evt-by-name {
         width: 100%;
         overflow-wrap: anywhere;
-        font-family: var(--font-family-2);
+        font-family: var(--font-meritage);
         font-size: var(--fs-xx-large);
         color: var(--primary-color);
         text-transform: capitalize;
@@ -213,7 +117,7 @@
         font-size: var(--fs-x-small);
       }
       .evt-date {
-        font-family: var(--font-family-3);
+        font-family: var(--font-antique);
         font-size: var(--fs-larger);
         text-transform: uppercase;
       }
@@ -222,7 +126,7 @@
         padding: 1%;
       }
       .venue-title {
-        font-family: var(--font-family-1);
+        font-family: var(--font-kaisei);
         font-size: xx-large;
         text-transform: capitalize;
         border-bottom: 3px solid var(--primary-color);
@@ -231,7 +135,7 @@
         display: inline-block;
         margin-top: 5%;
         text-transform: capitalize;
-        font-family: var(--font-family-1);
+        font-family: var(--font-kaisei);
         font-size: var(--fs-x-small);
         color: var(--third-color);
         font-weight: 700;
