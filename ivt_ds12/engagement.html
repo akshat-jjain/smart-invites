@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENGAGEMENT | IVT DS 12</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Meow+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ewr1.vultrobjects.com/cdn-sei/templates/c119ebce-4f0a-42e1-bc6b-a1efc2ac7168.css"
+    />
+    <style>
+      :root {
+        --background-color: #1e1e1e;
+        --primary-color: #9ed2a0;
+        --secondary-color: #fdd8af;
+        --third-color: #90c85d;
+        --fourth-color: #ffffff;
+        --font-family: var(--font-inter);
+      }
+      @media (min-width: 1025px) {
+        .address {
+          margin-top: 20%;
+        }
+      }
+      .content {
+        width: 65%;
+        text-align: center;
+        top: 12%;
+        bottom: 10%;
+      }
+      .content * {
+        color: var(--primary-color);
+      }
+
+      .inner-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .ivt-from-text {
+        text-transform: capitalize;
+        font-family: var(--font-meow);
+        font-size: var(--fs-x-large);
+      }
+      .invite-text {
+        font-size: var(--fs-xx-small);
+        text-transform: uppercase;
+        color: var(--secondary-color);
+      }
+      .wedding-date {
+        width: 100%;
+        font-family: var(--font-family);
+        font-size: var(--fs-medium);
+        color: var(--secondary-color);
+        text-transform: uppercase;
+      }
+      .evt-and-text,
+      .save-date {
+        width: 50% !important;
+        text-transform: uppercase;
+        font-size: var(--fs-small);
+        color: var(--background-color);
+      }
+      .evt-and-text[and] {
+        margin: -50% 0;
+      }
+      /* Css for Event Starts Here */
+      .event-name {
+        color: var(--fourth-color);
+        font-family: var(--font-meow);
+        font-size: var(--fs-xx-large);
+        text-transform: capitalize;
+      }
+      .event-img-block {
+        width: 60%;
+      }
+      .evt-by-name {
+        width: 100%;
+        overflow-wrap: anywhere;
+        font-family: var(--font-arunika);
+        font-size: var(--fs-x-large);
+        color: var(--primary-color);
+        text-transform: capitalize;
+      }
+      .on-of-text {
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        font-size: var(--fs-x-small);
+      }
+      .on-of-text[time],
+      .on-of-text[on] {
+        color: var(--secondary-color);
+      }
+      .on-of-text[day],
+      .on-of-text[time] {
+        font-size: var(--fs-medium);
+      }
+      .evt-time-block {
+        width: 100%;
+        position: relative;
+      }
+      .evt-time {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        padding: 6% 0;
+        text-transform: uppercase;
+        font-size: var(--fs-x-small);
+      }
+      .evt-date {
+        font-family: var(--font-family);
+        font-size: var(--fs-larger);
+        text-transform: uppercase;
+        color: var(--third-color);
+      }
+      .evt-venue {
+        width: 75%;
+        padding: 1%;
+      }
+      .venue-title {
+        font-family: var(--font-arunika);
+        font-size: var(--fs-x-large);
+        text-transform: capitalize;
+      }
+      .venue-text {
+        display: inline-block;
+        text-transform: capitalize;
+        font-family: var(--font-family);
+        font-size: var(--fs-x-small);
+        color: var(--secondary-color);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Engagement Block -->
+      <div class="outer-box">
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/a2c64eb9-fff3-43a7-94e1-4d349dfdbcaa.png"
+          alt=""
+          class="main-image"
+        />
+        <div class="content">
+          <div class="inner-block">
+            <span class="invite-text">
+              YOU ARE CORDIALLY INVITED TO <br />ATTEND THE
+            </span>
+            <div class="event-name">engagement</div>
+            <div class="event-img-block">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/b4c0a61f-c024-4dbf-b288-cbc5e24e380d.png"
+                alt="Engagement Event Image"
+                class="event-img"
+              />
+            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">#by_name</div>
+            <span class="on-of-text" on>on</span>
+            <span class="on-of-text" day>#wedding_day</span>
+            <span class="evt-date">#wedding_date</span>
+            <span class="on-of-text" time>#wedding_time</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
