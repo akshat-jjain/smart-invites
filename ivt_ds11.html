@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivt DS 6</title>
+    <title>Ivt DS 11</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -19,9 +19,10 @@
     <style>
       :root {
         --background-color: #ffffff;
-        --primary-color: #fbd3a0;
-        --secondary-color: #fbd3a0;
-        --third-color: #fbd3a0;
+        --primary-color: #ffffff;
+        --secondary-color: #e4d4af;
+        --third-color: #fe3962;
+        --fourth-color: #f3758c;
         --font-family: var(--font-inter);
       }
 
@@ -48,23 +49,31 @@
         width: 85%;
         font-size: var(--fs-xx-small);
         text-transform: uppercase;
+        color: var(--fourth-color);
       }
       .wedding-date {
-        font-family: var(--font-exceptional);
+        font-family: var(--font-family);
         font-size: var(--fs-medium);
         text-transform: uppercase;
+        color: var(--secondary-color);
       }
       .evt-and-text,
       .save-date {
         text-transform: uppercase;
         font-size: var(--fs-smaller);
+        color: var(--third-color);
+      }
+      .ivt-from-text {
+        text-transform: capitalize;
+        font-family: var(--font-meritage);
+        font-size: var(--fs-x-large);
       }
       /* Css for Event Starts Here */
       .event-name {
         font-family: var(--font-meow);
         font-size: var(--fs-x-large);
         text-transform: capitalize;
-        color: var(--background-color);
+        color: var(--primary-color);
       }
       .event-img-block {
         width: 60%;
@@ -72,10 +81,15 @@
       .evt-by-name {
         width: 100%;
         overflow-wrap: anywhere;
-        font-family: var(--font-exceptional);
+        font-family: var(--font-meritage);
         font-size: xx-large;
-        color: var(--primary-color);
+        color: var(--secondary-color);
         text-transform: capitalize;
+      }
+      .on-of-text {
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        font-size: var(--fs-x-small);
       }
       .evt-time-block {
         width: 100%;
@@ -90,7 +104,7 @@
         font-size: var(--fs-x-small);
       }
       .evt-date {
-        font-family: var(--font-exceptional);
+        font-family: var(--font-family);
         font-size: var(--fs-medium);
         text-transform: uppercase;
       }
@@ -99,7 +113,7 @@
         padding: 1%;
       }
       .venue-title {
-        font-family: var(--font-exceptional);
+        font-family: var(--font-meritage);
         font-size: var(--fs-larger);
         text-transform: capitalize;
         border-bottom: 3px solid var(--primary-color);
@@ -109,6 +123,7 @@
         margin-top: 5%;
         text-transform: uppercase;
         font-size: var(--fs-xx-small);
+        color: var(--fourth-color);
       }
     </style>
   </head>
@@ -118,15 +133,15 @@
       <!-- Intro Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/4ee207c9-0174-4703-ba78-082a09c98cce.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/68e1e8d1-8da6-4cd1-aaf9-1badb2839e04.png"
           alt=""
           class="main-image"
         />
         <div class="content" style="top: 30%; bottom: 30%">
           <div class="inner-block" style="margin-left: 50%">
-            <div class="evt-by-name">#BRIDE_NAME</div>
-            <div class="evt-and-text">and</div>
-            <div class="evt-by-name">#GROOM_NAME</div>
+            <div class="evt-by-name">#by_name</div>
+            <div class="evt-and-text evt-by-name">&</div>
+            <div class="evt-by-name">#spouse_name</div>
             <span class="wedding-date">#WEDDING_DATE</span>
           </div>
         </div>
@@ -134,39 +149,27 @@
       <!-- Wedding Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/bf69dbc2-2810-4664-8075-e94c638ea6e9.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/37055dec-7510-4e06-a021-abe55f7c1601.png"
           alt=""
           class="main-image"
         />
         <div class="content" style="top: 20%; bottom: 20%">
           <div class="inner-block">
+            <span class="ivt-from-text">mr. and mrs. #BY_LAST_NAME</span>
             <span class="invite-text">
-              YOU ARE CORDIALLY <br />
-              INVITED TO ATTEND THE WEDDING OF
+              Request the pleasure of your presence to grace the wedding of
             </span>
-            <div class="evt-by-name">#BRIDE_NAME</div>
-            <div class="evt-and-text">and</div>
-            <div class="evt-by-name">#GROOM_NAME</div>
-            <div class="evt-time-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
-                alt="Event Time Decor Image"
-                class="evt-time-img"
-              />
-              <div class="evt-time">#WEDDING_TIME</div>
-            </div>
+            <div class="evt-by-name">#by_name</div>
+            <div class="evt-and-text evt-by-name">&</div>
+            <div class="evt-by-name">#spouse_name</div>
             <span class="evt-date">#WEDDING_DATE</span>
-            <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
-              <span class="venue-text"> #ADDRESS </span>
-            </div>
           </div>
         </div>
       </div>
       <!-- Haldi Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/ce0c785f-6da0-4d29-81f3-261f97a89f16.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/37055dec-7510-4e06-a021-abe55f7c1601.png"
           alt=""
           class="main-image"
         />
@@ -180,18 +183,11 @@
                 class="event-img"
               />
             </div>
-            <div class="evt-by-name">#BRIDE_NAME</div>
-            <div class="evt-time-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
-                alt="Event Time Decor Image"
-                class="evt-time-img"
-              />
-              <div class="evt-time">#HALDI_EVENT_TIME</div>
-            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">#by_name</div>
+            <span class="on-of-text">on</span>
             <span class="evt-date">#HALDI_EVENT_DATE</span>
             <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
@@ -200,7 +196,7 @@
       <!-- Engagement Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/ce0c785f-6da0-4d29-81f3-261f97a89f16.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/37055dec-7510-4e06-a021-abe55f7c1601.png"
           alt=""
           class="main-image"
         />
@@ -209,23 +205,16 @@
             <div class="event-name">engagement</div>
             <div class="event-img-block">
               <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/134dfc54-ed26-4fde-bf79-753900566fe3.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/a962c934-2785-4272-a3d2-c27f94e6d18a.png"
                 alt="Engagement Event Image"
                 class="event-img"
               />
             </div>
-            <div class="evt-by-name">#BRIDE_NAME</div>
-            <div class="evt-time-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
-                alt="Event Time Decor Image"
-                class="evt-time-img"
-              />
-              <div class="evt-time">#ENGAGEMENT_EVENT_TIME</div>
-            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">#by_name</div>
+            <span class="on-of-text">on</span>
             <span class="evt-date">#ENGAGEMENT_EVENT_DATE</span>
             <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
@@ -234,7 +223,7 @@
       <!-- Cocktail Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/ce0c785f-6da0-4d29-81f3-261f97a89f16.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/37055dec-7510-4e06-a021-abe55f7c1601.png"
           alt=""
           class="main-image"
         />
@@ -248,18 +237,11 @@
                 class="event-img"
               />
             </div>
-            <div class="evt-by-name">#BRIDE_NAME</div>
-            <div class="evt-time-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
-                alt="Event Time Decor Image"
-                class="evt-time-img"
-              />
-              <div class="evt-time">#COCKTAIL_EVENT_TIME</div>
-            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">#by_name</div>
+            <span class="on-of-text">on</span>
             <span class="evt-date">#COCKTAIL_EVENT_DATE</span>
             <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
@@ -268,7 +250,7 @@
       <!-- Sangeet Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/ce0c785f-6da0-4d29-81f3-261f97a89f16.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/37055dec-7510-4e06-a021-abe55f7c1601.png"
           alt=""
           class="main-image"
         />
@@ -282,18 +264,11 @@
                 class="event-img"
               />
             </div>
-            <div class="evt-by-name">#BRIDE_NAME</div>
-            <div class="evt-time-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
-                alt="Event Time Decor Image"
-                class="evt-time-img"
-              />
-              <div class="evt-time">#SANGEET_EVENT_TIME</div>
-            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">#by_name</div>
+            <span class="on-of-text">on</span>
             <span class="evt-date">#SANGEET_EVENT_DATE</span>
             <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
@@ -302,7 +277,7 @@
       <!-- Mehandi Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/ce0c785f-6da0-4d29-81f3-261f97a89f16.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/37055dec-7510-4e06-a021-abe55f7c1601.png"
           alt=""
           class="main-image"
         />
@@ -316,18 +291,11 @@
                 class="event-img"
               />
             </div>
-            <div class="evt-by-name">#BRIDE_NAME</div>
-            <div class="evt-time-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
-                alt="Event Time Decor Image"
-                class="evt-time-img"
-              />
-              <div class="evt-time">#MEHANDI_EVENT_TIME</div>
-            </div>
+            <span class="on-of-text">of</span>
+            <div class="evt-by-name">#by_name</div>
+            <span class="on-of-text">on</span>
             <span class="evt-date">#MEHANDI_EVENT_DATE</span>
             <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
