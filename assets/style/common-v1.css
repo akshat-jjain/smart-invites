@@ -22,13 +22,19 @@
   font-family: "mojito";
   src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/8dd9e788-4434-41bd-85eb-0fbc17626a86.ttf);
 }
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&family=Calligraffitti&family=Esteban&family=Euphoria+Script&family=Inknut+Antiqua:wght@300&family=Inter&family=Kaisei+Decol:wght@700&family=Lora&family=Meow+Script&display=swap");
 :root {
-  --font-antique: "antique";
+  --font-antique: "antique", serif;
   --font-arunika: "arunika";
+  --font-bona-nova: "Bona Nova", serif;
   --font-booter: "Booter Script";
+  --font-calligraffitti: "Calligraffitti", cursive;
+  --font-esteban: "Esteban", serif;
+  --font-euphoria: "Euphoria Script", cursive;
   --font-exceptional: "Exceptional", serif;
   --font-inter: "Inter", sans-serif;
   --font-kaisei: "Kaisei Decol", serif;
+  --font-lora: "Lora", serif;
   --font-meow: "Meow Script", cursive;
   --font-meritage: "meritage";
   --font-mojito: "mojito";
