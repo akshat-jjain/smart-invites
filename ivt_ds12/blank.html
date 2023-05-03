@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HALDI | IVT DS 11</title>
+    <title>EVENT NAME | IVT DS 12</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -21,19 +21,23 @@
     />
     <style>
       :root {
-        --background-color: #ffffff;
-        --primary-color: #ffffff;
-        --secondary-color: #e4d4af;
-        --third-color: #fe3962;
-        --fourth-color: #f3758c;
+        --background-color: #1e1e1e;
+        --primary-color: #9ed2a0;
+        --secondary-color: #fdd8af;
+        --third-color: #90c85d;
+        --fourth-color: #ffffff;
         --font-family: var(--font-inter);
       }
-
+      @media (min-width: 1025px) {
+        .address {
+          margin-top: 20%;
+        }
+      }
       .content {
-        width: 60%;
+        width: 65%;
         text-align: center;
-        top: 20%;
-        bottom: 5%;
+        top: 12%;
+        bottom: 10%;
       }
       .content * {
         color: var(--primary-color);
@@ -48,35 +52,39 @@
         justify-content: space-evenly;
         align-items: center;
       }
-      .invite-text {
-        width: 85%;
-        font-size: var(--fs-xx-small);
-        text-transform: uppercase;
-        color: var(--fourth-color);
+      .ivt-from-text {
+        text-transform: capitalize;
+        font-family: var(--font-meow);
+        font-size: var(--fs-x-large);
       }
-      .wedding-date {
-        font-family: var(--font-family);
-        font-size: var(--fs-medium);
+      .invite-text {
+        font-size: var(--fs-xx-small);
         text-transform: uppercase;
         color: var(--secondary-color);
       }
+      .wedding-date {
+        width: 100%;
+        font-family: var(--font-family);
+        font-size: var(--fs-medium);
+        color: var(--secondary-color);
+        text-transform: uppercase;
+      }
       .evt-and-text,
       .save-date {
+        width: 50% !important;
         text-transform: uppercase;
-        font-size: var(--fs-smaller);
-        color: var(--third-color);
+        font-size: var(--fs-small);
+        color: var(--background-color);
       }
-      .ivt-from-text {
-        text-transform: capitalize;
-        font-family: var(--font-meritage);
-        font-size: var(--fs-x-large);
+      .evt-and-text[and] {
+        margin: -50% 0;
       }
       /* Css for Event Starts Here */
       .event-name {
+        color: var(--fourth-color);
         font-family: var(--font-meow);
         font-size: var(--fs-xx-large);
         text-transform: capitalize;
-        color: var(--primary-color);
       }
       .event-img-block {
         width: 60%;
@@ -84,15 +92,23 @@
       .evt-by-name {
         width: 100%;
         overflow-wrap: anywhere;
-        font-family: var(--font-meritage);
-        font-size: xx-large;
-        color: var(--secondary-color);
+        font-family: var(--font-arunika);
+        font-size: var(--fs-x-large);
+        color: var(--primary-color);
         text-transform: capitalize;
       }
       .on-of-text {
         text-transform: uppercase;
         font-family: var(--font-family);
         font-size: var(--fs-x-small);
+      }
+      .on-of-text[time],
+      .on-of-text[on] {
+        color: var(--secondary-color);
+      }
+      .on-of-text[day],
+      .on-of-text[time] {
+        font-size: var(--fs-medium);
       }
       .evt-time-block {
         width: 100%;
@@ -108,51 +124,54 @@
       }
       .evt-date {
         font-family: var(--font-family);
-        font-size: var(--fs-medium);
+        font-size: var(--fs-larger);
         text-transform: uppercase;
+        color: var(--third-color);
       }
       .evt-venue {
-        width: 70%;
+        width: 75%;
         padding: 1%;
       }
       .venue-title {
-        font-family: var(--font-meritage);
-        font-size: var(--fs-larger);
+        font-family: var(--font-arunika);
+        font-size: var(--fs-x-large);
         text-transform: capitalize;
-        border-bottom: 3px solid var(--primary-color);
       }
       .venue-text {
         display: inline-block;
-        margin-top: 5%;
-        text-transform: uppercase;
-        font-size: var(--fs-xx-small);
-        color: var(--fourth-color);
+        text-transform: capitalize;
+        font-family: var(--font-family);
+        font-size: var(--fs-x-small);
+        color: var(--secondary-color);
+        font-weight: 700;
       }
     </style>
   </head>
+
   <body>
     <div class="container">
-      <!-- Haldi Block -->
+      <!-- Event Name Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/37055dec-7510-4e06-a021-abe55f7c1601.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/a2c64eb9-fff3-43a7-94e1-4d349dfdbcaa.png"
           alt=""
           class="main-image"
         />
         <div class="content">
           <div class="inner-block">
-            <div class="event-name">haldi</div>
-            <div class="event-img-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/3802e80d-cfa0-4b57-9cb0-87a060e7b7e2.png"
-                alt="Haldi Event Image"
-                class="event-img"
-              />
+            <span class="invite-text">
+              YOU ARE CORDIALLY INVITED TO <br />ATTEND THE
+            </span>
+            <div class="event-name">#event_name</div>
+            <div class="event-img-block" style="width: 35%">
+              <img src="" alt="Event Image" class="event-img" />
             </div>
-            <span class="on-of-text">on</span>
-            <span class="evt-date">#haldi_event_date</span>
-            <span class="on-of-text" time>#haldi_event_time</span>
+            <span class="on-of-text" on>on</span>
+            <span class="on-of-text" day>#event_day</span>
+            <span class="evt-date">#event_date</span>
+            <span class="on-of-text" time>#event_time</span>
             <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
