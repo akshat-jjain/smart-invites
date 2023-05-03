@@ -22,17 +22,17 @@
     <style>
       :root {
         --background-color: #ffffff;
-        --primary-color: #407a86;
-        --secondary-color: #407a86;
-        --third-color: #407a86;
+        --primary-color: #fbd3a0;
+        --secondary-color: #fbd3a0;
+        --third-color: #fbd3a0;
         --font-family: var(--font-inter);
       }
 
       .content {
-        width: 60%;
+        width: 70%;
         text-align: center;
-        top: 15%;
-        bottom: 15%;
+        top: 10%;
+        bottom: 10%;
       }
       .content * {
         color: var(--primary-color);
@@ -48,13 +48,12 @@
         align-items: center;
       }
       .invite-text {
-        width: 85%;
         font-size: var(--fs-xx-small);
         text-transform: uppercase;
       }
       .wedding-date {
-        font-family: var(--font-exceptional);
-        font-size: var(--fs-medium);
+        font-family: var(--font-family);
+        font-size: large;
         text-transform: uppercase;
       }
       .evt-and-text,
@@ -66,6 +65,7 @@
       .event-name {
         font-family: var(--font-meow);
         font-size: var(--fs-xx-large);
+        color: var(--background-color);
         text-transform: capitalize;
       }
       .event-img-block {
@@ -73,8 +73,7 @@
       }
       .evt-by-name {
         font-family: var(--font-exceptional);
-        overflow-wrap: anywhere;
-        font-size: xx-large;
+        font-size: var(--fs-xx-large);
         color: var(--primary-color);
         text-transform: capitalize;
       }
@@ -92,7 +91,7 @@
       }
       .evt-date {
         font-family: var(--font-exceptional);
-        font-size: var(--fs-medium);
+        font-size: var(--fs-larger);
         text-transform: uppercase;
       }
       .evt-venue {
@@ -101,7 +100,7 @@
       }
       .venue-title {
         font-family: var(--font-exceptional);
-        font-size: var(--fs-larger);
+        font-size: var(--fs-xx-large);
         text-transform: capitalize;
         border-bottom: 3px solid var(--primary-color);
       }
@@ -118,20 +117,24 @@
       <!-- Intro Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/456e483a-4025-4c83-9d27-3ff9c26e16ba.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/b11047f2-2aa3-4de0-8832-278bbb05b102.png"
           alt=""
           class="main-image"
         />
-        <div class="content" style="top: 20%; bottom: 20%">
-          <div class="inner-block" style="margin-left: 40%">
-            <div class="evt-by-name">#by_name</div>
-            <div class="evt-and-text">and</div>
-            <div class="evt-by-name">#spouse_name</div>
-            <span class="wedding-date">#WEDDING_DATE</span>
-            <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
-              <span class="venue-text"> #ADDRESS </span>
+        <div class="content">
+          <div class="inner-block" style="height: 35%">
+            <span class="save-date">save our date</span>
+            <div class="evt-by-name" style="width: 90%; text-align: left">
+              #by_name
             </div>
+            <div class="evt-and-text" style="margin: -10% 0">and</div>
+            <div
+              class="evt-by-name"
+              style="width: 90%; text-align: right; margin-bottom: -5%"
+            >
+              #spouse_name
+            </div>
+            <span class="wedding-date">#wedding_date</span>
           </div>
         </div>
       </div>

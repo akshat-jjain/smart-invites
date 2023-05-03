@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MEHANDI | IVT DS 3</title>
+    <title>ENGAGEMENT | IVT DS 8</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Meow+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Kaisei+Decol:wght@700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,27 +21,22 @@
     />
     <style>
       :root {
-        --background-color: #ff5a7b;
+        --background-color: #ffffff;
         --primary-color: #ffffff;
-        --secondary-color: #481e6a;
+        --secondary-color: #e7b26d;
         --third-color: #ee9dc4;
         --font-family: var(--font-inter);
       }
-      @media (min-width: 750px) {
-        .evt-and-text[first] {
-          margin: 0 !important;
-        }
-      }
       @media (min-width: 1025px) {
-        .evt-and-text[first] {
-          margin: 0;
+        .address {
+          margin-top: 90%;
         }
       }
       .content {
         width: 65%;
         text-align: center;
-        top: 15%;
-        bottom: 15%;
+        top: 5%;
+        bottom: 20%;
       }
       .content * {
         color: var(--primary-color);
@@ -70,21 +65,18 @@
         width: 100%;
         font-family: var(--font-antique);
         font-size: var(--fs-medium);
-        color: var(--secondary-color);
         text-transform: uppercase;
-      }
-      .evt-and-text[first] {
-        margin: -5% 0;
-        color: var(--background-color);
       }
       .evt-and-text,
       .save-date {
         width: 50% !important;
         text-transform: uppercase;
-        font-size: var(--fs-small);
-        color: var(--background-color);
+        font-size: var(--fs-smaller);
+        color: var(--third-color);
       }
-
+      .address {
+        margin-top: 25%;
+      }
       /* Css for Event Starts Here */
       .event-name {
         font-family: var(--font-booter);
@@ -130,7 +122,7 @@
       }
       .venue-title {
         font-family: var(--font-kaisei);
-        font-size: xx-large;
+        font-size: var(--fs-xx-large);
         text-transform: capitalize;
         border-bottom: 3px solid var(--primary-color);
       }
@@ -147,10 +139,10 @@
   </head>
   <body>
     <div class="container">
-      <!-- Mehandi Block -->
+      <!-- Engagement Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/77df4344-9216-4f88-ba97-1bfcababd53f.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/d60f11e9-e7a9-4226-9e1f-5fac55217ad6.png"
           alt=""
           class="main-image"
         />
@@ -159,18 +151,17 @@
             <span class="invite-text">
               Request the pleasure of your presence to grace the
             </span>
-            <div class="event-name">mehandi</div>
+            <div class="event-name">engagement</div>
             <div class="event-img-block">
               <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/3962d680-30e0-4cbf-9639-2c42982bd684.png"
-                alt="Mehandi Event Image"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/1129eff1-806c-43ac-80f8-9726c4183681.png"
+                alt="Engagement Event Image"
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
-            <div class="evt-by-name">#by_name</div>
             <span class="on-of-text">on</span>
-            <span class="evt-date">#MEHANDI_EVENT_DATE</span>
+            <span class="evt-date">#engagement_event_date</span>
+            <span class="on-of-text" time>#engagement_event_time</span>
             <div class="evt-venue">
               <span class="venue-text"> #ADDRESS </span>
             </div>

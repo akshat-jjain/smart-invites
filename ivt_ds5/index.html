@@ -22,17 +22,17 @@
     <style>
       :root {
         --background-color: #ffffff;
-        --primary-color: #407a86;
-        --secondary-color: #407a86;
-        --third-color: #407a86;
+        --primary-color: #fbd3a0;
+        --secondary-color: #fbd3a0;
+        --third-color: #fbd3a0;
         --font-family: var(--font-inter);
       }
 
       .content {
-        width: 60%;
+        width: 70%;
         text-align: center;
-        top: 15%;
-        bottom: 15%;
+        top: 10%;
+        bottom: 10%;
       }
       .content * {
         color: var(--primary-color);
@@ -48,13 +48,12 @@
         align-items: center;
       }
       .invite-text {
-        width: 85%;
         font-size: var(--fs-xx-small);
         text-transform: uppercase;
       }
       .wedding-date {
-        font-family: var(--font-exceptional);
-        font-size: var(--fs-medium);
+        font-family: var(--font-family);
+        font-size: large;
         text-transform: uppercase;
       }
       .evt-and-text,
@@ -66,6 +65,7 @@
       .event-name {
         font-family: var(--font-meow);
         font-size: var(--fs-xx-large);
+        color: var(--background-color);
         text-transform: capitalize;
       }
       .event-img-block {
@@ -73,8 +73,7 @@
       }
       .evt-by-name {
         font-family: var(--font-exceptional);
-        overflow-wrap: anywhere;
-        font-size: xx-large;
+        font-size: var(--fs-xx-large);
         color: var(--primary-color);
         text-transform: capitalize;
       }
@@ -92,7 +91,7 @@
       }
       .evt-date {
         font-family: var(--font-exceptional);
-        font-size: var(--fs-medium);
+        font-size: var(--fs-larger);
         text-transform: uppercase;
       }
       .evt-venue {
@@ -101,7 +100,7 @@
       }
       .venue-title {
         font-family: var(--font-exceptional);
-        font-size: var(--fs-larger);
+        font-size: var(--fs-xx-large);
         text-transform: capitalize;
         border-bottom: 3px solid var(--primary-color);
       }
@@ -118,27 +117,31 @@
       <!-- Intro Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/456e483a-4025-4c83-9d27-3ff9c26e16ba.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/b11047f2-2aa3-4de0-8832-278bbb05b102.png"
           alt=""
           class="main-image"
         />
-        <div class="content" style="top: 20%; bottom: 20%">
-          <div class="inner-block" style="margin-left: 40%">
-            <div class="evt-by-name">#by_name</div>
-            <div class="evt-and-text">and</div>
-            <div class="evt-by-name">#spouse_name</div>
-            <span class="wedding-date">#WEDDING_DATE</span>
-            <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
-              <span class="venue-text"> #ADDRESS </span>
+        <div class="content">
+          <div class="inner-block" style="height: 35%">
+            <span class="save-date">save our date</span>
+            <div class="evt-by-name" style="width: 90%; text-align: left">
+              #by_name
             </div>
+            <div class="evt-and-text" style="margin: -10% 0">and</div>
+            <div
+              class="evt-by-name"
+              style="width: 90%; text-align: right; margin-bottom: -5%"
+            >
+              #spouse_name
+            </div>
+            <span class="wedding-date">#wedding_date</span>
           </div>
         </div>
       </div>
       <!-- Wedding Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/9c0105ce-f444-4c18-8b31-228566e1be04.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/e095b9c2-aa5d-4d5b-b8b0-8e48f00b0148.png"
           alt=""
           class="main-image"
         />
@@ -153,152 +156,16 @@
             <div class="evt-by-name">#spouse_name</div>
             <div class="evt-time-block">
               <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
                 alt="Event Time Decor Image"
                 class="evt-time-img"
               />
-              <div class="evt-time">#WEDDING_TIME</div>
+              <div class="evt-time">#wedding_time</div>
             </div>
-            <span class="evt-date">#WEDDING_DATE</span>
+            <span class="evt-date">#wedding_date</span>
             <div class="evt-venue">
               <span class="venue-title">venue</span><br />
-              <span class="venue-text"> #ADDRESS </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Haldi Block -->
-      <div class="outer-box">
-        <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/9c0105ce-f444-4c18-8b31-228566e1be04.png"
-          alt=""
-          class="main-image"
-        />
-        <div class="content">
-          <div class="inner-block">
-            <div class="event-name">haldi</div>
-            <div class="event-img-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/3802e80d-cfa0-4b57-9cb0-87a060e7b7e2.png"
-                alt="Haldi Event Image"
-                class="event-img"
-              />
-            </div>
-            <div class="evt-by-name">#by_name</div>
-            <div class="evt-time-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
-                alt="Event Time Decor Image"
-                class="evt-time-img"
-              />
-              <div class="evt-time">#HALDI_EVENT_TIME</div>
-            </div>
-            <span class="evt-date">#HALDI_EVENT_DATE</span>
-            <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
-              <span class="venue-text"> #ADDRESS </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Engagement Block -->
-      <div class="outer-box">
-        <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/9c0105ce-f444-4c18-8b31-228566e1be04.png"
-          alt=""
-          class="main-image"
-        />
-        <div class="content">
-          <div class="inner-block">
-            <div class="event-name">engagement</div>
-            <div class="event-img-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/1129eff1-806c-43ac-80f8-9726c4183681.png"
-                alt="Engagement Event Image"
-                class="event-img"
-              />
-            </div>
-            <div class="evt-by-name">#by_name</div>
-            <div class="evt-time-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
-                alt="Event Time Decor Image"
-                class="evt-time-img"
-              />
-              <div class="evt-time">#ENGAGEMENT_EVENT_TIME</div>
-            </div>
-            <span class="evt-date">#ENGAGEMENT_EVENT_DATE</span>
-            <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
-              <span class="venue-text"> #ADDRESS </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Cocktail Block -->
-      <div class="outer-box">
-        <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/9c0105ce-f444-4c18-8b31-228566e1be04.png"
-          alt=""
-          class="main-image"
-        />
-        <div class="content">
-          <div class="inner-block">
-            <div class="event-name">cocktail</div>
-            <div class="event-img-block" style="width: 40%">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/80052519-133c-41b6-9a2f-fe25dd64212b.png"
-                alt="Cocktail Event Image"
-                class="event-img"
-              />
-            </div>
-            <div class="evt-by-name">#by_name</div>
-            <div class="evt-time-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
-                alt="Event Time Decor Image"
-                class="evt-time-img"
-              />
-              <div class="evt-time">#COCKTAIL_EVENT_TIME</div>
-            </div>
-            <span class="evt-date">#COCKTAIL_EVENT_DATE</span>
-            <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
-              <span class="venue-text"> #ADDRESS </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Reception Block -->
-      <div class="outer-box">
-        <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/9c0105ce-f444-4c18-8b31-228566e1be04.png"
-          alt=""
-          class="main-image"
-        />
-        <div class="content">
-          <div class="inner-block">
-            <div class="event-name">reception</div>
-            <div class="event-img-block" style="width: 40%">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/c2561659-dccf-415d-9848-d88c8ff8037f.png"
-                alt="Reception Event Image"
-                class="event-img"
-              />
-            </div>
-            <div class="evt-by-name">#by_name</div>
-            <div class="evt-time-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
-                alt="Event Time Decor Image"
-                class="evt-time-img"
-              />
-              <div class="evt-time">#RECEPTION_EVENT_TIME</div>
-            </div>
-            <span class="evt-date">#RECEPTION_EVENT_DATE</span>
-            <div class="evt-venue">
-              <span class="venue-title">venue</span><br />
-              <span class="venue-text"> #ADDRESS </span>
+              <span class="venue-text"> #address </span>
             </div>
           </div>
         </div>
@@ -306,7 +173,7 @@
       <!-- Mehandi Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/9c0105ce-f444-4c18-8b31-228566e1be04.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/e095b9c2-aa5d-4d5b-b8b0-8e48f00b0148.png"
           alt=""
           class="main-image"
         />
@@ -320,19 +187,183 @@
                 class="event-img"
               />
             </div>
-            <div class="evt-by-name">#by_name</div>
             <div class="evt-time-block">
               <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
                 alt="Event Time Decor Image"
                 class="evt-time-img"
               />
-              <div class="evt-time">#MEHANDI_EVENT_TIME</div>
+              <div class="evt-time">#mehandi_event_time</div>
             </div>
-            <span class="evt-date">#MEHANDI_EVENT_DATE</span>
+            <span class="evt-date">#mehandi_event_date</span>
             <div class="evt-venue">
               <span class="venue-title">venue</span><br />
-              <span class="venue-text"> #ADDRESS </span>
+              <span class="venue-text"> #address </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Engagement Block -->
+      <div class="outer-box">
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/e095b9c2-aa5d-4d5b-b8b0-8e48f00b0148.png"
+          alt=""
+          class="main-image"
+        />
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">engagement</div>
+            <div class="event-img-block">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/134dfc54-ed26-4fde-bf79-753900566fe3.png"
+                alt="Engagement Event Image"
+                class="event-img"
+              />
+            </div>
+            <div class="evt-time-block">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#engagement_event_time</div>
+            </div>
+            <span class="evt-date">#engagement_event_date</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #address </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Haldi Block -->
+      <div class="outer-box">
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/e095b9c2-aa5d-4d5b-b8b0-8e48f00b0148.png"
+          alt=""
+          class="main-image"
+        />
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">haldi</div>
+            <div class="event-img-block">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/3802e80d-cfa0-4b57-9cb0-87a060e7b7e2.png"
+                alt="Haldi Event Image"
+                class="event-img"
+              />
+            </div>
+            <div class="evt-time-block">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#haldi_event_time</div>
+            </div>
+            <span class="evt-date">#haldi_event_date</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #address </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cocktail Block -->
+      <div class="outer-box">
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/e095b9c2-aa5d-4d5b-b8b0-8e48f00b0148.png"
+          alt=""
+          class="main-image"
+        />
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">cocktail</div>
+            <div class="event-img-block" style="width: 40%">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/80052519-133c-41b6-9a2f-fe25dd64212b.png"
+                alt="Cocktail Event Image"
+                class="event-img"
+              />
+            </div>
+            <div class="evt-time-block">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#cocktail_event_time</div>
+            </div>
+            <span class="evt-date">#cocktail_event_date</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #address </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sangeet Block -->
+      <div class="outer-box">
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/e095b9c2-aa5d-4d5b-b8b0-8e48f00b0148.png"
+          alt=""
+          class="main-image"
+        />
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">sangeet</div>
+            <div class="event-img-block" style="width: 40%">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c2561659-dccf-415d-9848-d88c8ff8037f.png"
+                alt="Sangeet Event Image"
+                class="event-img"
+              />
+            </div>
+            <div class="evt-time-block">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#sangeet_event_time</div>
+            </div>
+            <span class="evt-date">#sangeet_event_date</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #address </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Reception Block -->
+      <div class="outer-box">
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/e095b9c2-aa5d-4d5b-b8b0-8e48f00b0148.png"
+          alt=""
+          class="main-image"
+        />
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">reception</div>
+            <div class="event-img-block" style="width: 40%">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c2729bf5-41f4-4715-9bcb-ab56e422dc38.png"
+                alt="Reception Event Image"
+                class="event-img"
+              />
+            </div>
+            <div class="evt-time-block">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#reception_event_time</div>
+            </div>
+            <span class="evt-date">#reception_event_date</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #address </span>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEDDING | IVT DS 3</title>
+    <title>SANGEET | IVT DS 8</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Meow+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Kaisei+Decol:wght@700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,27 +21,22 @@
     />
     <style>
       :root {
-        --background-color: #ff5a7b;
+        --background-color: #ffffff;
         --primary-color: #ffffff;
-        --secondary-color: #481e6a;
+        --secondary-color: #e7b26d;
         --third-color: #ee9dc4;
         --font-family: var(--font-inter);
       }
-      @media (min-width: 750px) {
-        .evt-and-text[first] {
-          margin: 0 !important;
-        }
-      }
       @media (min-width: 1025px) {
-        .evt-and-text[first] {
-          margin: 0;
+        .address {
+          margin-top: 90%;
         }
       }
       .content {
         width: 65%;
         text-align: center;
-        top: 15%;
-        bottom: 15%;
+        top: 5%;
+        bottom: 20%;
       }
       .content * {
         color: var(--primary-color);
@@ -70,21 +65,18 @@
         width: 100%;
         font-family: var(--font-antique);
         font-size: var(--fs-medium);
-        color: var(--secondary-color);
         text-transform: uppercase;
-      }
-      .evt-and-text[first] {
-        margin: -5% 0;
-        color: var(--background-color);
       }
       .evt-and-text,
       .save-date {
         width: 50% !important;
         text-transform: uppercase;
-        font-size: var(--fs-small);
-        color: var(--background-color);
+        font-size: var(--fs-smaller);
+        color: var(--third-color);
       }
-
+      .address {
+        margin-top: 25%;
+      }
       /* Css for Event Starts Here */
       .event-name {
         font-family: var(--font-booter);
@@ -130,7 +122,7 @@
       }
       .venue-title {
         font-family: var(--font-kaisei);
-        font-size: xx-large;
+        font-size: var(--fs-xx-large);
         text-transform: capitalize;
         border-bottom: 3px solid var(--primary-color);
       }
@@ -147,30 +139,29 @@
   </head>
   <body>
     <div class="container">
-      <!-- Wedding Block -->
+      <!-- Sangeet Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/d9ec4510-9692-4f7f-9cca-9e89be4f3bd1.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/d60f11e9-e7a9-4226-9e1f-5fac55217ad6.png"
           alt=""
           class="main-image"
         />
         <div class="content">
           <div class="inner-block">
-            <span class="ivt-from-text">mr. and mrs. #by_last_name</span>
             <span class="invite-text">
-              Request the pleasure of your presence to grace the wedding of
+              Request the pleasure of your presence to grace the
             </span>
-            <div class="evt-by-name" style="margin-bottom: -10%">
-              #spouse_name
+            <div class="event-name">sangeet</div>
+            <div class="event-img-block" style="width: 40%">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c2561659-dccf-415d-9848-d88c8ff8037f.png"
+                alt="Sangeet Event Image"
+                class="event-img"
+              />
             </div>
-            <div
-              class="evt-and-text evt-by-name"
-              style="color: var(--third-color)"
-            >
-              &
-            </div>
-            <div class="evt-by-name" style="margin-top: -10%">#by_name</div>
-            <span class="evt-date">#WEDDING_DATE</span>
+            <span class="on-of-text">on</span>
+            <span class="evt-date">#sangeet_event_date</span>
+            <span class="on-of-text" time>#sangeet_event_time</span>
             <div class="evt-venue">
               <span class="venue-text"> #ADDRESS </span>
             </div>

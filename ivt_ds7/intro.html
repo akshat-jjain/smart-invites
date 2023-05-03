@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivt DS 7</title>
+    <title>INTRO | IVT DS 7</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Kaisei+Decol:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Meow+Script&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,18 +22,13 @@
     <style>
       :root {
         --background-color: #ffffff;
-        --primary-color: #ffffff;
-        --secondary-color: #e7b26d;
-        --third-color: #ee9dc4;
+        --primary-color: #14716a;
+        --secondary-color: #9a644e;
         --font-family: var(--font-inter);
       }
-      @media (min-width: 1025px) {
-        .address {
-          margin-top: 90%;
-        }
-      }
+
       .content {
-        width: 65%;
+        width: 60%;
         text-align: center;
         top: 5%;
         bottom: 20%;
@@ -51,53 +46,37 @@
         justify-content: space-evenly;
         align-items: center;
       }
-      .ivt-from-text {
-        text-transform: capitalize;
-        font-family: var(--font-meritage);
-        font-size: var(--fs-x-large);
-      }
       .invite-text {
+        width: 85%;
         font-size: var(--fs-xx-small);
+        text-transform: uppercase;
+      }
+      .wedding-date {
+        font-family: var(--font-exceptional);
+        font-size: var(--fs-medium);
         text-transform: uppercase;
         color: var(--secondary-color);
       }
-      .wedding-date {
-        width: 100%;
-        font-family: var(--font-antique);
-        font-size: var(--fs-medium);
-        text-transform: uppercase;
-      }
       .evt-and-text,
       .save-date {
-        width: 50% !important;
         text-transform: uppercase;
         font-size: var(--fs-smaller);
-        color: var(--third-color);
-      }
-      .address {
-        margin-top: 25%;
       }
       /* Css for Event Starts Here */
       .event-name {
-        font-family: var(--font-booter);
-        font-size: var(--fs-xx-large);
+        font-family: var(--font-meow);
+        font-size: xx-large;
         text-transform: capitalize;
       }
       .event-img-block {
         width: 60%;
       }
       .evt-by-name {
-        width: 100%;
+        font-family: var(--font-exceptional);
         overflow-wrap: anywhere;
-        font-family: var(--font-meritage);
-        font-size: var(--fs-xx-large);
+        font-size: xx-large;
         color: var(--primary-color);
         text-transform: capitalize;
-      }
-      .on-of-text {
-        text-transform: uppercase;
-        font-family: var(--font-family);
-        font-size: var(--fs-x-small);
       }
       .evt-time-block {
         width: 100%;
@@ -112,28 +91,25 @@
         font-size: var(--fs-x-small);
       }
       .evt-date {
-        font-family: var(--font-antique);
-        font-size: var(--fs-larger);
+        font-family: var(--font-exceptional);
+        font-size: var(--fs-medium);
         text-transform: uppercase;
       }
       .evt-venue {
-        width: 75%;
+        width: 70%;
         padding: 1%;
       }
       .venue-title {
-        font-family: var(--font-kaisei);
-        font-size: var(--fs-xx-large);
+        font-family: var(--font-exceptional);
+        font-size: var(--fs-larger);
         text-transform: capitalize;
         border-bottom: 3px solid var(--primary-color);
       }
       .venue-text {
         display: inline-block;
         margin-top: 5%;
-        text-transform: capitalize;
-        font-family: var(--font-kaisei);
-        font-size: var(--fs-x-small);
-        color: var(--third-color);
-        font-weight: 700;
+        text-transform: uppercase;
+        font-size: var(--fs-xx-small);
       }
     </style>
   </head>
@@ -142,24 +118,22 @@
       <!-- Intro Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/417ee57d-b5ec-430c-8a03-e5e75eebda47.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/8d232b77-1811-41a8-8736-f39446902ca2.png"
           alt=""
           class="main-image"
         />
-        <div class="content" style="top: 30%; bottom: 0%">
-          <div class="inner-block" style="margin-left: 45%">
+        <div class="content" style="top: 15%; bottom: 25%">
+          <div class="inner-block" style="margin-left: 40%">
             <div class="evt-by-name">#by_name</div>
-            <div
-              class="evt-and-text evt-by-name"
-              style="color: var(--third-color)"
-            >
-              &
-            </div>
+            <div class="evt-and-text">and</div>
             <div class="evt-by-name">#spouse_name</div>
             <span class="wedding-date">#WEDDING_DATE</span>
-          </div>
-          <div style="width: 100%" class="address">
-            <span class="save-date">#ADDRESS</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text" style="color: var(--secondary-color)">
+                #ADDRESS
+              </span>
+            </div>
           </div>
         </div>
       </div>

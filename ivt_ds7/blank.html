@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INTRO | IVT DS 3</title>
+    <title>EVENT NAME | IVT DS 7</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -21,27 +21,17 @@
     />
     <style>
       :root {
-        --background-color: #ff5a7b;
-        --primary-color: #ffffff;
-        --secondary-color: #481e6a;
-        --third-color: #ee9dc4;
+        --background-color: #ffffff;
+        --primary-color: #14716a;
+        --secondary-color: #9a644e;
         --font-family: var(--font-inter);
       }
-      @media (min-width: 750px) {
-        .evt-and-text[first] {
-          margin: 0 !important;
-        }
-      }
-      @media (min-width: 1025px) {
-        .evt-and-text[first] {
-          margin: 0;
-        }
-      }
+
       .content {
-        width: 65%;
+        width: 60%;
         text-align: center;
-        top: 15%;
-        bottom: 15%;
+        top: 5%;
+        bottom: 20%;
       }
       .content * {
         color: var(--primary-color);
@@ -56,56 +46,37 @@
         justify-content: space-evenly;
         align-items: center;
       }
-      .ivt-from-text {
-        text-transform: capitalize;
-        font-family: var(--font-meritage);
-        font-size: var(--fs-x-large);
-      }
       .invite-text {
+        width: 85%;
         font-size: var(--fs-xx-small);
         text-transform: uppercase;
-        color: var(--secondary-color);
       }
       .wedding-date {
-        width: 100%;
-        font-family: var(--font-antique);
+        font-family: var(--font-exceptional);
         font-size: var(--fs-medium);
-        color: var(--secondary-color);
         text-transform: uppercase;
-      }
-      .evt-and-text[first] {
-        margin: -5% 0;
-        color: var(--background-color);
+        color: var(--secondary-color);
       }
       .evt-and-text,
       .save-date {
-        width: 50% !important;
         text-transform: uppercase;
-        font-size: var(--fs-small);
-        color: var(--background-color);
+        font-size: var(--fs-smaller);
       }
-
       /* Css for Event Starts Here */
       .event-name {
-        font-family: var(--font-booter);
-        font-size: var(--fs-xx-large);
+        font-family: var(--font-meow);
+        font-size: xx-large;
         text-transform: capitalize;
       }
       .event-img-block {
         width: 60%;
       }
       .evt-by-name {
-        width: 100%;
+        font-family: var(--font-exceptional);
         overflow-wrap: anywhere;
-        font-family: var(--font-meritage);
-        font-size: var(--fs-xx-large);
+        font-size: xx-large;
         color: var(--primary-color);
         text-transform: capitalize;
-      }
-      .on-of-text {
-        text-transform: uppercase;
-        font-family: var(--font-family);
-        font-size: var(--fs-x-small);
       }
       .evt-time-block {
         width: 100%;
@@ -120,52 +91,55 @@
         font-size: var(--fs-x-small);
       }
       .evt-date {
-        font-family: var(--font-antique);
-        font-size: var(--fs-larger);
+        font-family: var(--font-exceptional);
+        font-size: var(--fs-medium);
         text-transform: uppercase;
       }
       .evt-venue {
-        width: 75%;
+        width: 70%;
         padding: 1%;
       }
       .venue-title {
-        font-family: var(--font-kaisei);
-        font-size: xx-large;
+        font-family: var(--font-exceptional);
+        font-size: var(--fs-larger);
         text-transform: capitalize;
         border-bottom: 3px solid var(--primary-color);
       }
       .venue-text {
         display: inline-block;
         margin-top: 5%;
-        text-transform: capitalize;
-        font-family: var(--font-kaisei);
-        font-size: var(--fs-x-small);
-        color: var(--third-color);
-        font-weight: 700;
+        text-transform: uppercase;
+        font-size: var(--fs-xx-small);
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <!-- Intro Block -->
+      <!-- Event Name Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/3ccf7678-2d08-4945-951d-e834d80588e2.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/3a52b38c-8c94-4f1a-8fd4-bc34ac4b3f14.png"
           alt=""
           class="main-image"
         />
-        <div class="content" style="bottom: 3%">
-          <div class="inner-block" style="justify-content: flex-end">
-            <div class="evt-by-name" style="color: var(--secondary-color)">
-              #by_name
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">event_name</div>
+            <div class="event-img-block" style="width: 40%">
+              <img src="" alt="Event Image" class="event-img" />
             </div>
-            <div class="evt-and-text evt-by-name" first>&</div>
-            <div class="evt-by-name" style="color: var(--secondary-color)">
-              #spouse_name
+            <div class="evt-time-block">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/9305feba-5599-4cf1-b60e-28709df7b14b.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#event_time</div>
             </div>
-            <span class="wedding-date">#WEDDING_DATE</span>
-            <div style="width: 100%" class="address">
-              <span class="save-date">#ADDRESS</span>
+            <span class="evt-date">#event_date</span>
+            <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
+              <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
         </div>

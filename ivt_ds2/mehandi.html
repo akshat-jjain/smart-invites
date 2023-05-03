@@ -22,19 +22,17 @@
     <style>
       :root {
         --background-color: #ffffff;
-        --primary-color: #00284a;
-        --secondary-color: #881719;
-        --third-color: #851418;
+        --primary-color: #fbd3a0;
+        --secondary-color: #fbd3a0;
+        --third-color: #fbd3a0;
         --font-family: var(--font-inter);
       }
-      .address {
-        margin-top: 20%;
-      }
+
       .content {
-        width: 65%;
+        width: 60%;
         text-align: center;
         top: 20%;
-        bottom: 20%;
+        bottom: 5%;
       }
       .content * {
         color: var(--primary-color);
@@ -49,48 +47,38 @@
         justify-content: space-evenly;
         align-items: center;
       }
-      .ivt-from-text {
-        text-transform: capitalize;
-        font-family: var(--font-meritage);
-        font-size: var(--fs-x-large);
-      }
       .invite-text {
+        width: 85%;
         font-size: var(--fs-xx-small);
         text-transform: uppercase;
-        color: var(--secondary-color);
       }
       .wedding-date {
-        width: 100%;
-        font-family: var(--font-antique);
+        font-family: var(--font-exceptional);
         font-size: var(--fs-medium);
         text-transform: uppercase;
       }
       .evt-and-text,
       .save-date {
-        width: 50% !important;
         text-transform: uppercase;
         font-size: var(--fs-smaller);
       }
       /* Css for Event Starts Here */
       .event-name {
-        font-family: var(--font-booter);
-        font-size: var(--fs-x-large);
+        font-family: var(--font-meow);
+        font-size: var(--fs-xx-large);
         text-transform: capitalize;
+        color: var(--background-color);
       }
       .event-img-block {
         width: 60%;
       }
       .evt-by-name {
         width: 100%;
-        font-family: var(--font-meritage);
-        font-size: var(--fs-x-large);
+        overflow-wrap: anywhere;
+        font-family: var(--font-exceptional);
+        font-size: xx-large;
         color: var(--primary-color);
         text-transform: capitalize;
-      }
-      .on-of-text {
-        text-transform: uppercase;
-        font-family: var(--font-family);
-        font-size: var(--fs-x-small);
       }
       .evt-time-block {
         width: 100%;
@@ -105,28 +93,25 @@
         font-size: var(--fs-x-small);
       }
       .evt-date {
-        font-family: var(--font-antique);
-        font-size: var(--fs-larger);
+        font-family: var(--font-exceptional);
+        font-size: var(--fs-medium);
         text-transform: uppercase;
       }
       .evt-venue {
-        width: 75%;
+        width: 70%;
         padding: 1%;
       }
       .venue-title {
-        font-family: var(--font-kaisei);
-        font-size: xx-large;
+        font-family: var(--font-exceptional);
+        font-size: var(--fs-larger);
         text-transform: capitalize;
         border-bottom: 3px solid var(--primary-color);
       }
       .venue-text {
         display: inline-block;
         margin-top: 5%;
-        text-transform: capitalize;
-        font-family: var(--font-kaisei);
-        font-size: var(--fs-x-small);
-        color: var(--secondary-color);
-        font-weight: 700;
+        text-transform: uppercase;
+        font-size: var(--fs-xx-small);
       }
     </style>
   </head>
@@ -135,7 +120,7 @@
       <!-- Mehandi Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/b409ae85-7447-4f5f-a0cf-88c3f695878b.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/ce0c785f-6da0-4d29-81f3-261f97a89f16.png"
           alt=""
           class="main-image"
         />
@@ -149,10 +134,17 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">on</span>
+            <div class="evt-time-block">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/c4438927-6a19-4d8a-82f0-b426f50aa204.png"
+                alt="Event Time Decor Image"
+                class="evt-time-img"
+              />
+              <div class="evt-time">#mehandi_event_time</div>
+            </div>
             <span class="evt-date">#mehandi_event_date</span>
-            <span class="on-of-text" time>#mehandi_event_time</span>
             <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>
