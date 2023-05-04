@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HALDI | IVT DS 18</title>
+    <title>EVENT NAME | IVT DS 15</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -12,36 +12,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Esteban&family=Euphoria+Script&family=Meow+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Meow+Script&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://ewr1.vultrobjects.com/cdn-sei/templates/3f2efe87-dec6-48c8-a9cb-1dfb1fa5b8ae.css"
+      href="https://ewr1.vultrobjects.com/cdn-sei/templates/c119ebce-4f0a-42e1-bc6b-a1efc2ac7168.css"
     />
     <style>
       :root {
-        --background-color: #ffffff;
-        --primary-color: rgba(166, 119, 62, 1);
-        --secondary-color: #74acb8;
-        --third-color: #30bbc6;
-        --font-family: var(--font-esteban);
-      }
-      @media (min-width: 750px) {
-        .evt-and-text[first] {
-          margin: 0 !important;
-        }
-      }
-      @media (min-width: 1025px) {
-        .evt-and-text[first] {
-          margin: 0;
-        }
+        --background-color: #1e1e1e;
+        --primary-color: #265b5e;
+        --secondary-color: #d7982b;
+        --third-color: #4a9ba1;
+        --fourth-color: #ffffff;
+        --font-family: var(--font-inter);
       }
       .content {
         width: 65%;
         text-align: center;
-        top: 15%;
-        bottom: 15%;
+        top: 12%;
+        bottom: 10%;
       }
       .content * {
         color: var(--primary-color);
@@ -58,13 +49,13 @@
       }
       .ivt-from-text {
         text-transform: capitalize;
-        font-family: var(--font-euphoria);
+        font-family: var(--font-meow);
         font-size: var(--fs-x-large);
       }
       .invite-text {
         font-size: var(--fs-xx-small);
         text-transform: uppercase;
-        color: var(--third-color);
+        color: var(--secondary-color);
       }
       .wedding-date {
         width: 100%;
@@ -73,24 +64,26 @@
         color: var(--third-color);
         text-transform: uppercase;
       }
-      .evt-and-text[first] {
-        margin: -5% 0;
-        color: var(--secondary-color);
-      }
       .evt-and-text,
       .save-date {
         width: 50% !important;
         text-transform: uppercase;
         font-size: var(--fs-small);
+        color: var(--background-color);
+      }
+      .evt-and-text[and] {
+        margin: -5% 0;
         color: var(--secondary-color);
       }
-
+      .address {
+        color: var(--third-color);
+      }
       /* Css for Event Starts Here */
       .event-name {
+        color: var(--secondary-color);
         font-family: var(--font-meow);
         font-size: var(--fs-xx-large);
         text-transform: capitalize;
-        color: var(--primary-color);
       }
       .event-img-block {
         width: 60%;
@@ -98,15 +91,23 @@
       .evt-by-name {
         width: 100%;
         overflow-wrap: anywhere;
-        font-family: var(--font-euphoria);
-        font-size: var(--fs-xx-large);
+        font-family: var(--font-arunika);
+        font-size: var(--fs-x-large);
+        color: var(--primary-color);
         text-transform: capitalize;
       }
       .on-of-text {
         text-transform: uppercase;
         font-family: var(--font-family);
         font-size: var(--fs-x-small);
+      }
+      .on-of-text[time],
+      .on-of-text[on] {
         color: var(--secondary-color);
+      }
+      .on-of-text[day],
+      .on-of-text[time] {
+        font-size: var(--fs-medium);
       }
       .evt-time-block {
         width: 100%;
@@ -121,53 +122,61 @@
         font-size: var(--fs-x-small);
       }
       .evt-date {
+        font-family: var(--font-family);
         font-size: var(--fs-larger);
         text-transform: uppercase;
-        color: var(--secondary-color);
+        color: var(--third-color);
       }
       .evt-venue {
         width: 75%;
         padding: 1%;
       }
       .venue-title {
-        font-size: xx-large;
+        font-family: var(--font-arunika);
+        font-size: var(--fs-x-large);
         text-transform: capitalize;
-        border-bottom: 3px solid var(--primary-color);
       }
       .venue-text {
         display: inline-block;
-        margin-top: 5%;
         text-transform: capitalize;
         font-family: var(--font-family);
         font-size: var(--fs-x-small);
+        color: var(--third-color);
         font-weight: 700;
-        color: var(--secondary-color);
+      }
+      @media (min-width: 755px) and (max-width: 1024px) {
+        .evt-and-text[and] {
+          margin: 0;
+        }
+      }
+      @media (min-width: 1025px) {
+        .evt-and-text[and] {
+          margin: 3% 0;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <!-- Haldi Block -->
+      <!-- Event Name Block -->
       <div class="outer-box">
         <img
-          src="https://ewr1.vultrobjects.com/cdn-sei/original/83da52d9-bf9c-4e3c-b569-063402862a5f.png"
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/7e93fec3-ce46-427f-9b08-840605455e62.png"
           alt=""
           class="main-image"
         />
         <div class="content">
           <div class="inner-block">
-            <div class="event-name">haldi</div>
-            <div class="event-img-block">
-              <img
-                src="https://ewr1.vultrobjects.com/cdn-sei/original/3802e80d-cfa0-4b57-9cb0-87a060e7b7e2.png"
-                alt="Haldi Event Image"
-                class="event-img"
-              />
+            <div class="event-name">#event_name</div>
+            <div class="event-img-block" style="width: 35%">
+              <img src="" alt="Event Image" class="event-img" />
             </div>
-            <span class="on-of-text">on</span>
-            <span class="evt-date">#haldi_event_date</span>
-            <span class="on-of-text" time>#haldi_event_time</span>
+            <span class="on-of-text" on>on</span>
+            <span class="on-of-text" day>#event_day</span>
+            <span class="evt-date">#event_date</span>
+            <span class="on-of-text" time>#event_time</span>
             <div class="evt-venue">
+              <span class="venue-title">venue</span><br />
               <span class="venue-text"> #ADDRESS </span>
             </div>
           </div>

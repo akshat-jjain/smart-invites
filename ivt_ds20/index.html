@@ -35,8 +35,8 @@
       .content {
         width: 65%;
         text-align: center;
-        top: 5%;
-        bottom: 20%;
+        top: 10%;
+        bottom: 10%;
       }
       .content * {
         color: var(--primary-color);
@@ -163,7 +163,7 @@
             </div>
           </div>
           <div style="width: 100%" class="address">
-            <span class="wedding-date">#WEDDING_DATE</span>
+            <span class="wedding-date">#WEDDING_DATE</span><br />
             <span class="save-date">#ADDRESS</span>
           </div>
         </div>
@@ -177,11 +177,11 @@
         />
         <div class="content">
           <div class="inner-block">
-            <span class="ivt-from-text">mr. and mrs. #by_last_name</span>
             <span class="invite-text">
               Request the pleasure of your presence to grace the wedding of
             </span>
             <div class="evt-by-name" style="margin-bottom: -10%">#by_name</div>
+            <span class="ivt-from-text">mr. and mrs. #by_last_name</span>
             <div
               class="evt-and-text evt-by-name"
               style="color: var(--third-color)"
@@ -189,6 +189,7 @@
               &
             </div>
             <div class="evt-by-name" style="margin-top: -10%">#spouse_name</div>
+            <span class="ivt-from-text">mr. and mrs. #spouse_last_name</span>
             <span class="evt-date">#WEDDING_DATE</span>
             <div class="evt-venue">
               <span class="venue-text"> #ADDRESS </span>
@@ -213,10 +214,11 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
-            <div class="evt-by-name">#by_name</div>
+            <!-- <span class="on-of-text">of</span> -->
+            <!-- <div class="evt-by-name">#by_name</div> -->
             <span class="on-of-text">on</span>
             <span class="evt-date">#engagement_event_date</span>
+            <span class="on-of-text" time>#engagement_event_time</span>
             <div class="evt-venue">
               <span class="venue-text"> #ADDRESS </span>
             </div>
@@ -240,10 +242,9 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
-            <div class="evt-by-name">#by_name</div>
             <span class="on-of-text">on</span>
             <span class="evt-date">#sangeet_event_date</span>
+            <span class="on-of-text" time>#sangeet_event_time</span>
             <div class="evt-venue">
               <span class="venue-text"> #ADDRESS </span>
             </div>
@@ -267,10 +268,9 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
-            <div class="evt-by-name">#by_name</div>
             <span class="on-of-text">on</span>
             <span class="evt-date">#haldi_event_date</span>
+            <span class="on-of-text" time>#haldi_event_time</span>
             <div class="evt-venue">
               <span class="venue-text"> #ADDRESS </span>
             </div>
@@ -294,10 +294,9 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
-            <div class="evt-by-name">#by_name</div>
             <span class="on-of-text">on</span>
             <span class="evt-date">#mehandi_event_date </span>
+            <span class="on-of-text" time>#mehandi_event_dtime</span>
             <div class="evt-venue">
               <span class="venue-text"> #ADDRESS </span>
             </div>
@@ -321,10 +320,9 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
-            <div class="evt-by-name">#by_name</div>
             <span class="on-of-text">on</span>
             <span class="evt-date">#cocktail_event_date</span>
+            <span class="on-of-text" time>#cocktail_event_time</span>
             <div class="evt-venue">
               <span class="venue-text"> #ADDRESS </span>
             </div>
@@ -348,10 +346,9 @@
                 class="event-img"
               />
             </div>
-            <span class="on-of-text">of</span>
-            <div class="evt-by-name">#by_name</div>
             <span class="on-of-text">on</span>
             <span class="evt-date">#reception_event_date</span>
+            <span class="on-of-text" time>#reception_event_time</span>
             <div class="evt-venue">
               <span class="venue-text"> #ADDRESS </span>
             </div>
