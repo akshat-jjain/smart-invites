@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEHANDI | IVT DS 29</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Esteban&family=Euphoria+Script&family=Meow+Script&display=swap&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ewr1.vultrobjects.com/cdn-sei/templates/1e417a56-742b-483e-99d8-f2d05c40d4f5.css"
+    />
+    <style>
+      :root {
+        --background-color: #ffffff;
+        --primary-color: #ffffff;
+        --secondary-color: #BD9B3F;
+        --third-color: #ffffff;
+        --font-family: var(--font-esteban);
+      }
+      .address {
+        margin-top: 20%;
+      }
+      .content {
+        width: 65%;
+        text-align: center;
+        top: 5%;
+        bottom: 5%;
+      }
+      .content * {
+        color: var(--primary-color);
+      }
+
+      .inner-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .ivt-from-text {
+        text-transform: capitalize;
+        font-family: var(--font-euphoria);
+        font-size: var(--fs-x-large);
+      }
+      .invite-text {
+        font-size: var(--fs-xx-small);
+        text-transform: uppercase;
+        color: var(--secondary-color);
+      }
+      .wedding-date {
+        width: 100%;
+        color: var(--secondary-color);
+        font-size: var(--fs-medium);
+        text-transform: uppercase;
+      }
+      .evt-and-text,
+      .save-date {
+        width: 50% !important;
+        text-transform: uppercase;
+        font-size: var(--fs-smaller);
+        color: var(--secondary-color);
+      }
+      .save-date {
+      color: var(--third-color);
+}
+/* Css for Event Starts Here */
+      .event-name {
+        font-family: var(--font-meow);
+        font-size: var(--fs-xx-large);
+        text-transform: capitalize;
+      }
+      .event-img-block {
+        width: 60%;
+      }
+      .evt-by-name {
+        width: 100%;
+        font-family: var(--font-euphoria);
+        font-size: var(--fs-x-large);
+        color: var(--primary-color);
+        text-transform: capitalize;
+      }
+      .on-of-text {
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        font-size: var(--fs-x-small);
+      }
+      .evt-time-block {
+        width: 100%;
+        position: relative;
+      }
+      .evt-time {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        padding: 6% 0;
+        text-transform: uppercase;
+        font-size: var(--fs-x-small);
+      }
+      .evt-date {
+color: var(--secondary-color);
+        font-size: var(--fs-larger);
+        text-transform: uppercase;
+      }
+      .evt-venue {
+        width: 75%;
+        padding: 1%;
+      }
+      .venue-title {
+        font-size: xx-large;
+        text-transform: capitalize;
+        border-bottom: 3px solid var(--primary-color);
+      }
+      .venue-text {
+        display: inline-block;
+        margin-top: 5%;
+        text-transform: capitalize;
+        font-size: var(--fs-x-small);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Mehandi Block -->
+      <div class="outer-box">
+        <img
+          src="https://ewr1.vultrobjects.com/cdn-sei/original/cc233f67-f97e-42c6-9c15-c405b172a3ba.png"
+          alt=""
+          class="main-image"
+        />
+        <div class="content">
+          <div class="inner-block">
+            <div class="event-name">mehandi</div>
+            <div class="event-img-block">
+              <img
+                src="https://ewr1.vultrobjects.com/cdn-sei/original/3962d680-30e0-4cbf-9639-2c42982bd684.png"
+                alt="Mehandi Event Image"
+                class="event-img"
+              />
+            </div>
+            <span class="on-of-text">on</span>
+            <span class="evt-date">#mehandi_event_date</span>
+            <span class="on-of-text" time>#mehandi_event_time</span>
+            <div class="evt-venue">
+              <span class="venue-text"> #ADDRESS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
