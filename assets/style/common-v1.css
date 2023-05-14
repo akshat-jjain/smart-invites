@@ -19,6 +19,10 @@
   src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/904c7605-2f1b-452e-bdae-4b535f7f6b30.ttf);
 }
 @font-face {
+  font-family: "Good Vibrations";
+  src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/517d430b-31ea-4ed2-b56b-12f19e958826.ttf);
+}
+@font-face {
   font-family: "meritage";
   src: url(https://ewr1.vultrobjects.com/cdn-sei/fonts/06783d24-29ab-40e9-861a-b3007e92ec79.ttf);
 }
@@ -36,7 +40,9 @@
   --font-esteban: "Esteban", serif;
   --font-euphoria: "Euphoria Script", cursive;
   --font-exceptional: "Exceptional", serif;
+  --font-vibrations: "Good Vibrations", serif;
   --font-inter: "Inter", sans-serif;
+  --font-jost: "Jost", sans-serif;
   --font-kaisei: "Kaisei Decol", serif;
   --font-lora: "Lora", serif;
   --font-meow: "Meow Script", cursive;
