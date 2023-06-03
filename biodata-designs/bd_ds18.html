@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://ewr1.vultrobjects.com/cdn-sei/templates/3ec31748-5290-46b1-9aae-178137c79bdc.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Inknut+Antiqua:wght@300&family=Inter&display=swap"
+            rel="stylesheet">
+        <title>BD DS 18</title>
+        <style>
+            :root {
+                --background-color: #FFFFFF;
+                --primary-color: #ffffff;
+                --secondary-color: #FF2D00;
+                --font-family: var(--font-inter);
+            }
+
+            .content {
+                width: 90%;
+                top: 0;
+                bottom: 0%;
+            }
+
+            .content * {
+                color: var(--primary-color);
+                overflow-wrap: anywhere;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                font-weight: 400;
+                text-transform: capitalize;
+                font-size: .55rem;
+            }
+
+            .inner-block {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .heading-line {
+                width: 100%;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 1.10rem;
+                text-align: center;
+                color: var(--secondary-color);
+            }
+
+            .header {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 5%;
+            }
+
+            .name {
+                width: 100%;
+                /* margin-top: 5%; */
+                font-weight: 600;
+                /* text-decoration: underline; */
+                font-size: 1.25rem;
+                color: var(--secondary-color);
+                text-align: center;
+            }
+
+            .mob-number {
+                width: 100%;
+                font-size: .6rem;
+            }
+
+            .address-box {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+            }
+
+            .details-group {
+                width: 100%;
+                display: flex;
+            }
+
+            .details {
+                width: 100%;
+            }
+
+            .text-box {
+                width: 100%;
+                display: flex;
+            }
+
+            .left-txt {
+                width: 47%;
+            }
+
+            .cnt-txt {
+                width: 5%;
+            }
+
+            .right-txt {
+                width: 47%;
+            }
+
+            .img-contain {
+                width: 40%;
+                position: relative;
+            }
+
+            .img-pp {
+                width: 100%;
+                border-radius: 20px;
+            }
+
+            .line-2 {
+                -webkit-line-clamp: 2;
+            }
+
+            .ex-space {
+                padding: 2% 0;
+            }
+
+            @media (min-width: 850px) {
+                .content * {
+                    font-size: 1rem;
+                }
+
+                .heading-line {
+                    font-size: 1.4rem;
+                }
+
+                .name {
+                    font-size: 1.15rem;
+                }
+
+                .mob-number {
+                    font-size: 1.10rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="outer-box">
+                <img src="https://ewr1.vultrobjects.com/cdn-sei/original/6555298a-bf6a-45d7-8468-5b3c7dc7a6a5.png"
+                    alt="main-background" srcset="" class="main-image">
+                <div class="content">
+                    <div class="inner-block">
+                        <div
+                            style="width: 100%;display: flex;justify-content: space-between;align-items:center;margin-top:5%">
+                            <div class="img-contain">
+                                <img src="https://ewr1.vultrobjects.com/cdn-sei/original/cbc38f40-dc30-4dff-ae7b-af9108fd08e5.png"
+                                    alt="">
+                                <div class="img-pp" style="width: 55%; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                                    <img src="https://i.pravatar.cc/500" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="name">[name]</div>
+                            </div>
+                        </div>
+                        <div class="details-group">
+                            <div class="details">
+                                <div class="text-box">
+                                    <span class="left-txt">date of birth</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[DATE_OF_BIRTH]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">time of birth</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[TIME_OF_BIRTH]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">place of birth</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[PLACE_OF_BIRTH]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">rashi</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt line-2">[SIGN_BIRTH](by Birth) [SIGN_MOON](by
+                                        Moon)</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">nakshatra</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[NAKSHATRA]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">height</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[HEIGHT]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">religion</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[RELIGION]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">caste</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[CASTE]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">sub caste</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[SUB_CASTE]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">gotra</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[GOTRA]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">mangalik</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[MANGALIK]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">education</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[EDUCATION]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">college name</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[COLLEGE_NAME]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">employed in</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[EMPLOYED_IN]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">organization name</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[ORGANIZATION_NAME]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">annual income</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[ANNUAL_INCOME]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt line-2">address details</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt line-2">[ADDRESS_DETAILS]</span>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="text-box">
+                                    <span class="left-txt">Father’s name</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[FATHER_NAME]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt line-2">Father’s occupation</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt line-2">[FATHER_OCCUPATION]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">Mother’s name</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[MOTHER_NAME]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt line-2">Mother’s occupation</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt line-2">[MOTHER_OCCUPATION]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">total sisters</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[TOTAL_SISTERS]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">total brothers</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[TOTAL_BROTHERS]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">married sisters</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[MARRIED_SISTERS]</span>
+                                </div>
+                                <div class="text-box">
+                                    <span class="left-txt">married brothers</span>
+                                    <span class="cnt-txt">:</span>
+                                    <span class="right-txt">[MARRIED_BROTHERS]</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="width: 100%">
+                            <img src="https://ewr1.vultrobjects.com/cdn-sei/original/0837cd3c-71ba-4c73-932a-bcdf2846c899.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

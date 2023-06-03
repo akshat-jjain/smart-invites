@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Josefin+Sans&family=Inter&display=swap"
+            rel="stylesheet">
+        <title>Id Card 1</title>
+        <style>
+            /* Common Css Start Here */
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth;
+                font-family: var(--font-family);
+            }
+
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
+            .container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                background: var(--background-color);
+            }
+
+            .outer-box {
+                position: relative;
+                width: 100%;
+                /* height: 150vw; */
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+                margin-bottom: 5%;
+                border: 1px solid;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            @media (min-width: 501px) and (max-width: 1024px) {
+                .outer-box {
+                    /* width: 60%; */
+                    width: 477px !important;
+                    /* height: 100%; */
+                }
+            }
+
+            @media (min-width: 1025px) {
+
+                .outer-box {
+                    /* width: 50%; */
+                    width: 477px !important;
+                    /* height: 100% !important; */
+                }
+            }
+
+            /* Commom Css Ends Here */
+
+            :root {
+                --background-color: #FFFFFF;
+                --primary-color: #000000;
+                --secondary-color: #FDC30E;
+                --font-family: "Outfit";
+            }
+
+            .content {
+                width: 100%;
+            }
+
+            .inner-block {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                /* align-content: center; */
+                justify-content: space-evenly;
+                align-items: flex-start;
+            }
+
+
+            .basic-div {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                background: linear-gradient(132.95deg, #6F2FF7 2.2%, #CE2E69 92.36%);
+                clip-path: circle(85% at 50% 0);
+            }
+
+            .inner-div {
+                width: 90%;
+                margin-top: 3%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: flex-end;
+            }
+
+            .user-pp {
+                width: 30%;
+                /* margin-left: 50%; */
+            }
+
+            .user-pp,
+            .user-pp img {
+                border-radius: 50%;
+            }
+
+            .user-basic {
+                width: 100%;
+                margin-top: -5%;
+                margin-bottom: 20%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+
+            .user-info {
+                width: 80%;
+                text-transform: capitalize;
+            }
+
+            .user-name {
+                font-weight: 600;
+                font-size: 2rem;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .user-surname {
+                font-weight: 600;
+                font-size: 1.75rem;
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            .user-role {
+                font-weight: 600;
+                font-size: .75rem;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .user-social {
+                width: 25%;
+                color: #FFFFFF;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .user-social a {
+                color: #FFFFFF !important;
+                text-decoration: none;
+            }
+
+            .address-div {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                padding: 5%;
+                margin-top: -15%;
+                margin-bottom: 5%;
+                background: #FFFFFF;
+                box-shadow: 0px 8px 15px 2px rgba(0, 0, 0, 0.25);
+                border-radius: 15px;
+                z-index: 1;
+            }
+
+            .address {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                font-size: .75rem;
+                margin-bottom: 2%;
+            }
+
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                background: #CB2E6E;
+                border-radius: 10px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-right: 1.75%;
+            }
+
+            .icon i {
+                color: #FFFFFF;
+            }
+
+            .address a {
+                text-transform: capitalize;
+                color: rgba(2, 130, 217, 1);
+                text-decoration: none;
+            }
+
+            .work-at-box {
+                width: 90%;
+                margin: 2% 1%;
+                /* height: 22%; */
+                /* aspect-ratio: 2/1; */
+                display: flex;
+                flex-direction: column;
+                background: linear-gradient(108.42deg, rgba(111, 47, 247, 0.5) 0.94%, rgba(224, 11, 89, 0.5) 100%);
+                border-radius: 15px;
+            }
+
+            .work-head {
+                margin-top: 4%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: stretch;
+            }
+
+            .polygon {
+                width: 35%;
+                padding: 2%;
+                padding-left: 5%;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                -webkit-clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
+                clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
+                background: linear-gradient(96.12deg, #AE3DAE 0.92%, #EA3751 100%);
+            }
+
+            .get-profile-btn {
+                margin-right: 2%;
+                width: 35%;
+                border: 3px solid #071532;
+                border-radius: 20px;
+                padding: 4px 8px;
+                font-weight: 600;
+                font-size: .7rem;
+                color: #071532;
+            }
+
+            .get-profile-btn a {
+                color: #071532;
+            }
+
+            .work-about {
+                width: 100%;
+                padding: 5%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .company-name {
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: 2rem;
+                color: rgba(0, 0, 0, 0.6);
+            }
+
+            .company-location {
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: 1.75rem;
+                color: rgba(1, 1, 1, 0.4);
+            }
+
+            .company-category {
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: .75rem;
+                color: rgba(0, 0, 0, 0.6);
+            }
+
+            .company-logo {
+                background: rgba(255, 255, 255, 0.8);
+                width: 50%;
+                border-radius: 50%;
+            }
+
+            .extra-info {
+                width: 90%;
+            }
+
+            .some-heading {
+                text-transform: capitalize;
+                margin: 2.5% 1%;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+
+            .sml-heading {
+                text-transform: capitalize;
+                margin: 2.5% 1%;
+                font-weight: 600;
+                font-size: 1.25rem;
+            }
+
+            .some-qna {
+                text-transform: capitalize;
+                margin: 1%;
+                color: rgba(1, 1, 1, 0.6);
+                font-size: 1rem;
+            }
+
+            .some-ans {
+                margin: 1%;
+                font-weight: 400;
+                font-size: .8rem;
+                margin-bottom: 1.75%;
+            }
+
+            .sml-txt-b {
+                margin: 1.25% 1%;
+                font-weight: 600;
+                font-size: .75rem;
+            }
+
+            .sml-txt {
+                margin: 1%;
+                font-weight: 400;
+                font-size: .75rem;
+            }
+
+            .pill-list {
+                display: flex;
+                margin: 1.25%;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .pill {
+                margin: 1%;
+                margin-right: 1.5%;
+                background: rgba(30, 30, 30, 0.1);
+                border-radius: 15px;
+                padding: 10px;
+                font-weight: 600;
+                font-size: .7rem;
+            }
+
+            .links-list {
+                display: flex;
+                flex-direction: column;
+                margin: 1.25%;
+            }
+
+            .social-links {
+                margin: 1.75% 1%;
+                width: 100%;
+                font-weight: 400;
+                font-size: .75rem;
+            }
+
+            .b-txt {
+                font-weight: 600;
+            }
+
+            .social-links i {
+                width: 8%;
+            }
+
+            .res-btn-div {
+                margin: 1%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .res-btn-div button {
+                width: 40%;
+                text-transform: capitalize;
+                background: #CB2E6E;
+                border: transparent;
+                border-radius: 10px;
+                color: #FFFFFF;
+                font-weight: 600;
+                font-size: .75rem;
+                padding: 8px 16px;
+            }
+
+            .res-btn-div i,
+            .send-btn * {
+                color: #FFFFFF;
+            }
+
+            .input-box {
+                margin: 1%;
+                width: 100%;
+                min-height: 70px;
+                max-height: min-content;
+                position: relative;
+                border: 1px solid #d9d9d9;
+                background: #D9D9D9;
+                color: #000000;
+                padding: 2%;
+                font-weight: 600;
+                font-size: .7rem;
+            }
+
+            .input-box[contenteditable=true]:empty::before {
+                content: attr(data-placeholder);
+            }
+
+            .input-box:focus {
+                outline: none;
+            }
+
+            .send-btn {
+                position: absolute;
+                bottom: .75%;
+                right: 7%;
+                background: #CB2E6E;
+                border: transparent;
+                border-radius: 10px;
+                padding: 4px 8px;
+                color: #FFFFFF;
+                font-weight: 600;
+                font-size: .7rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="outer-box">
+                <div class="content">
+                    <div class="inner-block">
+                        <div class="basic-div">
+                            <div class="inner-div">
+                                <div class="user-pp">
+                                    <img src="https://i.pravatar.cc/500" alt="User Profile Photo">
+                                </div>
+                                <div class="user-basic">
+                                    <div class="user-info">
+                                        <div class="user-name">aman amit</div>
+                                        <div class="user-surname"> jain</div>
+                                        <div class="user-role"> (UX Designer)</div>
+                                    </div>
+                                    <div class="user-social">
+                                        <a href="#"><i class="fa fa-instagram"></i></a> |
+                                        <a href="#"><i class="fa fa-github"></i></a> |
+                                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-div">
+                            <span class="address">
+                                <span class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                Works at &nbsp;<a href="#">cafe coffee day</a>
+                            </span>
+                            <span class="address">
+                                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                Lives at &nbsp;<a href="#">rohini, new delhi</a>
+                            </span>
+                        </div>
+                        <div class="work-at-box">
+                            <div class="work-head">
+                                <div class="polygon">Works at</div>
+                                <div class="get-profile-btn">
+                                    <a href="#">Get to profile
+                                        <sup><i class="fa fa-link" style="transform: rotate(90deg);"></i></sup>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-about">
+                                <div class="">
+                                    <div class="company-name">cafe coffee day</div>
+                                    <div class="company-location">kota</div>
+                                    <div class="company-category">(food services)</div>
+                                </div>
+                                <div class="company-logo">
+                                    <img src="https://i.pravatar.cc/500" alt=""
+                                        style="float: right;border-radius: 50%;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extra-info">
+                            <div class="some-heading">quick information <i class="fa fa-info-circle"></i></div>
+                            <div class="some-qna">expertise</div>
+                            <div class="some-ans">Creating UI design for Apps and Websites</div>
+                            <div class="some-qna">language known</div>
+                            <div class="some-ans">English, Hindi, Punjabi</div>
+                            <div class="some-qna">known for</div>
+                            <div class="some-ans">Best Intern😎</div>
+                            <div class="some-heading">skills</div>
+                            <div class="pill-list">
+                                <!-- Loop Code Starts Here -->
+                                <span class="pill">#creative</span>
+                                <!-- Loop Code Ends Here -->
+                                <span class="pill">#UI/UX</span>
+                                <span class="pill">#Adobe</span>
+                                <span class="pill">#Interface</span>
+                                <span class="pill">#Prototype</span>
+                                <span class="pill">#UXdesigner</span>
+                            </div>
+                            <div class="some-heading">about</div>
+                            <div class="sml-txt-b">Ux Designer at Smart E Invites currently working on the live
+                                projects.pursuing my professional certification course from GOOGLE.</div>
+                            <div class="some-heading">projects</div>
+                            <div class="links-list">
+                                <!-- Loop Code Starts Here -->
+                                <span class="social-links"><i class="fa fa-behance"></i> name/behance.com</span>
+                                <!-- Loop Code Ends Here -->
+                                <span class="social-links"><i class="fa fa-discord"></i> name/discord.com</span>
+                                <span class="social-links"><i class="fa fa-github"></i> name/github.com</span>
+                                <span class="social-links"><i class="fa fa-reddit"></i> name/reddit.com</span>
+                            </div>
+                            <div class="sml-heading">resume</div>
+                            <div class="res-btn-div">
+                                <button><i class="fa fa-download"></i> download</button>
+                                <button><i class="fa fa-eye"></i> view</button>
+                            </div>
+                            <div class="sml-heading">reach out</div>
+                            <div class="links-list">
+                                <!-- Loop Code Starts Here -->
+                                <span class="social-links b-txt"><i class="fa fa-envelope"></i> Email</span>
+                                <!-- Loop Code Ends Here -->
+                                <span class="social-links b-txt"><i class="fa fa-facebook"></i> Facebook</span>
+                                <span class="social-links b-txt"><i class="fa fa-instagram"></i> Instagram</span>
+                                <span class="social-links b-txt"><i class="fa fa-phone"></i> Phone</span>
+                            </div>
+                            <div class="sml-heading">any queries?</div>
+                            <div class="some-ans">
+                                <form action="#" method="post">
+                                    <textarea name="" id="query" readonly style="display: none;"></textarea>
+                                    <div contenteditable="true" id="queryDummy" class="input-box" role="textbox"
+                                        data-placeholder="Write down here."></div>
+                                    <button class="send-btn"><i class="fa fa-send"></i> Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#queryDummy").keyup(function () {
+                let input = $(this).text();
+                $("#query").val(input);
+            });
+        });
+    </script>
+
+</html>
