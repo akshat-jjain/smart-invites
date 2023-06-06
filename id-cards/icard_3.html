@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Josefin+Sans&family=Inter&display=swap"
+            rel="stylesheet">
+        <title>Id Card 3</title>
+        <style>
+            /* Common Css Start Here */
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth;
+                font-family: var(--font-family);
+            }
+
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
+            .container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .outer-box {
+                position: relative;
+                width: 100%;
+                /* height: 150vw; */
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+                margin-bottom: 5%;
+                border: 1px solid;
+                background: var(--background-color);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            @media (min-width: 501px) and (max-width: 1024px) {
+                .outer-box {
+                    /* width: 60%; */
+                    width: 477px !important;
+                    /* height: 100%; */
+                }
+            }
+
+            @media (min-width: 1025px) {
+
+                .outer-box {
+                    /* width: 50%; */
+                    width: 477px !important;
+                    /* height: 100% !important; */
+                }
+            }
+
+            /* Commom Css Ends Here */
+
+            :root {
+                --background-color: #FFFFFF;
+                --primary-color: #000000;
+                --secondary-color: #FDC30E;
+                --font-family: "Outfit";
+            }
+
+            .content {
+                width: 100%;
+            }
+
+            .inner-block {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                /* align-content: center; */
+                justify-content: space-evenly;
+                align-items: flex-start;
+            }
+
+
+            .basic-div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inner-div {
+                width: 90%;
+                margin-top: 3%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            .user-pp {
+                width: 30%;
+                padding: 3px;
+                background: linear-gradient(180deg, #871B87 0%, #DF0C5A 100%);
+                padding-bottom: 0;
+            }
+
+            .user-pp img {
+                border: 3px solid #FFFFFF;
+            }
+
+            .user-pp,
+            .user-pp img {
+                border-radius: 50%;
+            }
+
+            .user-basic {
+                width: 100%;
+                /* margin-bottom: 20%; */
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+
+            .user-info {
+                width: 70%;
+                text-transform: capitalize;
+            }
+
+            .user-name {
+                font-weight: 600;
+                font-size: 2rem;
+                color: #010101;
+            }
+
+            .user-surname {
+                font-weight: 600;
+                font-size: 1.75rem;
+                color: #8B8882;
+            }
+
+            .user-role {
+                font-weight: 600;
+                font-size: .75rem;
+                color: #000000;
+            }
+
+            .user-social {
+                width: 25%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-evenly;
+                align-items: center;
+                color: #000000;
+            }
+
+            .user-social a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .address-div {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5%;
+                background: #FFFFFF;
+            }
+
+            .address {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                font-size: .75rem;
+                margin-bottom: 2%;
+            }
+
+            .timeline {
+                position: relative;
+                list-style: none;
+                padding-left: 20px;
+                padding-bottom: 1px;
+            }
+
+            .timeline::before {
+                width: 3px;
+                content: "";
+                background: #D1D0D0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 6px;
+            }
+
+            .timeline::after {
+                content: "";
+                position: absolute;
+                top: 25%;
+                left: 1px;
+                width: 5px;
+                height: 5px;
+                background: #FFFFFF;
+                border: 3px solid #000000;
+                border-radius: 50%;
+                padding: 2px;
+            }
+
+            .timeline:first-child::before {
+                top: 15px;
+            }
+
+            .timeline:first-child::after {
+                top: 0;
+            }
+
+            .timeline:last-child {
+                padding-bottom: 0;
+            }
+
+            .timeline:last-child::before {
+                bottom: 19px;
+            }
+
+            .timeline:last-child::after {
+                background: #A39D93;
+                border: 3px solid #D1D0D0;
+                top: 50%;
+                bottom: 0;
+            }
+
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                background: linear-gradient(180deg, #8A1A85 0%, #E00B59 100%);
+                border-radius: 10px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-right: 1.75%;
+            }
+
+            .icon i {
+                color: #FFFFFF;
+            }
+
+            .address a {
+                text-transform: capitalize;
+                color: rgba(2, 130, 217, 1);
+                text-decoration: none;
+            }
+
+            .work-at-box {
+                width: 90%;
+                margin: 2% 1%;
+                /* height: 22%; */
+                /* aspect-ratio: 2/1; */
+                display: flex;
+                flex-direction: column;
+                background: linear-gradient(108.42deg, rgba(111, 47, 247, 0.5) 0.94%, rgba(224, 11, 89, 0.5) 100%);
+                border-radius: 15px;
+            }
+
+            .work-head {
+                margin-top: 4%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: stretch;
+            }
+
+            .polygon {
+                width: 35%;
+                padding: 2%;
+                padding-left: 5%;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                -webkit-clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
+                clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
+                background: linear-gradient(96.12deg, #AE3DAE 0.92%, #EA3751 100%);
+            }
+
+            .get-profile-btn {
+                margin-right: 2%;
+                width: 35%;
+                border: 3px solid #071532;
+                border-radius: 20px;
+                padding: 4px 8px;
+                font-weight: 600;
+                font-size: .7rem;
+                color: #071532;
+            }
+
+            .get-profile-btn a {
+                color: #071532;
+            }
+
+            .work-about {
+                width: 100%;
+                padding: 5%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .company-name {
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: 2rem;
+                color: rgba(0, 0, 0, 0.6);
+            }
+
+            .company-location {
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: 1.75rem;
+                color: rgba(1, 1, 1, 0.4);
+            }
+
+            .company-category {
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: .75rem;
+                color: rgba(0, 0, 0, 0.6);
+            }
+
+            .company-logo {
+                background: rgba(255, 255, 255, 0.8);
+                width: 50%;
+                border-radius: 50%;
+            }
+
+            .extra-info {
+                width: 90%;
+            }
+
+            .some-heading {
+                text-transform: capitalize;
+                margin: 2.5% 1%;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+
+            .qi-timeline {
+                position: relative;
+                list-style: none;
+                padding-left: 20px;
+                padding-bottom: 1px;
+                padding-top: 2px;
+            }
+
+            .qi-timeline::before {
+                position: absolute;
+                content: "";
+                width: 3px;
+                top: 0;
+                bottom: 0;
+                left: 6px;
+                background: rgba(1, 1, 1, 0.6);
+            }
+
+            .qi-timeline::after {
+                position: absolute;
+                content: "";
+                top: 25%;
+                left: 1px;
+                width: 5px;
+                height: 5px;
+                background: #000000;
+                border: 3px solid #D9D9D9;
+                border-radius: 50%;
+                padding: 2px;
+            }
+
+            .qi-timeline:first-child::before {
+                top: 19px;
+            }
+
+            .qi-timeline:first-child::after {
+                top: 0;
+                background: #FFFFFF;
+                border: 3px solid #DC0B5B;
+            }
+
+            .qi-timeline:last-child {
+                padding-bottom: 0;
+            }
+
+            .qi-timeline:last-child::before {
+                bottom: 19px;
+            }
+
+            .qi-timeline:last-child::after {
+                background: #DC0B5B;
+                border: 3px solid #D9D9D9;
+                top: 70%;
+                bottom: 0;
+            }
+
+            .sml-heading {
+                text-transform: capitalize;
+                margin: 2.5% 1%;
+                font-weight: 600;
+                font-size: 1.25rem;
+            }
+
+            .some-qna {
+                text-transform: capitalize;
+                margin: 1%;
+                color: rgba(1, 1, 1, 0.6);
+                font-size: 1rem;
+            }
+
+            .some-ans {
+                margin: 1%;
+                font-weight: 400;
+                font-size: .8rem;
+                margin-bottom: 1.75%;
+            }
+
+            .sml-txt-b {
+                margin: 1.25% 1%;
+                font-weight: 600;
+                font-size: .75rem;
+            }
+
+            .sml-txt {
+                margin: 1%;
+                font-weight: 400;
+                font-size: .75rem;
+            }
+
+            .pill-list {
+                display: flex;
+                margin: 1.25%;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .pill {
+                margin: 1%;
+                margin-right: 1.5%;
+                background: rgba(30, 30, 30, 0.1);
+                border-radius: 15px;
+                padding: 10px;
+                font-weight: 600;
+                font-size: .7rem;
+            }
+
+            .links-list {
+                display: flex;
+                flex-direction: column;
+                margin: 1.25%;
+            }
+
+            .social-links {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin: 1.75% 1%;
+                font-weight: 400;
+                font-size: .75rem;
+            }
+
+            .b-txt {
+                font-weight: 600;
+            }
+
+            .res-btn-div {
+                margin: 1%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .res-btn-div button {
+                width: 40%;
+                text-transform: capitalize;
+                background: linear-gradient(180deg, #8A1A85 0%, #E00B59 100%);
+                border: transparent;
+                border-radius: 10px;
+                color: #FFFFFF;
+                font-weight: 600;
+                font-size: .75rem;
+                padding: 8px 16px;
+            }
+
+            .res-btn-div i,
+            .send-btn * {
+                color: #FFFFFF;
+            }
+
+            .input-box {
+                margin: 1%;
+                width: 100%;
+                min-height: 70px;
+                max-height: min-content;
+                position: relative;
+                border: 1px solid #d9d9d9;
+                background: #D9D9D9;
+                color: #000000;
+                padding: 2%;
+                font-weight: 600;
+                font-size: .7rem;
+            }
+
+            .input-box[contenteditable=true]:empty::before {
+                content: attr(data-placeholder);
+            }
+
+            .input-box:focus {
+                outline: none;
+            }
+
+            .send-btn {
+                position: absolute;
+                bottom: .75%;
+                right: 7%;
+                background: linear-gradient(180deg, #8A1A85 0%, #E00B59 100%);
+                border: transparent;
+                border-radius: 10px;
+                padding: 4px 8px;
+                color: #FFFFFF;
+                font-weight: 600;
+                font-size: .7rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="outer-box">
+                <div class="content">
+                    <div class="inner-block">
+                        <div class="basic-div">
+                            <div class="inner-div">
+                                <div class="user-pp">
+                                    <img src="https://i.pravatar.cc/500" alt="User Profile Photo">
+                                </div>
+                                <i style="font-size: larger;color: #0282D9;margin-top: -12px;margin-left: 50px;"
+                                    class="fa fa-check-circle"></i>
+                                <div class="user-basic">
+                                    <div class="user-info">
+                                        <div class="user-name">aman amit</div>
+                                        <div class="user-surname"> jain</div>
+                                        <div class="user-role"> (UX Designer)</div>
+                                    </div>
+                                    <div class="user-social">
+                                        <a href="#"><i class="fa fa-instagram"></i></a> |
+                                        <a href="#"><i class="fa fa-github"></i></a> |
+                                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width: 100%;height: 100px;">
+                                <img src="https://ewr1.vultrobjects.com/cdn-sei/original/52ef8be5-9b69-4bb0-9cae-0938083901d4.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="address-div">
+                            <ul>
+                                <li class="timeline">
+                                    <span class="address">
+                                        <span class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                        Works at &nbsp;<a href="#">cafe coffee day</a>
+                                    </span>
+                                </li>
+                                <li class="timeline">
+                                    <span class="address">
+                                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                        Lives at &nbsp;<a href="#">rohini, new delhi</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="work-at-box">
+                            <div class="work-head">
+                                <div class="polygon">Works at</div>
+                                <div class="get-profile-btn">
+                                    <a href="#">Get to profile
+                                        <sup><i class="fa fa-link" style="transform: rotate(90deg);"></i></sup>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work-about">
+                                <div class="">
+                                    <div class="company-name">cafe coffee day</div>
+                                    <div class="company-location">kota</div>
+                                    <div class="company-category">(food services)</div>
+                                </div>
+                                <div class="company-logo">
+                                    <img src="https://i.pravatar.cc/500" alt=""
+                                        style="float: right;border-radius: 50%;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extra-info">
+                            <div class="some-heading">quick information <i class="fa fa-info-circle"></i></div>
+                            <ul>
+                                <li class="qi-timeline">
+                                    <div class="some-qna">expertise</div>
+                                    <div class="some-ans">Creating UI design for Apps and Websites</div>
+                                </li>
+                                <li class="qi-timeline">
+                                    <div class="some-qna">language known</div>
+                                    <div class="some-ans">English, Hindi, Punjabi</div>
+                                </li>
+                                <li class="qi-timeline">
+                                    <div class="some-qna">known for</div>
+                                    <div class="some-ans">Best Intern😎</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="extra-info skills-box">
+                            <div class="some-heading">skills</div>
+                            <div class="pill-list">
+                                <!-- Loop Code Starts Here -->
+                                <span class="pill">#creative</span>
+                                <!-- Loop Code Ends Here -->
+                                <span class="pill">#UI/UX</span>
+                                <span class="pill">#Adobe</span>
+                                <span class="pill">#Interface</span>
+                                <span class="pill">#Prototype</span>
+                                <span class="pill">#UXdesigner</span>
+                            </div>
+                        </div>
+                        <div class="extra-info">
+                            <div class="some-heading">about</div>
+                            <div class="sml-txt-b">Ux Designer at Smart E Invites currently working on the live
+                                projects.pursuing my professional certification course from GOOGLE.</div>
+                        </div>
+                        <div class="extra-info">
+                            <div class="some-heading">projects</div>
+                            <div class="links-list">
+                                <!-- Loop Code Starts Here -->
+                                <span class="social-links">
+                                    <span class="icon"><i class="fa fa-behance"></i></span> name/behance.com
+                                </span>
+                                <!-- Loop Code Ends Here -->
+                                <span class="social-links">
+                                    <span class="icon"><i class="fa fa-discord"></i></span> name/discord.com
+                                </span>
+                                <span class="social-links">
+                                    <span class="icon"><i class="fa fa-github"></i></span> name/github.com
+                                </span>
+                                <span class="social-links">
+                                    <span class="icon"><i class="fa fa-reddit"></i></span> name/reddit.com
+                                </span>
+                            </div>
+                            <div class="sml-heading">resume</div>
+                            <div class="res-btn-div">
+                                <button><i class="fa fa-download"></i> download</button>
+                                <button><i class="fa fa-eye"></i> view</button>
+                            </div>
+                        </div>
+                        <div class="extra-info">
+                            <div class="sml-heading">reach out</div>
+                            <div class="links-list">
+                                <!-- Loop Code Starts Here -->
+                                <span class="social-links b-txt">
+                                    <span class="icon"><i class="fa fa-envelope"></i></span> Email
+                                </span>
+                                <!-- Loop Code Ends Here -->
+                                <span class="social-links b-txt">
+                                    <span class="icon"><i class="fa fa-facebook"></i></span> Facebook
+                                </span>
+                                <span class="social-links b-txt">
+                                    <span class="icon"><i class="fa fa-instagram"></i></span> Instagram
+                                </span>
+                                <span class="social-links b-txt">
+                                    <span class="icon"><i class="fa fa-phone"></i></span> Phone
+                                </span>
+                            </div>
+                            <!-- <div class="sml-heading">any queries?</div>
+                            <div class="some-ans">
+                                <form action="#" method="post">
+                                    <textarea name="" id="query" readonly style="display: none;"></textarea>
+                                    <div contenteditable="true" id="queryDummy" class="input-box" role="textbox"
+                                        data-placeholder="Write down here."></div>
+                                    <button class="send-btn"><i class="fa fa-send"></i> Send</button>
+                                </form>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#queryDummy").keyup(function () {
+                let input = $(this).text();
+                $("#query").val(input);
+            });
+        });
+    </script>
+
+</html>
