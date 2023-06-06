@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Josefin+Sans&family=Inter&display=swap"
             rel="stylesheet">
-        <title>Id Card 1</title>
+        <title>Id Card 2</title>
         <style>
             /* Common Css Start Here */
             * {
@@ -37,7 +37,7 @@
                 justify-content: center;
                 align-content: center;
             }
-            
+
             .outer-box {
                 position: relative;
                 width: 100%;
@@ -82,7 +82,7 @@
             /* Commom Css Ends Here */
 
             :root {
-                --background-color: #FFFFFF;
+                --background-color: #FFF2EC;
                 --primary-color: #000000;
                 --secondary-color: #FDC30E;
                 --font-family: "Outfit";
@@ -106,8 +106,8 @@
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                background: linear-gradient(132.95deg, #6F2FF7 2.2%, #CE2E69 92.36%);
-                clip-path: circle(85% at 50% 0);
+                background: url(https://ewr1.vultrobjects.com/cdn-sei/original/f589035f-eff8-4993-afeb-a73a3137e37e.png) 0;
+                background-size: 100% 100%;
             }
 
             .inner-div {
@@ -116,12 +116,14 @@
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-                align-items: flex-end;
+                align-items: flex-start;
             }
 
             .user-pp {
                 width: 30%;
                 /* margin-left: 50%; */
+                padding: 3px;
+                border: 5px solid #DD571C;
             }
 
             .user-pp,
@@ -131,10 +133,9 @@
 
             .user-basic {
                 width: 100%;
-                margin-top: -5%;
                 margin-bottom: 20%;
                 display: flex;
-                align-items: flex-end;
+                align-items: flex-start;
                 justify-content: space-between;
                 flex-direction: row;
             }
@@ -147,7 +148,7 @@
             .user-name {
                 font-weight: 600;
                 font-size: 2rem;
-                color: rgba(255, 255, 255, 1);
+                color: #FFFFFF;
             }
 
             .user-surname {
@@ -159,11 +160,12 @@
             .user-role {
                 font-weight: 600;
                 font-size: .75rem;
-                color: rgba(255, 255, 255, 1);
+                color: #FFFFFF;
             }
 
             .user-social {
                 width: 25%;
+                margin-top: -5%;
                 color: #FFFFFF;
                 display: flex;
                 flex-direction: row;
@@ -206,7 +208,8 @@
                 align-items: center;
                 width: 30px;
                 height: 30px;
-                background: #CB2E6E;
+                background: #DD571C;
+                ;
                 border-radius: 10px;
                 text-align: center;
                 color: #FFFFFF;
@@ -230,7 +233,7 @@
                 /* aspect-ratio: 2/1; */
                 display: flex;
                 flex-direction: column;
-                background: linear-gradient(108.42deg, rgba(111, 47, 247, 0.5) 0.94%, rgba(224, 11, 89, 0.5) 100%);
+                background: linear-gradient(108.42deg, rgba(241, 61, 62, 0.5) 0.94%, rgba(230, 35, 53, 0.5) 100%);
                 border-radius: 15px;
             }
 
@@ -251,7 +254,7 @@
                 color: #FFFFFF;
                 -webkit-clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
                 clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
-                background: linear-gradient(96.12deg, #AE3DAE 0.92%, #EA3751 100%);
+                background: linear-gradient(96.12deg, #F13D3E 0.92%, #E62335 100%);
             }
 
             .get-profile-btn {
@@ -283,7 +286,7 @@
                 text-transform: capitalize;
                 font-weight: 600;
                 font-size: 2rem;
-                color: rgba(0, 0, 0, 0.6);
+                color: #000000;
             }
 
             .company-location {
@@ -297,7 +300,7 @@
                 text-transform: capitalize;
                 font-weight: 600;
                 font-size: .75rem;
-                color: rgba(0, 0, 0, 0.6);
+                color: #000000;
             }
 
             .company-logo {
@@ -384,8 +387,18 @@
                 font-weight: 600;
             }
 
+            /* .projects-box {
+                color: #ffffff;
+            } */
+
             .social-links i {
                 width: 8%;
+            }
+
+            .resume {
+                padding: 2.5% 5%;
+                /* color: #FFFFFF; */
+                /* background: #000000; */
             }
 
             .res-btn-div {
@@ -399,7 +412,7 @@
             .res-btn-div button {
                 width: 40%;
                 text-transform: capitalize;
-                background: #CB2E6E;
+                background: #DD571C;
                 border: transparent;
                 border-radius: 10px;
                 color: #FFFFFF;
@@ -410,6 +423,13 @@
 
             .res-btn-div i,
             .send-btn * {
+                color: #FFFFFF;
+            }
+
+            .qc-box {
+                width: 100%;
+                background: url(https://ewr1.vultrobjects.com/cdn-sei/original/ae8b0935-66b0-49bc-bac1-3607a5060e60.png) no-repeat 0 0;
+                background-size: 100% 100%;
                 color: #FFFFFF;
             }
 
@@ -439,7 +459,7 @@
                 position: absolute;
                 bottom: .75%;
                 right: 7%;
-                background: #CB2E6E;
+                background: #DD571C;
                 border: transparent;
                 border-radius: 10px;
                 padding: 4px 8px;
@@ -507,12 +527,14 @@
                         </div>
                         <div class="extra-info">
                             <div class="some-heading">quick information <i class="fa fa-info-circle"></i></div>
-                            <div class="some-qna">expertise</div>
-                            <div class="some-ans">Creating UI design for Apps and Websites</div>
-                            <div class="some-qna">language known</div>
-                            <div class="some-ans">English, Hindi, Punjabi</div>
-                            <div class="some-qna">known for</div>
-                            <div class="some-ans">Best Intern😎</div>
+                            <div class="some-qna">past role</div>
+                            <div class="some-ans">was an UX designer at CrowdOverflow</div>
+                            <div class="some-qna">past experience</div>
+                            <div class="some-ans">2 year experience as UX designer</div>
+                            <div class="some-qna">One word that describes you</div>
+                            <div class="some-ans">Quick learner</div>
+                        </div>
+                        <div class="extra-info skills-box">
                             <div class="some-heading">skills</div>
                             <div class="pill-list">
                                 <!-- Loop Code Starts Here -->
@@ -524,41 +546,55 @@
                                 <span class="pill">#Prototype</span>
                                 <span class="pill">#UXdesigner</span>
                             </div>
+                        </div>
+                        <div class="extra-info about-box">
                             <div class="some-heading">about</div>
                             <div class="sml-txt-b">Ux Designer at Smart E Invites currently working on the live
                                 projects.pursuing my professional certification course from GOOGLE.</div>
-                            <div class="some-heading">projects</div>
-                            <div class="links-list">
-                                <!-- Loop Code Starts Here -->
-                                <span class="social-links"><i class="fa fa-behance"></i> name/behance.com</span>
-                                <!-- Loop Code Ends Here -->
-                                <span class="social-links"><i class="fa fa-discord"></i> name/discord.com</span>
-                                <span class="social-links"><i class="fa fa-github"></i> name/github.com</span>
-                                <span class="social-links"><i class="fa fa-reddit"></i> name/reddit.com</span>
+                        </div>
+                        <div class="extra-info projects-box" style="width: 100%;">
+                            <div style="padding: 2.5% 5%;">
+                                <div class="some-heading">projects</div>
+                                <div class="links-list">
+                                    <!-- Loop Code Starts Here -->
+                                    <span class="social-links"><i class="fa fa-behance"></i> name/behance.com</span>
+                                    <!-- Loop Code Ends Here -->
+                                    <span class="social-links"><i class="fa fa-discord"></i> name/discord.com</span>
+                                    <span class="social-links"><i class="fa fa-github"></i> name/github.com</span>
+                                    <span class="social-links"><i class="fa fa-reddit"></i> name/reddit.com</span>
+                                </div>
                             </div>
-                            <div class="sml-heading">resume</div>
-                            <div class="res-btn-div">
-                                <button><i class="fa fa-download"></i> download</button>
-                                <button><i class="fa fa-eye"></i> view</button>
+                        </div>
+                        <div class="extra-info qc-box">
+                            <div class="resume">
+                                <div class="sml-heading">resume</div>
+                                <div class="res-btn-div">
+                                    <button><i class="fa fa-download"></i> download</button>
+                                    <button><i class="fa fa-eye"></i> view</button>
+                                </div>
                             </div>
-                            <div class="sml-heading">reach out</div>
-                            <div class="links-list">
-                                <!-- Loop Code Starts Here -->
-                                <span class="social-links b-txt"><i class="fa fa-envelope"></i> Email</span>
-                                <!-- Loop Code Ends Here -->
-                                <span class="social-links b-txt"><i class="fa fa-facebook"></i> Facebook</span>
-                                <span class="social-links b-txt"><i class="fa fa-instagram"></i> Instagram</span>
-                                <span class="social-links b-txt"><i class="fa fa-phone"></i> Phone</span>
+                            <div class="" style="margin: 2.5% 5%;">
+                                <div class="sml-heading">reach out</div>
+                                <div class="links-list">
+                                    <!-- Loop Code Starts Here -->
+                                    <span class="social-links b-txt"><i class="fa fa-envelope"></i> Email</span>
+                                    <!-- Loop Code Ends Here -->
+                                    <span class="social-links b-txt"><i class="fa fa-facebook"></i> Facebook</span>
+                                    <span class="social-links b-txt"><i class="fa fa-instagram"></i> Instagram</span>
+                                    <span class="social-links b-txt"><i class="fa fa-phone"></i> Phone</span>
+                                </div>
                             </div>
-                            <div class="sml-heading">any queries?</div>
-                            <div class="some-ans">
-                                <form action="#" method="post">
-                                    <textarea name="" id="query" readonly style="display: none;"></textarea>
-                                    <div contenteditable="true" id="queryDummy" class="input-box" role="textbox"
-                                        data-placeholder="Write down here."></div>
-                                    <button class="send-btn"><i class="fa fa-send"></i> Send</button>
-                                </form>
-                            </div>
+                            <!-- <div class="query-box" style="margin: 0 5%;">
+                                <div class="sml-heading">any queries?</div>
+                                <div class="some-ans">
+                                    <form action="#" method="post">
+                                        <textarea name="" id="query" readonly style="display: none;"></textarea>
+                                        <div contenteditable="true" id="queryDummy" class="input-box" role="textbox"
+                                            data-placeholder="Write down here."></div>
+                                        <button class="send-btn"><i class="fa fa-send"></i> Send</button>
+                                    </form>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
