@@ -10,9 +10,10 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Josefin+Sans&family=Inter&display=swap"
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit&family=Josefin+Sans&family=Inter&family=Nunito+Sans&display=swap"
             rel="stylesheet">
-        <title>Id Card 3</title>
+        <title>Id Card 4</title>
         <style>
             /* Common Css Start Here */
             * {
@@ -82,14 +83,15 @@
             /* Commom Css Ends Here */
 
             :root {
-                --background-color: #FFFFFF;
-                --primary-color: #000000;
+                --background-color: #000000;
+                --primary-color: #ffffff;
                 --secondary-color: #FDC30E;
-                --font-family: "Outfit";
+                --font-family: "Josefin Sans";
             }
 
             .content {
                 width: 100%;
+                color: #ffffff;
             }
 
             .inner-block {
@@ -116,30 +118,22 @@
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-                align-items: center;
+                align-items: flex-start;
             }
 
             .user-pp {
-                width: 30%;
-                padding: 3px;
-                background: linear-gradient(180deg, #871B87 0%, #DF0C5A 100%);
-                padding-bottom: 0;
-            }
-
-            .user-pp img {
-                border: 3px solid #FFFFFF;
+                width: 50%;
             }
 
             .user-pp,
             .user-pp img {
-                border-radius: 50%;
+                border-radius: 35px;
             }
 
             .user-basic {
                 width: 100%;
-                /* margin-bottom: 20%; */
+                margin-bottom: 10%;
                 display: flex;
-                align-items: flex-end;
                 justify-content: space-between;
                 flex-direction: row;
             }
@@ -151,44 +145,50 @@
 
             .user-name {
                 font-weight: 600;
-                font-size: 2rem;
-                color: #010101;
+                font-size: 1.9rem;
+                color: #ffffff;
+                padding: 1%;
             }
 
             .user-surname {
                 font-weight: 600;
                 font-size: 1.75rem;
-                color: #8B8882;
+                color: rgba(255, 255, 255, 0.31);
+                padding: 1%;
             }
 
             .user-role {
                 font-weight: 600;
                 font-size: .75rem;
-                color: #000000;
+                color: #ffffff;
+                padding: 1%;
             }
 
             .user-social {
                 width: 25%;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 flex-wrap: wrap;
                 align-content: center;
                 justify-content: space-evenly;
                 align-items: center;
-                color: #000000;
+                color: #ffffff;
             }
 
             .user-social a {
+                font-size: x-large;
                 color: inherit;
                 text-decoration: none;
             }
 
             .address-div {
-                width: 90%;
+                width: 98%;
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 5%;
-                background: #FFFFFF;
+                background: rgba(222, 224, 228, 0.1);
+                border-radius: 50px;
+                padding: 5%;
             }
 
             .address {
@@ -200,66 +200,12 @@
                 margin-bottom: 2%;
             }
 
-            .timeline {
-                position: relative;
-                list-style: none;
-                padding-left: 20px;
-                padding-bottom: 1px;
-            }
-
-            .timeline::before {
-                width: 3px;
-                content: "";
-                background: #D1D0D0;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 6px;
-            }
-
-            .timeline::after {
-                content: "";
-                position: absolute;
-                top: 25%;
-                left: 1px;
-                width: 5px;
-                height: 5px;
-                background: #FFFFFF;
-                border: 3px solid #000000;
-                border-radius: 50%;
-                padding: 2px;
-            }
-
-            .timeline:first-child::before {
-                top: 15px;
-            }
-
-            .timeline:first-child::after {
-                top: 0;
-            }
-
-            .timeline:last-child {
-                padding-bottom: 0;
-            }
-
-            .timeline:last-child::before {
-                bottom: 19px;
-            }
-
-            .timeline:last-child::after {
-                background: #A39D93;
-                border: 3px solid #D1D0D0;
-                top: 50%;
-                bottom: 0;
-            }
-
             .icon {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 30px;
                 height: 30px;
-                background: linear-gradient(180deg, #8A1A85 0%, #E00B59 100%);
                 border-radius: 10px;
                 text-align: center;
                 color: #FFFFFF;
@@ -271,6 +217,7 @@
             }
 
             .address a {
+                font-family: 'Nunito Sans';
                 text-transform: capitalize;
                 color: rgba(2, 130, 217, 1);
                 text-decoration: none;
@@ -283,7 +230,7 @@
                 /* aspect-ratio: 2/1; */
                 display: flex;
                 flex-direction: column;
-                background: linear-gradient(108.42deg, rgba(111, 47, 247, 0.5) 0.94%, rgba(224, 11, 89, 0.5) 100%);
+                background: linear-gradient(108.42deg, rgba(39, 138, 204, 0.5) 0.94%, rgba(0, 98, 224, 0.5) 100%);
                 border-radius: 15px;
             }
 
@@ -297,29 +244,31 @@
             }
 
             .polygon {
-                width: 35%;
+                width: 40%;
                 padding: 2%;
                 padding-left: 5%;
                 text-transform: capitalize;
                 color: #FFFFFF;
                 -webkit-clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
                 clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
-                background: linear-gradient(96.12deg, #AE3DAE 0.92%, #EA3751 100%);
+                background: linear-gradient(96.12deg, #19AFFF 0.92%, #0062E0 100%);
+                font-family: 'Outfit';
             }
 
             .get-profile-btn {
+                font-family: 'Outfit';
                 margin-right: 2%;
-                width: 35%;
-                border: 3px solid #071532;
+                width: 40%;
+                border: 3px solid #ffffff;
                 border-radius: 20px;
                 padding: 4px 8px;
                 font-weight: 600;
                 font-size: .7rem;
-                color: #071532;
+                color: #ffffff;
             }
 
             .get-profile-btn a {
-                color: #071532;
+                color: #ffffff;
             }
 
             .work-about {
@@ -333,24 +282,27 @@
             }
 
             .company-name {
-                text-transform: capitalize;
-                font-weight: 600;
-                font-size: 2rem;
-                color: rgba(0, 0, 0, 0.6);
-            }
-
-            .company-location {
+                font-family: 'Outfit';
                 text-transform: capitalize;
                 font-weight: 600;
                 font-size: 1.75rem;
-                color: rgba(1, 1, 1, 0.4);
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            .company-location {
+                font-family: 'Outfit';
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: 1.75rem;
+                color: rgba(255, 255, 255, 0.6);
             }
 
             .company-category {
+                font-family: 'Outfit';
                 text-transform: capitalize;
                 font-weight: 600;
                 font-size: .75rem;
-                color: rgba(0, 0, 0, 0.6);
+                color: rgba(255, 255, 255, 0.8);
             }
 
             .company-logo {
@@ -361,6 +313,7 @@
 
             .extra-info {
                 width: 90%;
+                margin-bottom: 2%;
             }
 
             .some-heading {
@@ -385,7 +338,7 @@
                 top: 0;
                 bottom: 0;
                 left: 6px;
-                background: rgba(1, 1, 1, 0.6);
+                background: #D1D0D0;
             }
 
             .qi-timeline::after {
@@ -395,7 +348,7 @@
                 left: 1px;
                 width: 5px;
                 height: 5px;
-                background: #000000;
+                background: #2D2D2D;
                 border: 3px solid #D9D9D9;
                 border-radius: 50%;
                 padding: 2px;
@@ -407,8 +360,8 @@
 
             .qi-timeline:first-child::after {
                 top: 0;
-                background: #FFFFFF;
-                border: 3px solid #DC0B5B;
+                background: #2D2D2D;
+                border: 3px solid #19AFFF;
             }
 
             .qi-timeline:last-child {
@@ -420,7 +373,7 @@
             }
 
             .qi-timeline:last-child::after {
-                background: #DC0B5B;
+                background: #19AFFF;
                 border: 3px solid #D9D9D9;
                 top: 70%;
                 bottom: 0;
@@ -436,7 +389,7 @@
             .some-qna {
                 text-transform: capitalize;
                 margin: 1%;
-                color: rgba(1, 1, 1, 0.6);
+                color: #6F737C;
                 font-size: 1rem;
             }
 
@@ -469,7 +422,7 @@
             .pill {
                 margin: 1%;
                 margin-right: 1.5%;
-                background: rgba(30, 30, 30, 0.1);
+                background: #242323;
                 border-radius: 15px;
                 padding: 10px;
                 font-weight: 600;
@@ -495,6 +448,10 @@
                 font-weight: 600;
             }
 
+            .social-links i {
+                width: 8%;
+            }
+
             .res-btn-div {
                 margin: 1%;
                 display: flex;
@@ -506,7 +463,7 @@
             .res-btn-div button {
                 width: 40%;
                 text-transform: capitalize;
-                background: linear-gradient(180deg, #8A1A85 0%, #E00B59 100%);
+                background: #242323;
                 border: transparent;
                 border-radius: 10px;
                 color: #FFFFFF;
@@ -526,10 +483,11 @@
                 min-height: 70px;
                 max-height: min-content;
                 position: relative;
-                border: 1px solid #d9d9d9;
-                background: #D9D9D9;
-                color: #000000;
-                padding: 2%;
+                /* border: 1px solid #d9d9d9; */
+                background: #242323;
+                border-radius: 20px;
+                color: #ffffff;
+                padding: 3%;
                 font-weight: 600;
                 font-size: .7rem;
             }
@@ -544,9 +502,9 @@
 
             .send-btn {
                 position: absolute;
-                bottom: .75%;
+                bottom: 1.2%;
                 right: 7%;
-                background: linear-gradient(180deg, #8A1A85 0%, #E00B59 100%);
+                background: #19AFFF;
                 border: transparent;
                 border-radius: 10px;
                 padding: 4px 8px;
@@ -564,44 +522,32 @@
                     <div class="inner-block">
                         <div class="basic-div">
                             <div class="inner-div">
-                                <div class="user-pp">
-                                    <img src="https://i.pravatar.cc/500" alt="User Profile Photo">
-                                </div>
-                                <i style="font-size: larger;color: #0282D9;margin-top: -12px;margin-left: 50px;"
-                                    class="fa fa-check-circle"></i>
                                 <div class="user-basic">
-                                    <div class="user-info">
-                                        <div class="user-name">aman amit</div>
-                                        <div class="user-surname"> jain</div>
-                                        <div class="user-role"> (UX Designer)</div>
+                                    <div class="user-pp">
+                                        <img src="https://i.pravatar.cc/500" alt="User Profile Photo">
                                     </div>
                                     <div class="user-social">
-                                        <a href="#"><i class="fa fa-instagram"></i></a> |
-                                        <a href="#"><i class="fa fa-github"></i></a> |
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                        <a href="#"><i class="fa fa-github"></i></a>
                                         <a href="#"><i class="fa fa-facebook-f"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div style="width: 100%;height: 100px;">
-                                <img src="https://ewr1.vultrobjects.com/cdn-sei/original/52ef8be5-9b69-4bb0-9cae-0938083901d4.png"
-                                    alt="">
-                            </div>
                         </div>
                         <div class="address-div">
-                            <ul>
-                                <li class="timeline">
-                                    <span class="address">
-                                        <span class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-                                        Works at &nbsp;<a href="#">cafe coffee day</a>
-                                    </span>
-                                </li>
-                                <li class="timeline">
-                                    <span class="address">
-                                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                                        Lives at &nbsp;<a href="#">rohini, new delhi</a>
-                                    </span>
-                                </li>
-                            </ul>
+                            <div class="user-info">
+                                <div class="user-name">aman amit</div>
+                                <div class="user-surname"> jain</div>
+                                <div class="user-role"> (UX Designer)</div>
+                            </div>
+                            <span class="address">
+                                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                <a href="#">rohini, new delhi</a>
+                            </span>
+                            <span class="address">
+                                <span class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                <a href="#">cafe coffee day</a>
+                            </span>
                         </div>
                         <div class="work-at-box">
                             <div class="work-head">
@@ -654,12 +600,13 @@
                                 <span class="pill">#UXdesigner</span>
                             </div>
                         </div>
-                        <div class="extra-info">
+                        <div class="extra-info"
+                            style="background: no-repeat linear-gradient(0deg, rgba(2, 130, 217, 0.8), rgba(2, 130, 217, 0.8)), url(https://i.pravatar.cc/500) center;background-size: cover;border-radius: 35px;padding: 5%;color: #000000;">
                             <div class="some-heading">about</div>
                             <div class="sml-txt-b">Ux Designer at Smart E Invites currently working on the live
                                 projects.pursuing my professional certification course from GOOGLE.</div>
                         </div>
-                        <div class="extra-info">
+                        <div class="extra-info" style="background: #242323;border-radius: 35px;padding: 5%;">
                             <div class="some-heading">projects</div>
                             <div class="links-list">
                                 <!-- Loop Code Starts Here -->
@@ -685,22 +632,23 @@
                                 <button><i class="fa fa-eye"></i> view</button>
                             </div>
                         </div>
-                        <div class="extra-info">
+                        <div class="extra-info"
+                            style="background: no-repeat linear-gradient(0deg, rgba(2, 130, 217, 0.8), rgba(2, 130, 217, 0.8)), url(https://i.pravatar.cc/500) center;background-size: cover;border-radius: 35px;padding: 5%;color: #000000;">
                             <div class="sml-heading">reach out</div>
                             <div class="links-list">
                                 <!-- Loop Code Starts Here -->
                                 <span class="social-links b-txt">
-                                    <span class="icon"><i class="fa fa-envelope"></i></span> Email
+                                    <i class="fa fa-envelope"></i> Email
                                 </span>
                                 <!-- Loop Code Ends Here -->
                                 <span class="social-links b-txt">
-                                    <span class="icon"><i class="fa fa-facebook"></i></span> Facebook
+                                    <i class="fa fa-facebook"></i> Facebook
                                 </span>
                                 <span class="social-links b-txt">
-                                    <span class="icon"><i class="fa fa-instagram"></i></span> Instagram
+                                    <i class="fa fa-instagram"></i> Instagram
                                 </span>
                                 <span class="social-links b-txt">
-                                    <span class="icon"><i class="fa fa-phone"></i></span> Phone
+                                    <i class="fa fa-phone"></i> Phone
                                 </span>
                             </div>
                         </div>
@@ -718,7 +666,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         </div>
     </body>

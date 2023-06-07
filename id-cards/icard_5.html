@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Josefin+Sans&family=Inter&display=swap"
             rel="stylesheet">
-        <title>Id Card 3</title>
+        <title>Id Card 5</title>
         <style>
             /* Common Css Start Here */
             * {
@@ -85,7 +85,7 @@
                 --background-color: #FFFFFF;
                 --primary-color: #000000;
                 --secondary-color: #FDC30E;
-                --font-family: "Outfit";
+                --font-family: "Josefin Sans";
             }
 
             .content {
@@ -105,81 +105,78 @@
             .basic-div {
                 width: 100%;
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
-                align-items: center;
             }
 
             .inner-div {
-                width: 90%;
-                margin-top: 3%;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-                align-items: center;
+                align-items: flex-end;
             }
 
             .user-pp {
-                width: 30%;
-                padding: 3px;
-                background: linear-gradient(180deg, #871B87 0%, #DF0C5A 100%);
-                padding-bottom: 0;
-            }
-
-            .user-pp img {
-                border: 3px solid #FFFFFF;
-            }
-
-            .user-pp,
-            .user-pp img {
-                border-radius: 50%;
+                width: 100%;
+                /* margin-left: 50%; */
             }
 
             .user-basic {
+                margin-top: -15%;
                 width: 100%;
-                /* margin-bottom: 20%; */
                 display: flex;
-                align-items: flex-end;
+                flex-direction: column;
+                align-items: center;
                 justify-content: space-between;
-                flex-direction: row;
+                border-radius: 50px 50px 0 0;
+                background: #FFFFFF;
+                padding: 5%;
             }
 
             .user-info {
-                width: 70%;
+                width: 100%;
                 text-transform: capitalize;
+                padding: 5%;
+                box-shadow: 0px 8px 15px 2px rgba(0, 0, 0, 0.35);
+                border-radius: 25px;
             }
 
             .user-name {
                 font-weight: 600;
                 font-size: 2rem;
-                color: #010101;
+                color: #071532;
             }
 
             .user-surname {
                 font-weight: 600;
                 font-size: 1.75rem;
-                color: #8B8882;
+                color: rgba(0, 0, 0, 0.4);
             }
 
             .user-role {
                 font-weight: 600;
                 font-size: .75rem;
-                color: #000000;
+                color: #071532;
             }
 
             .user-social {
-                width: 25%;
+                margin-top: -5%;
+                width: 50%;
+                color: #FFFFFF;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 align-content: center;
                 justify-content: space-evenly;
                 align-items: center;
-                color: #000000;
+                background: #071532;
+                border-radius: 10px;
+                padding: 3%;
+                font-size: large;
             }
 
             .user-social a {
-                color: inherit;
+                color: #FFFFFF !important;
                 text-decoration: none;
             }
 
@@ -187,8 +184,11 @@
                 width: 90%;
                 display: flex;
                 flex-direction: column;
+                padding: 5%;
                 margin-bottom: 5%;
                 background: #FFFFFF;
+                border-radius: 15px;
+                z-index: 1;
             }
 
             .address {
@@ -205,52 +205,17 @@
                 list-style: none;
                 padding-left: 20px;
                 padding-bottom: 1px;
+                padding-top: 2px;
             }
 
             .timeline::before {
                 width: 3px;
                 content: "";
-                background: #D1D0D0;
+                background: #000000;
                 position: absolute;
                 top: 0;
                 bottom: 0;
                 left: 6px;
-            }
-
-            .timeline::after {
-                content: "";
-                position: absolute;
-                top: 25%;
-                left: 1px;
-                width: 5px;
-                height: 5px;
-                background: #FFFFFF;
-                border: 3px solid #000000;
-                border-radius: 50%;
-                padding: 2px;
-            }
-
-            .timeline:first-child::before {
-                top: 15px;
-            }
-
-            .timeline:first-child::after {
-                top: 0;
-            }
-
-            .timeline:last-child {
-                padding-bottom: 0;
-            }
-
-            .timeline:last-child::before {
-                bottom: 19px;
-            }
-
-            .timeline:last-child::after {
-                background: #A39D93;
-                border: 3px solid #D1D0D0;
-                top: 50%;
-                bottom: 0;
             }
 
             .icon {
@@ -259,7 +224,7 @@
                 align-items: center;
                 width: 30px;
                 height: 30px;
-                background: linear-gradient(180deg, #8A1A85 0%, #E00B59 100%);
+                background: #071532;
                 border-radius: 10px;
                 text-align: center;
                 color: #FFFFFF;
@@ -283,7 +248,7 @@
                 /* aspect-ratio: 2/1; */
                 display: flex;
                 flex-direction: column;
-                background: linear-gradient(108.42deg, rgba(111, 47, 247, 0.5) 0.94%, rgba(224, 11, 89, 0.5) 100%);
+                background: rgba(7, 21, 50, 0.9);
                 border-radius: 15px;
             }
 
@@ -297,29 +262,31 @@
             }
 
             .polygon {
-                width: 35%;
+                font-family: "Outfit";
+                width: 40%;
                 padding: 2%;
                 padding-left: 5%;
                 text-transform: capitalize;
                 color: #FFFFFF;
                 -webkit-clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
                 clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
-                background: linear-gradient(96.12deg, #AE3DAE 0.92%, #EA3751 100%);
+                background: linear-gradient(276.76deg, #6F2FF7 0%, #B23BA6 100%);
             }
 
             .get-profile-btn {
+                font-family: "Outfit";
                 margin-right: 2%;
-                width: 35%;
-                border: 3px solid #071532;
+                width: 40%;
+                border: 3px solid #FFFFFF;
                 border-radius: 20px;
                 padding: 4px 8px;
                 font-weight: 600;
                 font-size: .7rem;
-                color: #071532;
+                color: #FFFFFF;
             }
 
             .get-profile-btn a {
-                color: #071532;
+                color: #FFFFFF;
             }
 
             .work-about {
@@ -335,22 +302,22 @@
             .company-name {
                 text-transform: capitalize;
                 font-weight: 600;
-                font-size: 2rem;
-                color: rgba(0, 0, 0, 0.6);
+                font-size: 1.9rem;
+                color: rgba(255, 255, 255, 0.6);
             }
 
             .company-location {
                 text-transform: capitalize;
                 font-weight: 600;
                 font-size: 1.75rem;
-                color: rgba(1, 1, 1, 0.4);
+                color: rgba(255, 255, 255, 0.4);
             }
 
             .company-category {
                 text-transform: capitalize;
                 font-weight: 600;
                 font-size: .75rem;
-                color: rgba(0, 0, 0, 0.6);
+                color: rgba(255, 255, 255, 0.6);
             }
 
             .company-logo {
@@ -368,62 +335,6 @@
                 margin: 2.5% 1%;
                 font-weight: 600;
                 font-size: 1.5rem;
-            }
-
-            .qi-timeline {
-                position: relative;
-                list-style: none;
-                padding-left: 20px;
-                padding-bottom: 1px;
-                padding-top: 2px;
-            }
-
-            .qi-timeline::before {
-                position: absolute;
-                content: "";
-                width: 3px;
-                top: 0;
-                bottom: 0;
-                left: 6px;
-                background: rgba(1, 1, 1, 0.6);
-            }
-
-            .qi-timeline::after {
-                position: absolute;
-                content: "";
-                top: 25%;
-                left: 1px;
-                width: 5px;
-                height: 5px;
-                background: #000000;
-                border: 3px solid #D9D9D9;
-                border-radius: 50%;
-                padding: 2px;
-            }
-
-            .qi-timeline:first-child::before {
-                top: 19px;
-            }
-
-            .qi-timeline:first-child::after {
-                top: 0;
-                background: #FFFFFF;
-                border: 3px solid #DC0B5B;
-            }
-
-            .qi-timeline:last-child {
-                padding-bottom: 0;
-            }
-
-            .qi-timeline:last-child::before {
-                bottom: 19px;
-            }
-
-            .qi-timeline:last-child::after {
-                background: #DC0B5B;
-                border: 3px solid #D9D9D9;
-                top: 70%;
-                bottom: 0;
             }
 
             .sml-heading {
@@ -483,16 +394,18 @@
             }
 
             .social-links {
-                width: 100%;
-                display: flex;
-                align-items: center;
                 margin: 1.75% 1%;
+                width: 100%;
                 font-weight: 400;
                 font-size: .75rem;
             }
 
             .b-txt {
                 font-weight: 600;
+            }
+
+            .social-links i {
+                width: 8%;
             }
 
             .res-btn-div {
@@ -506,7 +419,7 @@
             .res-btn-div button {
                 width: 40%;
                 text-transform: capitalize;
-                background: linear-gradient(180deg, #8A1A85 0%, #E00B59 100%);
+                background: #071532;
                 border: transparent;
                 border-radius: 10px;
                 color: #FFFFFF;
@@ -532,6 +445,7 @@
                 padding: 2%;
                 font-weight: 600;
                 font-size: .7rem;
+                border-radius: 15px;
             }
 
             .input-box[contenteditable=true]:empty::before {
@@ -546,7 +460,7 @@
                 position: absolute;
                 bottom: .75%;
                 right: 7%;
-                background: linear-gradient(180deg, #8A1A85 0%, #E00B59 100%);
+                background: #071532;
                 border: transparent;
                 border-radius: 10px;
                 padding: 4px 8px;
@@ -567,8 +481,6 @@
                                 <div class="user-pp">
                                     <img src="https://i.pravatar.cc/500" alt="User Profile Photo">
                                 </div>
-                                <i style="font-size: larger;color: #0282D9;margin-top: -12px;margin-left: 50px;"
-                                    class="fa fa-check-circle"></i>
                                 <div class="user-basic">
                                     <div class="user-info">
                                         <div class="user-name">aman amit</div>
@@ -581,10 +493,6 @@
                                         <a href="#"><i class="fa fa-facebook-f"></i></a>
                                     </div>
                                 </div>
-                            </div>
-                            <div style="width: 100%;height: 100px;">
-                                <img src="https://ewr1.vultrobjects.com/cdn-sei/original/52ef8be5-9b69-4bb0-9cae-0938083901d4.png"
-                                    alt="">
                             </div>
                         </div>
                         <div class="address-div">
@@ -627,21 +535,21 @@
                         <div class="extra-info">
                             <div class="some-heading">quick information <i class="fa fa-info-circle"></i></div>
                             <ul>
-                                <li class="qi-timeline">
+                                <li class="timeline">
                                     <div class="some-qna">expertise</div>
                                     <div class="some-ans">Creating UI design for Apps and Websites</div>
                                 </li>
-                                <li class="qi-timeline">
+                                <li class="timeline">
                                     <div class="some-qna">language known</div>
                                     <div class="some-ans">English, Hindi, Punjabi</div>
                                 </li>
-                                <li class="qi-timeline">
+                                <li class="timeline">
                                     <div class="some-qna">known for</div>
                                     <div class="some-ans">Best Intern😎</div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="extra-info skills-box">
+                        <div class="extra-info">
                             <div class="some-heading">skills</div>
                             <div class="pill-list">
                                 <!-- Loop Code Starts Here -->
@@ -663,19 +571,11 @@
                             <div class="some-heading">projects</div>
                             <div class="links-list">
                                 <!-- Loop Code Starts Here -->
-                                <span class="social-links">
-                                    <span class="icon"><i class="fa fa-behance"></i></span> name/behance.com
-                                </span>
+                                <span class="social-links"><i class="fa fa-behance"></i> name/behance.com</span>
                                 <!-- Loop Code Ends Here -->
-                                <span class="social-links">
-                                    <span class="icon"><i class="fa fa-discord"></i></span> name/discord.com
-                                </span>
-                                <span class="social-links">
-                                    <span class="icon"><i class="fa fa-github"></i></span> name/github.com
-                                </span>
-                                <span class="social-links">
-                                    <span class="icon"><i class="fa fa-reddit"></i></span> name/reddit.com
-                                </span>
+                                <span class="social-links"><i class="fa fa-discord"></i> name/discord.com</span>
+                                <span class="social-links"><i class="fa fa-github"></i> name/github.com</span>
+                                <span class="social-links"><i class="fa fa-reddit"></i> name/reddit.com</span>
                             </div>
                         </div>
                         <div class="extra-info">
@@ -689,19 +589,11 @@
                             <div class="sml-heading">reach out</div>
                             <div class="links-list">
                                 <!-- Loop Code Starts Here -->
-                                <span class="social-links b-txt">
-                                    <span class="icon"><i class="fa fa-envelope"></i></span> Email
-                                </span>
+                                <span class="social-links b-txt"><i class="fa fa-envelope"></i> Email</span>
                                 <!-- Loop Code Ends Here -->
-                                <span class="social-links b-txt">
-                                    <span class="icon"><i class="fa fa-facebook"></i></span> Facebook
-                                </span>
-                                <span class="social-links b-txt">
-                                    <span class="icon"><i class="fa fa-instagram"></i></span> Instagram
-                                </span>
-                                <span class="social-links b-txt">
-                                    <span class="icon"><i class="fa fa-phone"></i></span> Phone
-                                </span>
+                                <span class="social-links b-txt"><i class="fa fa-facebook"></i> Facebook</span>
+                                <span class="social-links b-txt"><i class="fa fa-instagram"></i> Instagram</span>
+                                <span class="social-links b-txt"><i class="fa fa-phone"></i> Phone</span>
                             </div>
                         </div>
                         <div class="extra-info">
@@ -718,7 +610,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         </div>
     </body>
